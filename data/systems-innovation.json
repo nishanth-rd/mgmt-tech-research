@@ -17,7 +17,12 @@
       "year": 1968,
       "title": "How Do Committees Invent? (Conway's Law)",
       "authors": "Melvin E. Conway (Datamation)",
-      "tags": ["Conway's Law", "System Architecture", "Organizational Structure", "Communication"],
+      "tags": [
+        "Conway's Law",
+        "System Architecture",
+        "Organizational Structure",
+        "Communication"
+      ],
       "paperUrl": "https://doi.org/10.1145/357980.357982",
       "isRecommended": true,
       "levelOfAnalysis": "System & Organization",
@@ -28,14 +33,20 @@
         "Communication Overhead: Shows how exponential communication costs in large teams inevitably force architectural modularization along team organizational boundaries.",
         "The Inverse Conway Maneuver Precursor: Highlights that changing a system's target architectural decoupling requires first reconfiguring the reporting lines and collaborative boundaries of the engineering organization.",
         "Enduring Engineering Standard: Forms the bedrock theoretical justification for modern microservices architecture, domain-driven design (DDD), and team topologies."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "henderson-clark-architectural-innovation-1990",
       "year": 1990,
       "title": "Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms",
       "authors": "Rebecca M. Henderson, Kim B. Clark (Administrative Science Quarterly)",
-      "tags": ["Architectural Innovation", "Modular Innovation", "Component Knowledge", "Inertia"],
+      "tags": [
+        "Architectural Innovation",
+        "Modular Innovation",
+        "Component Knowledge",
+        "Inertia"
+      ],
       "paperUrl": "https://doi.org/10.2307/2393549",
       "isRecommended": true,
       "levelOfAnalysis": "Firm & Industry",
@@ -46,14 +57,20 @@
         "Information Filtering Pathology: When an architectural shift occurs, incumbent managers unconsciously filter out vital architectural warning signals because legacy channels are optimized for old system topologies.",
         "Semiconductor Photolithography Evidence: Tracks four successive generational architectural transitions where dominant market leaders suffered commercial collapse despite heavy R&D spending.",
         "Executive Leadership Lesson: Incumbents must develop specialized architectural diagnostic capabilities that operate independently of legacy organizational reporting routines."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "baldwin-clark-design-rules-modularity-2000",
       "year": 2000,
       "title": "Design Rules: The Power of Modularity in Engineering and Economic Systems",
       "authors": "Carliss Y. Baldwin, Kim B. Clark (MIT Press)",
-      "tags": ["Modularity", "Design Rules", "Real Options", "System Evolution"],
+      "tags": [
+        "Modularity",
+        "Design Rules",
+        "Real Options",
+        "System Evolution"
+      ],
       "paperUrl": "https://doi.org/10.7551/mitpress/2366.001.0001",
       "isRecommended": true,
       "levelOfAnalysis": "System & Economic Ecosystem",
@@ -64,14 +81,20 @@
         "Modularity as Real Options: Mathematically models modular designs as portfolios of financial call options—modularity grants the right (without obligation) to substitute superior module experiments.",
         "Industrial Reorganization of Computing: Details how IBM System/360 modular architecture inadvertently decentralized the entire computer industry into specialized horizontal markets.",
         "Systemic Design Governance: Provides chief system architects with formal mathematical principles for deciding when to decouple interfaces and when to integrate subsystems."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "ulrich-role-of-product-architecture-1995",
       "year": 1995,
       "title": "The Role of Product Architecture in the Manufacturing Firm",
       "authors": "Karl Ulrich (Research Policy)",
-      "tags": ["Product Architecture", "Modular Architecture", "Integrated Architecture", "Performance"],
+      "tags": [
+        "Product Architecture",
+        "Modular Architecture",
+        "Integrated Architecture",
+        "Performance"
+      ],
       "paperUrl": "https://doi.org/10.1016/0048-7333(94)00775-3",
       "isRecommended": true,
       "levelOfAnalysis": "Product & Firm",
@@ -82,14 +105,20 @@
         "Organizational Mirroring Link: Highlights that product architecture dictates how corporate functions, supplier networks, and development schedules can be structured.",
         "Postponement & Mass Customization: Demonstrates how modular architecture enables operational postponement—customizing product variants at final assembly stages with minimal inventory risk.",
         "Cross-Disciplinary Bridge: Provided the foundational conceptual bridge uniting mechanical engineering design with strategic operations management."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "christensen-customer-power-disruptive-technologies-1996",
       "year": 1996,
       "title": "Customer Power, Technology Investment, and the Failure of Leading Firms",
       "authors": "Clayton M. Christensen, Joseph L. Bower (Strategic Management Journal)",
-      "tags": ["Disruptive Innovation", "Resource Allocation", "Customer Power", "Disk Drives"],
+      "tags": [
+        "Disruptive Innovation",
+        "Resource Allocation",
+        "Customer Power",
+        "Disk Drives"
+      ],
       "paperUrl": "https://doi.org/10.1002/(sici)1097-0266(199603)17:3<197::aid-smj804>3.0.co;2-u",
       "isRecommended": true,
       "levelOfAnalysis": "Firm & Market",
@@ -100,14 +129,21 @@
         "Performance Trajectories: Disruptive technologies underperform mainstream performance metrics at launch, but improve along a steep trajectory that eventually overtakes mainstream market demand.",
         "Value Network Traps: Incumbents cannot justify investing capital into low-margin, small-market disruptive architectures until an entrant firm secures a defended beachhead.",
         "Strategic Governance Takeaway: Corporate executives must house disruptive architectural projects in completely independent autonomous business units with distinct cost structures."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "teece-explicating-dynamic-capabilities-2007",
       "year": 2007,
       "title": "Explicating Dynamic Capabilities: The Nature and Microfoundations of (Sustainable) Enterprise Performance",
       "authors": "David J. Teece (Strategic Management Journal)",
-      "tags": ["Dynamic Capabilities", "Microfoundations", "Sensing", "Seizing", "Transforming"],
+      "tags": [
+        "Dynamic Capabilities",
+        "Microfoundations",
+        "Sensing",
+        "Seizing",
+        "Transforming"
+      ],
       "paperUrl": "https://doi.org/10.1002/smj.640",
       "isRecommended": true,
       "levelOfAnalysis": "Firm & Ecosystem",
@@ -118,14 +154,20 @@
         "Seizing Microfoundations: Designing coherent business models, securing complementary assets, and overcoming cognitive lock-in to commit irreversible capital to new architectures.",
         "Transforming (Realigning) Microfoundations: Continually orchestrating, reallocating, and revamping legacy operational assets and organizational structures to avoid organizational ossification.",
         "Distinction from Ordinary Capabilities: Contrasts 'ordinary capabilities' (doing things right / technical efficiency) with 'dynamic capabilities' (doing the right things / strategic adaptability)."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "maccormack-developing-products-internet-time-2001",
       "year": 2001,
       "title": "Developing Products on 'Internet Time': The Anatomy of a Flexible Development Process",
       "authors": "Alan MacCormack, Roberto Verganti, Marco Iansiti (Management Science)",
-      "tags": ["Flexible Development", "Internet Time", "System Architecture", "Empirical"],
+      "tags": [
+        "Flexible Development",
+        "Internet Time",
+        "System Architecture",
+        "Empirical"
+      ],
       "paperUrl": "https://doi.org/10.1287/mnsc.47.1.133.10663",
       "isRecommended": false,
       "levelOfAnalysis": "Project & Team",
@@ -136,14 +178,21 @@
         "Modular Architectural Cushion: Demonstrates that successful flexible projects invest heavily in modular software architectures that accommodate radical subsystem redesign without destabilizing the whole.",
         "Experience Over Formal Process: Shows that individual team architectural experience and decentralized autonomy outperform rigid adherence to standardized bureaucratic process manuals.",
         "Precursor to Agile-at-Scale: Established the foundational academic empirical validation for evolutionary development, continuous integration, and rapid sprint cycles."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "maccormack-exploring-structure-complex-software-2006",
       "year": 2006,
       "title": "Exploring the Structure of Complex Software Designs: An Empirical Examination of Open Source and Proprietary Code",
       "authors": "Alan MacCormack, John Rusnak, Carliss Y. Baldwin (Management Science)",
-      "tags": ["Design Structure Matrix", "DSM", "Propagation Cost", "Modularity", "Empirical"],
+      "tags": [
+        "Design Structure Matrix",
+        "DSM",
+        "Propagation Cost",
+        "Modularity",
+        "Empirical"
+      ],
       "paperUrl": "https://doi.org/10.1287/mnsc.1060.0552",
       "isRecommended": false,
       "levelOfAnalysis": "Codebase & Organization",
@@ -154,14 +203,20 @@
         "Architectural Decoupling: Quantitatively demonstrates that Mozilla exhibited an architectural propagation cost four times lower than Netscape, with dramatically fewer cyclic dependencies.",
         "Core-Periphery Structure: Uncovers that modular software converges on a small, tightly coupled 'core' surrounded by a vast decoupled 'periphery' of optional components.",
         "Architectural Audit Tool: Provided software engineering executives with automated algorithmic tools to detect insidious architectural decay and dependency loops."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "colfer-baldwin-mirroring-hypothesis-2016",
       "year": 2016,
       "title": "The Mirroring Hypothesis: Theory, Evidence, and Exceptions",
       "authors": "Lyra J. Colfer, Carliss Y. Baldwin (Industrial and Corporate Change)",
-      "tags": ["Mirroring Hypothesis", "System Architecture", "Organizational Design", "Literature Review"],
+      "tags": [
+        "Mirroring Hypothesis",
+        "System Architecture",
+        "Organizational Design",
+        "Literature Review"
+      ],
       "paperUrl": "https://doi.org/10.1093/icc/dtw027",
       "isRecommended": true,
       "levelOfAnalysis": "System & Industry",
@@ -172,14 +227,20 @@
         "Analysis of 'Mistracked' Systems: Documents severe performance drops, coordination friction, and project delays when organizations attempt to build modular products using integrated teams or vice versa.",
         "Systemic Exceptions: Identifies open collaborative ecosystems and digital platform communities as vital exceptions that intentionally 'break' mirroring via standardized digital interfaces.",
         "Governance Matrix: Delivers an analytical roadmap helping technology leaders anticipate when architectural decoupling will fail due to sticky organizational communication bottlenecks."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "cooper-stage-gate-systems-1990",
       "year": 1990,
       "title": "Stage-Gate Systems: A New Tool for Managing New Products",
       "authors": "Robert G. Cooper (Business Horizons)",
-      "tags": ["Stage-Gate", "Product Development", "Risk Management", "Governance"],
+      "tags": [
+        "Stage-Gate",
+        "Product Development",
+        "Risk Management",
+        "Governance"
+      ],
       "paperUrl": "https://doi.org/10.1016/0007-6813(90)90040-i",
       "isRecommended": false,
       "levelOfAnalysis": "Process & Enterprise",
@@ -190,14 +251,20 @@
         "Cross-Functional Gatekeeping: Enforces multi-disciplinary reviews where engineering, marketing, operations, and finance jointly sign off on milestone deliverables.",
         "Quality of Execution: Identifies that upfront homework (preliminary technical assessment and market scoping) is the primary determinant of ultimate commercial victory.",
         "Modern Evolution: Serves as the historical governance baseline against which modern agile-stage-gate hybrid frameworks are benchmarked."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "eisenhardt-martin-dynamic-capabilities-2000",
       "year": 2000,
       "title": "Dynamic Capabilities: What Are They?",
       "authors": "Kathleen M. Eisenhardt, Jeffrey A. Martin (Strategic Management Journal)",
-      "tags": ["Dynamic Capabilities", "Routines", "High-Velocity Markets", "Best Practices"],
+      "tags": [
+        "Dynamic Capabilities",
+        "Routines",
+        "High-Velocity Markets",
+        "Best Practices"
+      ],
       "paperUrl": "https://doi.org/10.1002/1097-0266(200010/11)21:10/11<1105::aid-smj133>3.0.co;2-e",
       "isRecommended": false,
       "levelOfAnalysis": "Firm & Routine",
@@ -208,14 +275,20 @@
         "Commonalities Across Firms: Proves that while effective routines exhibit 'best practice' commonalities across firms, competitive advantage stems from the idiosyncratic resource combinations they produce.",
         "Evolutionary Decay: Emphasizes that dynamic capabilities themselves must be continuously updated or they ossify into rigid core rigidities.",
         "Managerial Guidance: Prescribes 'simple rules' heuristics for engineering teams operating under severe technological ambiguity."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "cusumano-gawer-platform-leadership-2002",
       "year": 2002,
       "title": "The Elements of Platform Leadership",
       "authors": "Michael A. Cusumano, Annabelle Gawer (MIT Sloan Management Review)",
-      "tags": ["Platform Leadership", "Ecosystems", "Complementors", "Architecture"],
+      "tags": [
+        "Platform Leadership",
+        "Ecosystems",
+        "Complementors",
+        "Architecture"
+      ],
       "paperUrl": "https://doi.org/10.1016/S0024-6301(02)00155-4",
       "isRecommended": true,
       "levelOfAnalysis": "Platform Ecosystem & Industry",
@@ -226,14 +299,20 @@
         "Network Effects Orchestration: Explains how platform leaders stimulate two-sided network effects by subsidizing critical complementor development tools and SDKs.",
         "Intel Case Analysis: Deconstructs Intel's Architecture Labs (IAL) strategy of creating open USB and PCI standards to expand total market demand for PC computing.",
         "Strategic Governance Playbook: Delivered the foundational management playbook adopted by enterprise software and mobile operating system ecosystems."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "gawer-henderson-platform-owner-entry-2007",
       "year": 2007,
       "title": "Platform Owner Entry and Innovation in Complementary Markets: Evidence from Intel",
       "authors": "Annabelle Gawer, Rebecca M. Henderson (Journal of Economics & Management Strategy)",
-      "tags": ["Platform Governance", "Complementary Innovation", "Squeeze", "Ecosystem Strategy"],
+      "tags": [
+        "Platform Governance",
+        "Complementary Innovation",
+        "Squeeze",
+        "Ecosystem Strategy"
+      ],
       "paperUrl": "https://doi.org/10.1111/j.1530-9134.2007.00130.x",
       "isRecommended": false,
       "levelOfAnalysis": "Platform & Complementors",
@@ -244,14 +323,20 @@
         "Commitment Devices: Documents organizational mechanisms used by leaders to reassure complementors: open technical forums, transparent roadmap disclosure, and independent operational units.",
         "Architectural Squeeze Risk: Analyzes how platform owners can inadvertently kill thriving complementors by bundling complementary features directly into core OS or hardware layers.",
         "Ecosystem Longevity: Concludes that sustainable platform leadership requires exercising self-restraint and preserving attractive economic margins for third-party complementors."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "tiwana-konsynski-platform-evolution-architecture-2010",
       "year": 2010,
       "title": "Platform Evolution: Coevolution of Platform Architecture, Governance, and Environmental Dynamics",
       "authors": "Amrit Tiwana, Benn Konsynski, Ashley A. Bush (Information Systems Research)",
-      "tags": ["Platform Evolution", "Architecture", "Governance", "Coevolution"],
+      "tags": [
+        "Platform Evolution",
+        "Architecture",
+        "Governance",
+        "Coevolution"
+      ],
       "paperUrl": "https://doi.org/10.1287/isre.1100.0323",
       "isRecommended": false,
       "levelOfAnalysis": "Platform Architecture & Governance",
@@ -262,14 +347,20 @@
         "Governance Mechanisms: Categorizes governance controls into Gatekeeping (app store vetting), Metrics (ratings/telemetry), and Relational trust.",
         "Trade-offs in Control: Shows how excessive architectural lockdown suppresses generative innovation, whereas excessive openness leads to system fragmentation and security collapse.",
         "Information Systems Agenda: Provided a rigorous architectural and governance taxonomy that bridged computer science systems engineering with organizational strategy."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "ethiraj-levinthal-modularity-complex-systems-2004",
       "year": 2004,
       "title": "Modularity and Innovation in Complex Systems",
       "authors": "Sendil K. Ethiraj, Daniel A. Levinthal (Management Science)",
-      "tags": ["Modularity", "Complex Systems", "NK Model", "Local Search"],
+      "tags": [
+        "Modularity",
+        "Complex Systems",
+        "NK Model",
+        "Local Search"
+      ],
       "paperUrl": "https://doi.org/10.1287/mnsc.1030.0145",
       "isRecommended": false,
       "levelOfAnalysis": "System Architecture & Simulation",
@@ -280,14 +371,20 @@
         "Under-Modularity Gridlock: Demonstrates that insufficient modularization subjects developers to combinatorial explosion, where minor subsystem edits inadvertently break remote components.",
         "Imperfection of Boundaries: Shows that human designers inevitably misestimate true dependency boundaries; successful modular systems survive because they allow slow cross-module tuning over time.",
         "System Architecture Guideline: Advises architects to bias toward slightly larger integrated subsystems when task interdependencies are poorly understood."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "pisano-you-need-an-innovation-strategy-2015",
       "year": 2015,
       "title": "You Need an Innovation Strategy",
       "authors": "Gary P. Pisano (Harvard Business Review)",
-      "tags": ["Innovation Strategy", "Business Model", "Technical Competence", "Executive Leadership"],
+      "tags": [
+        "Innovation Strategy",
+        "Business Model",
+        "Technical Competence",
+        "Executive Leadership"
+      ],
       "paperUrl": "https://doi.org/10.1109/emr.2017.2783856",
       "isRecommended": true,
       "levelOfAnalysis": "Firm & Strategy",
@@ -298,14 +395,20 @@
         "Trade-off Allocation: Explains that leadership must make deliberate trade-off bets across all four innovation quadrants rather than pouring 100% of capital into sustaining routine innovations.",
         "Demand-Side Versus Supply-Side Alignment: Emphasizes matching internal engineering problem-solving architectures with external market monetization channels.",
         "Leadership Responsibility: Declares that innovation strategy is the non-delegable duty of senior executive leadership rather than decentralized lower-tier R&D managers."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "sosa-eppinger-rowles-misalignment-architecture-structure-2004",
       "year": 2004,
       "title": "The Misalignment of Product Architecture and Organizational Structure in Complex Product Development",
       "authors": "Manuel E. Sosa, Steven D. Eppinger, Craig M. Rowles (Management Science)",
-      "tags": ["Design Structure Matrix", "Conway's Law", "Misalignment", "Aerospace Engineering"],
+      "tags": [
+        "Design Structure Matrix",
+        "Conway's Law",
+        "Misalignment",
+        "Aerospace Engineering"
+      ],
       "paperUrl": "https://doi.org/10.1287/mnsc.1040.0289",
       "isRecommended": false,
       "levelOfAnalysis": "Engineering Organization & Subsystems",
@@ -316,14 +419,20 @@
         "Modularity Boundary Blinders: Discovers that modular systems create dangerous organizational blind spots: teams communicate heavily within their modular subsystem but ignore cross-subsystem interface changes.",
         "Cross-System Interface Hazards: 33% of cross-subsystem technical interfaces lacked active communication channels, directly generating late-stage integration assembly failures.",
         "Systems Engineering Diagnostic: Demonstrates how engineering executives can systematically overlay Design Structure Matrices to pinpoint communication deficits before physical manufacturing."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "schilling-general-modular-systems-theory-2000",
       "year": 2000,
       "title": "Toward a General Modular Systems Theory and Its Application to Interfirm Product Modularity",
       "authors": "Melissa A. Schilling (Academy of Management Review)",
-      "tags": ["Modular Systems Theory", "Standards", "Recombination", "Heterogeneity"],
+      "tags": [
+        "Modular Systems Theory",
+        "Standards",
+        "Recombination",
+        "Heterogeneity"
+      ],
       "paperUrl": "https://doi.org/10.5465/amr.2000.3312918",
       "isRecommended": false,
       "levelOfAnalysis": "System & Interfirm",
@@ -334,14 +443,20 @@
         "Forces Resisting Modularity: Synergistic system specificity, performance-density demands, and high interface standardization costs resist modular fragmentation.",
         "Interfirm Modularity: Explains how standardized component interfaces dismantle vertically integrated firms, transforming entire industries into loosely coupled production networks.",
         "Speed of Recombination: Formulates how modular architectures dramatically reduce the cycle time of product iteration through rapid component recombination."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "sanchez-mahoney-modularity-flexibility-knowledge-1996",
       "year": 1996,
       "title": "Modularity, Flexibility, and Knowledge Management in Product and Organization Design",
       "authors": "Ron Sanchez, Joseph T. Mahoney (Strategic Management Journal)",
-      "tags": ["Modularity", "Knowledge Management", "Coordination", "Organization Design"],
+      "tags": [
+        "Modularity",
+        "Knowledge Management",
+        "Coordination",
+        "Organization Design"
+      ],
       "paperUrl": "https://doi.org/10.1002/(sici)1097-0266(199612)17:10s<63::aid-smj987>3.0.co;2-8",
       "isRecommended": true,
       "levelOfAnalysis": "Organization & System",
@@ -352,14 +467,20 @@
         "Strategic Flexibility: Modularity enables rapid product portfolio reconfiguration without the catastrophic organizational restructuring required by tightly integrated designs.",
         "Knowledge Partitioning: Separates firm knowledge into architectural knowledge (defining interface rules) and component knowledge (developing modular subsystems), advising firms to retain architectural rights.",
         "Managerial Paradigms: Contrasts traditional hierarchical authority models with informational governance grounded in system design rules."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "wheelwright-clark-revolutionizing-product-development-1992",
       "year": 1992,
       "title": "Revolutionizing Product Development: Quantum Leaps in Speed, Efficiency, and Quality",
       "authors": "Steven C. Wheelwright, Kim B. Clark (Free Press / Harvard)",
-      "tags": ["Product Development", "Heavyweight Teams", "Phase-Gate", "Manufacturing"],
+      "tags": [
+        "Product Development",
+        "Heavyweight Teams",
+        "Phase-Gate",
+        "Manufacturing"
+      ],
       "paperUrl": "https://doi.org/10.1016/0737-6782(93)90011-i",
       "isRecommended": false,
       "levelOfAnalysis": "Project & Organization",
@@ -370,14 +491,20 @@
         "Design-Manufacturing Integration: Highlights the critical engineering phase of early prototyping and design-for-manufacturability to prevent catastrophic late-stage engineering changes.",
         "The Cross-Functional Mandate: Proves that isolating engineering from marketing and operations creates products that are technically sophisticated but commercially unviable.",
         "Benchmark of Excellence: Established the foundational development playbook adopted across automotive, aerospace, and consumer electronics giants globally."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "deneufville-scholtes-flexibility-engineering-design-2011",
       "year": 2011,
       "title": "Flexibility in Engineering Design: Multi-Domain Systems Decision Making under Uncertainty",
       "authors": "Richard de Neufville, Stefan Scholtes (MIT Press)",
-      "tags": ["Flexibility", "Real Options in Design", "Decision Making", "Engineering Systems"],
+      "tags": [
+        "Flexibility",
+        "Real Options in Design",
+        "Decision Making",
+        "Engineering Systems"
+      ],
       "paperUrl": "https://doi.org/10.7551/mitpress/8194.001.0001",
       "isRecommended": false,
       "levelOfAnalysis": "Engineering Architecture & Infrastructure",
@@ -388,6 +515,257 @@
         "Multi-Domain Decision Rules: Models design choices under deep uncertainty using simulation trees, decision rules, and expected net present value distributions.",
         "Architectural Decoupling for Future Growth: Explains how upfront investment in modular over-capacity or modular interfaces yields multi-billion-dollar payoffs when unexpected technological disruption strikes.",
         "Systems Engineering Standard: Established modern MIT systems design methodologies across aerospace, energy, cloud infrastructure, and transportation."
+      ],
+      "isPeerReviewed": true
+    },
+    {
+      "id": "mit-esd-engineering-systems-monograph-2012",
+      "year": 2012,
+      "title": "Engineering Systems Monograph: Meeting Human Needs in a Complex Technological World",
+      "authors": "Daniel Roos, Joseph M. Sussman, Joel Moses (MIT Engineering Systems Division)",
+      "tags": [
+        "Engineering Systems",
+        "MIT ESD",
+        "Complexity",
+        "Holistic Architecture"
+      ],
+      "paperUrl": "https://esd.mit.edu/symposium/monograph.pdf",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "Macro-System & Society",
+      "teaser": "Foundational MIT monograph establishing the discipline of Engineering Systems to address large-scale complex socio-technical systems exhibiting high uncertainty and social entanglement.",
+      "summaryPoints": [
+        "Definition of Engineering Systems: Expands traditional engineering to encompass systems characterized by complex technical architectures embedded in political, economic, and human social networks.",
+        "The Ilities Framework: Formulates core architectural system properties: Flexibility, Robustness, Adaptability, Scalability, and Sustainability as non-functional primary metrics.",
+        "Holistic Systems Thinking: Critiques narrow reductionist engineering that optimizes component parameters while causing catastrophic failures at systemic human-machine interfaces.",
+        "Enterprise and Industry Architecture: Models socio-technical evolution where regulatory policy and organizational culture co-determine technical design trade-offs.",
+        "Educational and Research Paradigm: Established the curriculum and research agenda for complex socio-technical engineering leadership across aerospace, energy, and digital platforms."
+      ]
+    },
+    {
+      "id": "nasa-systems-engineering-handbook-2016",
+      "year": 2016,
+      "title": "NASA Systems Engineering Handbook (SP-2016-6105) for Complex Mission Architecture",
+      "authors": "National Aeronautics and Space Administration (NASA Technical Reports)",
+      "tags": [
+        "NASA",
+        "Systems Engineering",
+        "Mission Architecture",
+        "Interfaces"
+      ],
+      "paperUrl": "https://www.nasa.gov/connect/ebooks/sp-2016-6105.html",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Institutional Technical Handbook",
+      "levelOfAnalysis": "System Architecture & Engineering",
+      "teaser": "The definitive aerospace systems engineering manual establishing standardized lifecycle phases, interface control protocols, and formal architectural verification gates.",
+      "summaryPoints": [
+        "The NASA Systems Engineering Engine: Formulates a continuous 17-process cycle integrating system design processes (requirements definition, architecture design) with product realization processes.",
+        "The V-Model Lifecycle: Deconstructs project decomposition from high-level mission concept down to component manufacture on the left leg, and progressive integration/verification up the right leg.",
+        "Interface Management Rigor: Establishes Interface Control Documents (ICDs) and Interface Working Groups (IWGs) as non-negotiable tools to prevent multi-subcontractor integration disasters.",
+        "Technical Review Gates: Formalizes critical governance milestones: Mission Concept Review (MCR), System Requirements Review (SRR), Preliminary Design Review (PDR), and Critical Design Review (CDR).",
+        "Global Engineering Reference: Serves as the international benchmark utilized across aerospace, defense, automotive, and large-scale industrial infrastructure engineering programs."
+      ]
+    },
+    {
+      "id": "serc-digital-engineering-strategy-2022",
+      "year": 2022,
+      "title": "Digital Engineering Strategy: Model-Centric Socio-Technical Design and Interface Verification",
+      "authors": "Dinesh Verma, Nicole Hutchison, et al. (Systems Engineering Research Center / DoD)",
+      "tags": [
+        "Digital Engineering",
+        "MBSE",
+        "SERC",
+        "Interface Verification"
+      ],
+      "paperUrl": "https://sercuarc.org/research-project/digital-engineering-competency-framework/",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Institutional Research Report",
+      "levelOfAnalysis": "Enterprise Engineering & Defense",
+      "teaser": "Strategic research report mapping the paradigm shift from static paper-based engineering documentation to integrated digital engineering ecosystems and continuous digital threads.",
+      "summaryPoints": [
+        "The Digital Thread Concept: Establishes an unbroken, authoritative digital record connecting preliminary requirements, SysML architectural models, CAD designs, simulation telemetry, and field telemetry.",
+        "Model-Based Systems Engineering (MBSE): Details the transition from ambiguous natural language specification documents to computable, mathematically verifiable architectural models.",
+        "Automated Interface Verification: Enables multi-disciplinary engineering teams to run automated collision and interface mismatch simulations continuously during design sprints.",
+        "Workforce Competency Transformation: Identifies critical skill gaps across legacy engineering organizations transitioning from traditional drawing boards to cloud-native modeling platforms.",
+        "Acquisition and Procurement Revolution: Explains how digital engineering threads fundamentally alter how government and enterprise clients procure and audit complex mission systems."
+      ]
+    },
+    {
+      "id": "google-cloud-sre-sociotechnical-architecture-2023",
+      "year": 2023,
+      "title": "Site Reliability Engineering (SRE) and Socio-Technical Architecture: Conway Alignment in Large-Scale Platforms",
+      "authors": "Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Murphy (Google Cloud)",
+      "tags": [
+        "SRE",
+        "Cloud Architecture",
+        "Conway Alignment",
+        "Reliability"
+      ],
+      "paperUrl": "https://sre.google/books/",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Industry White Paper",
+      "levelOfAnalysis": "Platform Architecture & Operations",
+      "teaser": "Pioneering industry treatise establishing Site Reliability Engineering as a socio-technical governance framework bridging software engineering and operational systems resilience.",
+      "summaryPoints": [
+        "The Error Budget Paradigm: Reconciles the systemic organizational conflict between development teams (incentivized to ship features) and operations teams (incentivized for stability) via quantitative Error Budgets.",
+        "Treating Operations as a Software Problem: Mandates that operational tasks (provisioning, incident management, alerting) be automated using software code rather than manual human labor.",
+        "Socio-Technical Conway Alignment: Documents how aligning autonomous SRE pods alongside product feature teams enforces clear architectural boundaries and decoupled API contracts.",
+        "Blameless Post-Mortem Culture: Establishes a psychological safety protocol where systemic architectural and procedural root causes of incidents are analyzed without individual scapegoating.",
+        "Global Industry Impact: Established the dominant operational paradigm adopted across hyperscale cloud providers and enterprise software engineering organizations globally."
+      ]
+    },
+    {
+      "id": "thoughtworks-team-topologies-evolutionary-arch-2023",
+      "year": 2023,
+      "title": "Team Topologies and Evolutionary Architecture: The Inverse Conway Maneuver in Cloud-Native Enterprise Systems",
+      "authors": "Rebecca Parsons, Neal Ford, Patrick Kua (Thoughtworks Technology Advisory Board)",
+      "tags": [
+        "Team Topologies",
+        "Evolutionary Architecture",
+        "Inverse Conway",
+        "Platform Teams"
+      ],
+      "paperUrl": "https://www.thoughtworks.com/radar",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Industry White Paper",
+      "levelOfAnalysis": "Enterprise Engineering & Organization",
+      "teaser": "Architectural advisory paper operationalizing the Inverse Conway Maneuver, detailing how configuring team topologies drives decoupled microservices and platform engineering velocity.",
+      "summaryPoints": [
+        "The Four Fundamental Team Types: Stream-aligned teams (delivering direct customer value), Platform teams (providing underlying developer self-service tooling), Enabling teams (upskilling), and Complicated-subsystem teams.",
+        "Cognitive Load as Architectural Limiter: Proves that software architecture must be partitioned to respect team cognitive load limits; teams responsible for sprawling codebases experience velocity collapse.",
+        "The Inverse Conway Maneuver: Prescribes deliberately organizing team interaction modes (collaboration, X-as-a-Service, facilitating) to produce desired decoupled microservice boundaries.",
+        "Evolutionary Architecture Fitness Functions: Introduces automated fitness functions in CI/CD pipelines to protect architectural modularity and prevent dependency rot.",
+        "Platform-as-a-Product Paradigm: Advises internal platform engineering teams to treat application developers as paying customers rather than issuing rigid mandatory bureaucratic decrees."
+      ]
+    },
+    {
+      "id": "fowler-microservices-conway-law-2022",
+      "year": 2022,
+      "title": "Microservices Architecture and Conway's Law: Evaluating Modularity and Inter-Team Dependency Overhead",
+      "authors": "Martin Fowler, James Lewis (martinfowler.com Technical Essays)",
+      "tags": [
+        "Microservices",
+        "Conway's Law",
+        "Modularity",
+        "Decoupling"
+      ],
+      "paperUrl": "https://martinfowler.com/articles/microservices.html",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Industry White Paper",
+      "levelOfAnalysis": "Software Architecture & Team",
+      "teaser": "The definitive industry essay defining microservices architecture as a suite of small services running in their own processes and communicating with lightweight mechanisms.",
+      "summaryPoints": [
+        "Nine Core Microservices Characteristics: Componentization via Services, Organized around Business Capabilities, Products not Projects, Smart Endpoints and Dumb Pipes, Decentralized Governance, Decentralized Data Management, Infrastructure Automation, Design for Failure, Evolutionary Design.",
+        "Conway's Law Operationalization: Argues that monolithic software architectures mirror cross-functional siloed organizations; microservices empower cross-functional full-stack teams owning services end-to-end.",
+        "The Premium Cost of Microservices: Warns engineering leaders that distributed architectures introduce severe operational complexity, distributed transaction challenges, and latency overhead.",
+        "Monolith First Strategy: Advises starting with a clean modular monolith before attempting to split into microservices, avoiding premature architectural decomposition along incorrect boundaries.",
+        "Architectural Evolution: Provided the primary architectural blueprint and vocabulary for the cloud-native software revolution over the past decade."
+      ]
+    },
+    {
+      "id": "harvard-belfer-dual-use-architectural-governance-2023",
+      "year": 2023,
+      "title": "Managing Dual-Use Technological Innovation: Architectural Governance in Frontier Systems",
+      "authors": "Jason Matheny, Graham Allison, Eric Schmidt (Harvard Kennedy School Belfer Center)",
+      "tags": [
+        "Dual-Use",
+        "Frontier Systems",
+        "Belfer Center",
+        "Architectural Governance"
+      ],
+      "paperUrl": "https://www.belfercenter.org/publication/managing-dual-use-technology",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "National Strategy & Ecosystem",
+      "teaser": "Policy research report examining governance frameworks for dual-use frontier technologies, proposing architectural isolation mechanisms and supply-chain oversight.",
+      "summaryPoints": [
+        "The Dual-Use Dilemma: Analyzes frontier technologies (advanced semiconductors, generative AI, synthetic biology) that yield immense commercial benefits while posing existential national security risks.",
+        "Hardware Chokepoints as Governance Anchors: Explains why governing physical compute silicon and photolithography supply chains is technically feasible compared to controlling digital software code.",
+        "Architectural Access Verification: Proposes cryptographic hardware verification and compute threshold tracking to ensure high-performance clusters are audited for safety compliance.",
+        "Public-Private Innovation Alliances: Prescribes institutional mechanisms for aligning venture capital and commercial R&D speed with federal strategic requirements.",
+        "Global Regulatory Interdependence: Highlights that unilateral technical embargoes fail unless multilateral export controls and common architectural verification standards are institutionalized."
+      ]
+    },
+    {
+      "id": "incose-systems-engineering-vision-2035",
+      "year": 2022,
+      "title": "Systems Engineering Vision 2035: Architecting Resilient and Modular Socio-Technical Systems",
+      "authors": "International Council on Systems Engineering (INCOSE Technical Council)",
+      "tags": [
+        "INCOSE",
+        "SE Vision 2035",
+        "Resilience",
+        "Socio-Technical"
+      ],
+      "paperUrl": "https://www.incose.org/about-systems-engineering/se-vision-2035",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "International Technical Standard",
+      "levelOfAnalysis": "Global Engineering Discipline",
+      "teaser": "Comprehensive strategic vision document from INCOSE establishing the future trajectory of systems engineering in an era of autonomous computation, circular economics, and extreme complexity.",
+      "summaryPoints": [
+        "The Changing Engineering Landscape: Documents exponential rises in system interconnectivity, software intensity, autonomous behavior, and regulatory environmental constraints.",
+        "The Future Systems Engineer Profile: Transitions the systems engineer from a document coordinator to an enterprise value orchestrator adept at data analytics, social ethics, and model governance.",
+        "Model-Centric and Data-Driven Future: Projects that by 2035, model-based systems engineering will be fully integrated with real-time digital twins and machine learning simulation engines.",
+        "Socio-Technical Resilience Imperative: Emphasizes that systems engineering must address social equity, climate resilience, and cyber-physical security as fundamental architectural requirements.",
+        "Global Educational Roadmap: Provides engineering universities with foundational curriculum transformation recommendations to prepare the next generation of systems leaders."
+      ]
+    },
+    {
+      "id": "aws-two-pizza-team-microservices-2023",
+      "year": 2023,
+      "title": "The Two-Pizza Team Paradigm: Modular Architecture, Microservices, and Hyperscale Conway Alignment",
+      "authors": "Werner Vogels, Adrian Cockcroft, et al. (Amazon Web Services Architecture)",
+      "tags": [
+        "Two-Pizza Teams",
+        "AWS Architecture",
+        "Hyperscale",
+        "Decentralized Governance"
+      ],
+      "paperUrl": "https://aws.amazon.com/architecture/",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Industry White Paper",
+      "levelOfAnalysis": "Hyperscale Enterprise & Infrastructure",
+      "teaser": "Architecture and organizational case study detailing how Amazon's famed Two-Pizza Team model enforces modular service boundaries and decentralized operational autonomy.",
+      "summaryPoints": [
+        "The Two-Pizza Rule: Dictates that teams should be small enough to be fed by two pizzas (6-10 people), minimizing communication lines and maximizing ownership accountability.",
+        "You Build It, You Run It: Mandates that developers who write code are directly responsible for deploying, monitoring, and debugging it in production, eliminating handoffs to separate ops teams.",
+        "API-First Mandate (The Bezos API Mandate): Enforces that all software teams must expose data and functionality strictly through service interfaces designed to be consumable by external developers.",
+        "Decentralized Innovation Engine: Demonstrates how decoupling services into single-purpose modular APIs enabled Amazon to scale from hundreds of deploys annually to millions of deploys daily.",
+        "Operational Resilience Metrics: Explains how automated canary deployments, cell-based architectures, and chaos testing maintain high availability at cloud hyperscale."
+      ]
+    },
+    {
+      "id": "cambridge-ifm-strategic-technology-roadmapping-2023",
+      "year": 2023,
+      "title": "Strategic Technology Roadmapping: Aligning Systems Engineering Decisions with Corporate Innovation Pipelines",
+      "authors": "Robert Phaal, Clare Farrukh, David Probert (Cambridge Institute for Manufacturing)",
+      "tags": [
+        "Roadmapping",
+        "Innovation Pipelines",
+        "Cambridge IfM",
+        "Strategic Alignment"
+      ],
+      "paperUrl": "https://www.ifm.eng.cam.ac.uk/research/ctm/roadmapping/",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "Strategic Enterprise & R&D",
+      "teaser": "Methodological handbook from the University of Cambridge establishing time-based visual roadmapping architectures to synchronize technological capabilities with market opportunities.",
+      "summaryPoints": [
+        "The Multi-Layered Roadmapping Architecture: Unifies three fundamental layers over time: Market (Know-Why / Trends & Drivers), Product/Service (Know-What / Features & Architectures), and Technology (Know-How / R&D Capabilities).",
+        "Visual Strategy as Communication Tool: Proves that time-based visual maps provide a common language bridging technical systems architects, financial controllers, and commercial sales leaders.",
+        "Fast-Start Roadmapping Workshop Process: Provides a standardized, agile workshop methodology allowing cross-functional corporate teams to generate preliminary strategic roadmaps within hours.",
+        "Scenario Planning Integration: Demonstrates how to link technology roadmaps with alternative macro-economic and regulatory scenarios to evaluate system architectural resilience.",
+        "Global Corporate Standard: Deployed across 300+ multinational engineering corporations to align multi-billion-dollar R&D capital investments with long-term strategic visions."
       ]
     }
   ]

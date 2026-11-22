@@ -17,7 +17,12 @@
       "year": 1989,
       "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
       "authors": "Fred D. Davis (MIS Quarterly)",
-      "tags": ["TAM", "User Acceptance", "Perceived Usefulness", "Perceived Ease of Use"],
+      "tags": [
+        "TAM",
+        "User Acceptance",
+        "Perceived Usefulness",
+        "Perceived Ease of Use"
+      ],
       "paperUrl": "https://doi.org/10.2307/249008",
       "isRecommended": true,
       "levelOfAnalysis": "Individual & Behavioral",
@@ -28,14 +33,20 @@
         "Empirical Primacy of Usefulness: Demonstrates across lab and field studies that Perceived Usefulness is roughly 1.5 times more influential on user adoption than Perceived Ease of Use.",
         "Mediating Role of Ease: Proves that PEOU operates primarily as an antecedent to PU—tools that are easy to use are perceived as more useful, but ease cannot compensate for lack of utility.",
         "Enduring Impact: Provided the foundational psychometric instrumentation utilized in tens of thousands of empirical information systems studies globally."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "venkatesh-davis-tam2-theoretical-extension-2000",
       "year": 2000,
       "title": "A Theoretical Extension of the Technology Acceptance Model: Four Longitudinal Field Studies (TAM2)",
       "authors": "Viswanath Venkatesh, Fred D. Davis (Management Science)",
-      "tags": ["TAM2", "Social Influence", "Cognitive Instrumental", "Longitudinal"],
+      "tags": [
+        "TAM2",
+        "Social Influence",
+        "Cognitive Instrumental",
+        "Longitudinal"
+      ],
       "paperUrl": "https://doi.org/10.1287/mnsc.46.2.186.11926",
       "isRecommended": true,
       "levelOfAnalysis": "Individual & Social",
@@ -46,14 +57,20 @@
         "Cognitive Instrumental Predictors: Establishes Job Relevance, Output Quality, and Result Demonstrability as significant predictors accounting for up to 60% of variance in perceived usefulness.",
         "Temporal Moderation: Longitudinal field studies reveal that direct compliance effects of subjective norm attenuate over time as hands-on experiential knowledge accumulates.",
         "Methodological Rigor: Validated across four diverse industry organizations at three distinct temporal post-adoption intervals."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "venkatesh-unified-theory-utaut-2003",
       "year": 2003,
       "title": "User Acceptance of Information Technology: Toward a Unified View (UTAUT)",
       "authors": "Viswanath Venkatesh, Michael G. Morris, Gordon B. Davis, Fred D. Davis (MIS Quarterly)",
-      "tags": ["UTAUT", "Unified Model", "Performance Expectancy", "Facilitating Conditions"],
+      "tags": [
+        "UTAUT",
+        "Unified Model",
+        "Performance Expectancy",
+        "Facilitating Conditions"
+      ],
       "paperUrl": "https://doi.org/10.2307/30036540",
       "isRecommended": true,
       "levelOfAnalysis": "Individual & Organizational",
@@ -64,14 +81,21 @@
         "Key Moderating Variables: Identifies four essential demographic and contextual moderators: Gender, Age, Experience, and Voluntariness of Use.",
         "Direct Usage Determinants: Confirms that Behavioral Intention and Facilitating Conditions directly predict actual technological utilization.",
         "Academic Standard: Established the preeminent global baseline instrument for quantitative technology evaluation in enterprise environments."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "venkatesh-thong-xu-utaut2-consumer-2012",
       "year": 2012,
       "title": "Consumer Acceptance and Use of Information Technology: Extending the Unified Theory of Acceptance and Use of Technology (UTAUT2)",
       "authors": "Viswanath Venkatesh, James Y. L. Thong, Xin Xu (MIS Quarterly)",
-      "tags": ["UTAUT2", "Hedonic Motivation", "Price Value", "Habit", "Consumer Tech"],
+      "tags": [
+        "UTAUT2",
+        "Hedonic Motivation",
+        "Price Value",
+        "Habit",
+        "Consumer Tech"
+      ],
       "paperUrl": "https://doi.org/10.2307/41410412",
       "isRecommended": false,
       "levelOfAnalysis": "Individual & Market",
@@ -82,14 +106,20 @@
         "Variance Expansion: Increases explained variance in technology use from 40% (baseline UTAUT) to 52% in consumer environments.",
         "Habit Primacy: Demonstrates that as consumer experience matures, habitual automaticity becomes a more powerful direct predictor of continued usage than conscious intention.",
         "Theoretical Boundary: Provides critical architectural guidance for designing digital platforms targeting voluntary end-user adoption and retention."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "rogers-diffusion-of-innovations-1995",
       "year": 1995,
       "title": "Diffusion of Innovations: Core Theoretical Framework for Attribute Perceptions and Adopter Categorization",
       "authors": "Everett M. Rogers (Free Press / SAGE)",
-      "tags": ["Diffusion of Innovations", "Adopter Categories", "Perceived Attributes", "Social Systems"],
+      "tags": [
+        "Diffusion of Innovations",
+        "Adopter Categories",
+        "Perceived Attributes",
+        "Social Systems"
+      ],
       "paperUrl": "https://doi.org/10.1111/j.1467-6486.2004.00445.x",
       "isRecommended": true,
       "levelOfAnalysis": "Social System & Population",
@@ -100,14 +130,20 @@
         "The S-Curve Dynamic: Explains how adoption starts slowly, accelerates exponentially past the critical mass inflection point (10–20% adoption), and eventually saturates as an asymptote.",
         "Opinion Leadership & Social Networks: Emphasizes that information flows not through formal media alone, but through subjective evaluations transmitted via homophilous interpersonal networks.",
         "Re-invention Phenomenon: Formally models how adopters modify and adapt technology during implementation rather than adopting a static immutable product."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "tornatzky-fleischer-toe-framework-1990",
       "year": 1990,
       "title": "The Processes of Technological Innovation: Technological, Organizational, and Environmental (TOE) Framework",
       "authors": "Louis G. Tornatzky, Mitchell Fleischer (Lexington Books)",
-      "tags": ["TOE Framework", "Firm-Level Adoption", "Environmental Context", "Organizational Context"],
+      "tags": [
+        "TOE Framework",
+        "Firm-Level Adoption",
+        "Environmental Context",
+        "Organizational Context"
+      ],
       "paperUrl": "https://doi.org/10.1016/0048-7333(91)90042-4",
       "isRecommended": true,
       "levelOfAnalysis": "Firm & Industry",
@@ -118,14 +154,20 @@
         "Organizational Context Dimensions: Models firm size, managerial structure, slack resources, communication processes, and internal talent specialization.",
         "Environmental Context Dimensions: Analyzes competitive intensity, regulatory mandates, supplier ecosystems, and institutional market structure.",
         "Enterprise Synthesis: Serves as the premier conceptual framework for enterprise and B2B technology adoption studies, contrasting with individual-level psychometric models."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "trist-bamforth-socio-technical-systems-1951",
       "year": 1951,
       "title": "Some Social and Psychological Consequences of the Longwall Method of Coal-Getting: The Socio-Technical Paradigm",
       "authors": "Eric L. Trist, Kenneth W. Bamforth (Human Relations / Tavistock)",
-      "tags": ["Socio-Technical Systems", "Joint Optimization", "Work Organization", "Tavistock"],
+      "tags": [
+        "Socio-Technical Systems",
+        "Joint Optimization",
+        "Work Organization",
+        "Tavistock"
+      ],
       "paperUrl": "https://doi.org/10.1177/001872675100400101",
       "isRecommended": true,
       "levelOfAnalysis": "Workplace & Systemic",
@@ -136,14 +178,20 @@
         "Social Subsystem Dimensions: Emphasizes psychological safety, autonomous task allocation, peer accountability, and craft pride as non-negotiable determinants of technological performance.",
         "Critique of Taylorism: Directly refutes scientific management dogmas that treat workers as passive, interchangeable attachments to industrial machinery.",
         "Modern Digital Relevance: Forms the philosophical origin for modern agile teams, platform sociotechnical architecture, and human-in-the-loop AI governance."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "orlikowski-duality-of-technology-1992",
       "year": 1992,
       "title": "The Duality of Technology: Rethinking the Concept of Technology in Organizations",
       "authors": "Wanda J. Orlikowski (Organization Science)",
-      "tags": ["Structuration Theory", "Duality of Technology", "Sociomateriality", "Institutional"],
+      "tags": [
+        "Structuration Theory",
+        "Duality of Technology",
+        "Sociomateriality",
+        "Institutional"
+      ],
       "paperUrl": "https://doi.org/10.1287/orsc.3.3.398",
       "isRecommended": true,
       "levelOfAnalysis": "Organization & Institutional",
@@ -154,14 +202,20 @@
         "Institutional Conditioning: Models how organizational power dynamics, institutional norms, and resource allocations condition how technologies are built and implemented.",
         "Unintended Consequences: Explains how rigid software architectures inadvertently institutionalize pathological bureaucratic processes through repeated habitual usage.",
         "Theoretical Grounding: Overcame the decades-long divide between technological determinism (technology drives organizations) and social constructivism (social forces drive technology)."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "orlikowski-technology-in-practice-2000",
       "year": 2000,
       "title": "Using Technology and Constituting Structures: A Practice Lens for Studying Technology in Organizations",
       "authors": "Wanda J. Orlikowski (Organization Science)",
-      "tags": ["Practice Lens", "Enacted Technology", "Appropriation", "Qualitative"],
+      "tags": [
+        "Practice Lens",
+        "Enacted Technology",
+        "Appropriation",
+        "Qualitative"
+      ],
       "paperUrl": "https://doi.org/10.1287/orsc.11.4.404.14600",
       "isRecommended": false,
       "levelOfAnalysis": "Practice & Routine",
@@ -172,14 +226,20 @@
         "Improvisation in Routine: Shows how frontline workers continually improvise workarounds to overcome software rigidity, effectively re-architecting technology's real-world impact.",
         "Anti-Essentialist Stance: Rejects the assumption that an IT application possesses an inherent 'spirit' or deterministic capability that guarantees uniform outcomes across adopting firms.",
         "Methodological Directive: Mandates ethnographic, observational inquiry into actual everyday workplace practices rather than analyzing vendor technical specification documents."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "delone-mclean-is-success-model-1992",
       "year": 1992,
       "title": "Information Systems Success: The Quest for the Dependent Variable",
       "authors": "William H. DeLone, Ephraim R. McLean (Information Systems Research)",
-      "tags": ["IS Success", "System Quality", "Information Quality", "Organizational Impact"],
+      "tags": [
+        "IS Success",
+        "System Quality",
+        "Information Quality",
+        "Organizational Impact"
+      ],
       "paperUrl": "https://doi.org/10.1287/isre.3.1.60",
       "isRecommended": true,
       "levelOfAnalysis": "System & Enterprise",
@@ -190,14 +250,20 @@
         "Causal Interdependence: Proves that System Quality and Information Quality jointly drive Use and User Satisfaction, which sequentially determine Individual and Organizational Impact.",
         "Clarifying the Dependent Variable: Resolved a historical crisis in IS scholarship where researchers measured technology success using arbitrary, non-comparable metrics.",
         "Enterprise Governance Standard: Established the fundamental evaluation criteria adopted by corporate IT scorecards and benchmarking audits."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "delone-mclean-is-success-ten-year-update-2003",
       "year": 2003,
       "title": "The DeLone and McLean Model of Information Systems Success: A Ten-Year Update",
       "authors": "William H. DeLone, Ephraim R. McLean (Journal of Management Information Systems)",
-      "tags": ["IS Success", "Service Quality", "E-Commerce", "Net Benefits"],
+      "tags": [
+        "IS Success",
+        "Service Quality",
+        "E-Commerce",
+        "Net Benefits"
+      ],
       "paperUrl": "https://doi.org/10.1080/07421222.2003.11045748",
       "isRecommended": false,
       "levelOfAnalysis": "Enterprise & E-Business",
@@ -208,14 +274,21 @@
         "E-Commerce Adaptation: Validates the model's robustness for evaluating transactional internet platforms, web portals, and digital customer journeys.",
         "Feedback Loop Dynamics: Formally models the feedback loop where Net Benefits actively reinforce or degrade subsequent User Satisfaction and System Intention-to-Use.",
         "Evaluation Roadmap: Provides researchers with concrete guidelines for selecting appropriate contextual indicators for each dimension depending on system typology."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "damschroder-cfir-implementation-research-2009",
       "year": 2009,
       "title": "Fostering Implementation through the Consolidated Framework for Implementation Research (CFIR)",
       "authors": "Laura J. Damschroder, David C. Aron, Rosalind E. Rosalind, et al. (Implementation Science)",
-      "tags": ["CFIR", "Implementation Science", "Inner Setting", "Outer Setting", "Process"],
+      "tags": [
+        "CFIR",
+        "Implementation Science",
+        "Inner Setting",
+        "Outer Setting",
+        "Process"
+      ],
       "paperUrl": "https://doi.org/10.1186/1748-5908-4-50",
       "isRecommended": true,
       "levelOfAnalysis": "Organization & Ecosystem",
@@ -226,14 +299,21 @@
         "Domain 2 & 3 — Outer and Inner Setting: External economic/regulatory pressures versus internal structural characteristics, culture, leadership engagement, and implementation climate.",
         "Domain 4 & 5 — Characteristics of Individuals & Process: Knowledge, self-efficacy, stage of change alongside active planning, engaging champions, executing, and evaluating.",
         "Implementation Diagnostic: Serves as the premier qualitative and mixed-methods diagnostic tool for evaluating why identical technical systems succeed in one unit but fail in another."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "damschroder-cfir-2-updated-framework-2022",
       "year": 2022,
       "title": "The Updated Consolidated Framework for Implementation Research (CFIR 2.0)",
       "authors": "Laura J. Damschroder, Claire M. Reardon, Maria A. Widerquist, et al. (Implementation Science)",
-      "tags": ["CFIR 2.0", "Implementation Science", "Recipient Needs", "Equity", "Adaptation"],
+      "tags": [
+        "CFIR 2.0",
+        "Implementation Science",
+        "Recipient Needs",
+        "Equity",
+        "Adaptation"
+      ],
       "paperUrl": "https://doi.org/10.1186/s13012-022-01245-0",
       "isRecommended": false,
       "levelOfAnalysis": "Organization & Ecosystem",
@@ -244,14 +324,21 @@
         "Tension Between Fidelity & Adaptation: Provides explicit guidance on documenting intentional planned adaptations versus chaotic implementation drift.",
         "Inner Setting Overhaul: Expands organizational culture constructs into shared values, recipient-centeredness, learning climate, and leadership commitment.",
         "Practical Utility: Offers standardized codebooks and quantitative scoring criteria for technology transformation programs."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "glasgow-re-aim-framework-1999",
       "year": 1999,
       "title": "Evaluating the Public Health Impact of Health Promotion Interventions: The RE-AIM Framework",
       "authors": "Russell E. Glasgow, Thomas M. Vogt, Shawn M. Boles (American Journal of Public Health)",
-      "tags": ["RE-AIM", "Implementation Science", "Reach", "Efficacy", "Maintenance"],
+      "tags": [
+        "RE-AIM",
+        "Implementation Science",
+        "Reach",
+        "Efficacy",
+        "Maintenance"
+      ],
       "paperUrl": "https://doi.org/10.2105/ajph.89.9.1322",
       "isRecommended": false,
       "levelOfAnalysis": "Population & Organization",
@@ -262,14 +349,20 @@
         "Multiplicative Impact Equation: Models overall intervention impact as a product of all five dimensions, showing how minor drops across stages compound into failure.",
         "Setting-Level Versus Individual-Level: Distinguishes between organizational-level gatekeeping (Adoption by leaders) and end-user uptake (Reach to frontline workers).",
         "Cross-Domain Adoption: Widely adopted beyond public health across software deployment, corporate wellness, and enterprise transformation audits."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "dimaggio-powell-iron-cage-isomorphism-1983",
       "year": 1983,
       "title": "The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields",
       "authors": "Paul J. DiMaggio, Walter W. Powell (American Sociological Review)",
-      "tags": ["Institutional Theory", "Isomorphism", "Legitimacy", "Mimetic Adoption"],
+      "tags": [
+        "Institutional Theory",
+        "Isomorphism",
+        "Legitimacy",
+        "Mimetic Adoption"
+      ],
       "paperUrl": "https://doi.org/10.2307/2095101",
       "isRecommended": true,
       "levelOfAnalysis": "Organizational Field & Sector",
@@ -280,14 +373,20 @@
         "Mimetic Isomorphism: Under conditions of severe technological ambiguity and uncertainty, organizations uncritically imitate the technological adoptions of perceived industry leaders.",
         "Normative Isomorphism: Professional networks, elite business school accreditations, and executive socialization that standardize acceptable managerial practices.",
         "Decoupling Mechanics: Explains why firms frequently purchase enterprise software to signal institutional legitimacy to external markets while decoupling daily operations from using it."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "barley-technology-occasion-for-structuring-1986",
       "year": 1986,
       "title": "Technology as an Occasion for Structuring: Observations of CT Scanners in Radiology Departments",
       "authors": "Stephen R. Barley (Administrative Science Quarterly)",
-      "tags": ["Structuration", "Technology as Trigger", "Social Order", "Ethnography"],
+      "tags": [
+        "Structuration",
+        "Technology as Trigger",
+        "Social Order",
+        "Ethnography"
+      ],
       "paperUrl": "https://doi.org/10.2307/2392767",
       "isRecommended": true,
       "levelOfAnalysis": "Team & Professional",
@@ -298,14 +397,20 @@
         "Divergent Structural Trajectories: In Hospital A, junior technologists gained autonomy, producing a decentralized collaborative structure; in Hospital B, radiologists reinforced traditional authoritarian hierarchy.",
         "Scripts and Role Interventions: Details how subtle interpersonal scripts during system breakdown events dictate long-term shifts in organizational authority.",
         "Methodological Breakthrough: Established sequential interaction analysis as a gold standard methodology for tracking how technology adoption reshapes organizational sociology."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "goodhue-thompson-task-technology-fit-1995",
       "year": 1995,
       "title": "Task-Technology Fit and Individual Performance",
       "authors": "Dale L. Goodhue, Ronald L. Thompson (MIS Quarterly)",
-      "tags": ["TTF", "Task-Technology Fit", "Individual Performance", "Technology-to-Performance"],
+      "tags": [
+        "TTF",
+        "Task-Technology Fit",
+        "Individual Performance",
+        "Technology-to-Performance"
+      ],
       "paperUrl": "https://doi.org/10.2307/249689",
       "isRecommended": false,
       "levelOfAnalysis": "Individual & Task",
@@ -316,14 +421,20 @@
         "Eight Fit Dimensions: Quality, Locatability, Authorization, Compatibility, Ease of Use/Training, Production Timeliness, Systems Reliability, and Relationship with Users.",
         "Technology-to-Performance Chain: Models Individual Characteristics, Task Requirements, and Technology Characteristics as joint antecedents to TTF, which determines Performance.",
         "Mandatory Setting Validity: Explains why mandated technology usage in corporate environments frequently leads to productivity drops if the task-technology mapping is flawed."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "leonardi-human-material-imbrication-2011",
       "year": 2011,
       "title": "When Flexible Routines Meet Flexible Technologies: Affordance, Constraint, and Imbrication of Agencies",
       "authors": "Paul M. Leonardi (MIS Quarterly)",
-      "tags": ["Sociomateriality", "Imbrication", "Affordances", "Organizational Routines"],
+      "tags": [
+        "Sociomateriality",
+        "Imbrication",
+        "Affordances",
+        "Organizational Routines"
+      ],
       "paperUrl": "https://doi.org/10.2307/23043493",
       "isRecommended": false,
       "levelOfAnalysis": "Workplace & Routine",
@@ -334,14 +445,20 @@
         "Routines Versus Technology Mutability: Tracks an automotive crash-simulation engineering team choosing between modifying human work routines or altering digital software code.",
         "The Drift Toward Stability: Demonstrates how repeated imbrications gradually ossify flexible routines and flexible code into rigid, institutionalized organizational practices.",
         "Theoretical Grounding: Bridged the gap between abstract sociomaterial philosophy and actionable, empirical organizational analysis."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "venkatesh-bala-tam3-interventions-2008",
       "year": 2008,
       "title": "Technology Acceptance Model 3 and a Research Agenda on Interventions (TAM3)",
       "authors": "Viswanath Venkatesh, Hillol Bala (Decision Sciences)",
-      "tags": ["TAM3", "Managerial Interventions", "Anchoring and Adjustment", "Field Research"],
+      "tags": [
+        "TAM3",
+        "Managerial Interventions",
+        "Anchoring and Adjustment",
+        "Field Research"
+      ],
       "paperUrl": "https://doi.org/10.1111/j.1540-5915.2008.00192.x",
       "isRecommended": false,
       "levelOfAnalysis": "Individual & Management",
@@ -352,14 +469,20 @@
         "Intervention Taxonomy: Categorizes corporate managerial levers into Pre-Implementation Interventions (user participation, realistic previews) and Post-Implementation Interventions (peer support, feedback).",
         "Targeted Diagnostic: Demonstrates that training interventions specifically enhance objective usability and reduce anxiety, whereas organizational championing elevates perceived usefulness.",
         "Managerial Runbook: Provides IT directors and project managers with evidence-based intervention playbooks tailored to specific phase roadblocks."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "greenhalgh-diffusion-in-service-organizations-2004",
       "year": 2004,
       "title": "Diffusion of Innovations in Service Organizations: Systematic Review and Recommendations",
       "authors": "Trisha Greenhalgh, Glenn Robert, Frank Macfarlane, Paul Bate, Olivia Kyriakidou (Milbank Quarterly)",
-      "tags": ["Systematic Review", "Diffusion", "Service Organizations", "Receptive Context"],
+      "tags": [
+        "Systematic Review",
+        "Diffusion",
+        "Service Organizations",
+        "Receptive Context"
+      ],
       "paperUrl": "https://doi.org/10.1111/j.0887-378x.2004.00325.x",
       "isRecommended": true,
       "levelOfAnalysis": "Enterprise & Sector",
@@ -370,14 +493,20 @@
         "Linkage Mechanics: Highlights the critical boundary-spanning role of change agents, internal champions, and implementation teams operating at early project stages.",
         "Hard Innovation Versus Soft Adaptation: Contrasts rigid technological artifacts with messy, socially negotiated implementation processes that require ongoing adaptation.",
         "Sustainability Failures: Documents how innovations that achieve initial adoption collapse during the assimilation and institutional routinization phases due to unaligned incentives."
-      ]
+      ],
+      "isPeerReviewed": true
     },
     {
       "id": "burton-jones-effective-use-representation-theory-2013",
       "year": 2013,
       "title": "From Use to Effective Use: A Representation Theory Perspective",
       "authors": "Andrew Burton-Jones, Camille Grange (Information Systems Research)",
-      "tags": ["Effective Use", "Representation Theory", "Deep Structure", "IS Use"],
+      "tags": [
+        "Effective Use",
+        "Representation Theory",
+        "Deep Structure",
+        "IS Use"
+      ],
       "paperUrl": "https://doi.org/10.1287/isre.2013.0487",
       "isRecommended": false,
       "levelOfAnalysis": "Individual & Task",
@@ -388,6 +517,257 @@
         "Three Representational Dimensions: Transparent Interaction (user interacts without cognitive software friction), Representational Fidelity (system faithfully mirrors real-world task domain), and Informed Action (acting upon representations effectively).",
         "Representation Theory Foundation: Grounded in Wand and Weber's ontological models of information systems representation.",
         "Evaluation Framework: Provides diagnostic instruments for identifying cognitive misrepresentations that cause users to execute incorrect actions despite heavy software utilization."
+      ],
+      "isPeerReviewed": true
+    },
+    {
+      "id": "nist-ai-risk-management-framework-2023",
+      "year": 2023,
+      "title": "Artificial Intelligence Risk Management Framework (NIST AI RMF 1.0) and Socio-Technical Profile",
+      "authors": "Elham Tabassi, Reva Schwartz, et al. (National Institute of Standards and Technology)",
+      "tags": [
+        "NIST",
+        "Risk Management",
+        "Socio-Technical",
+        "Governance"
+      ],
+      "paperUrl": "https://doi.org/10.6028/NIST.CSWP.28",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Institutional Standards Framework",
+      "levelOfAnalysis": "Systemic & Enterprise",
+      "teaser": "The premier U.S. federal government consensus framework providing organizations with actionable methods to manage AI risks and govern trustworthy socio-technical systems.",
+      "summaryPoints": [
+        "Four Core Functions: Structure AI risk management into four continuous functions: Govern (organizational culture and structures), Map (contextual risks), Measure (quantitative metrics), and Manage (mitigation actions).",
+        "Socio-Technical Perspective: Explicitly treats AI as a socio-technical system where technical factors, human operators, and institutional contexts interact unpredictably.",
+        "Characteristics of Trustworthiness: Establishes seven core pillars: Valid & Reliable, Safe, Secure & Resilient, Accountable & Transparent, Explainable & Interpretable, Privacy-Enhanced, and Fair.",
+        "Risk Measurement Limitations: Highlights that qualitative socio-technical harms cannot be adequately captured by purely statistical model validation benchmarks.",
+        "Enterprise Adoption Baseline: Rapidly established as the preeminent voluntary compliance baseline adopted across Fortune 500 enterprises and defense contractors."
+      ]
+    },
+    {
+      "id": "iso-iec-42001-ai-management-system-2023",
+      "year": 2023,
+      "title": "ISO/IEC 42001: Information Technology — Artificial Intelligence Management System (AIMS)",
+      "authors": "ISO/IEC JTC 1/SC 42 Artificial Intelligence Committee",
+      "tags": [
+        "ISO Standards",
+        "AIMS",
+        "Compliance",
+        "Management System"
+      ],
+      "paperUrl": "https://www.iso.org/standard/81230.html",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "International Standard",
+      "levelOfAnalysis": "Enterprise & Governance",
+      "teaser": "The world's first certifiable international standard for Artificial Intelligence Management Systems, specifying requirements for establishing, implementing, and maintaining AI governance.",
+      "summaryPoints": [
+        "Plan-Do-Check-Act (PDCA) Architecture: Applies the proven ISO harmonized management structure to institutional AI governance and operational deployment.",
+        "Comprehensive Controls Annex: Provides normative controls covering AI policy, risk assessment, data quality governance, lifecycle management, and third-party vendor relationships.",
+        "Certifiable Governance Standard: Enables organizations to undergo formal third-party audits to demonstrate international regulatory and ethical compliance to partners.",
+        "Alignment with Broader Standards: Seamlessly integrates with existing enterprise management frameworks including ISO 9001 (Quality) and ISO/IEC 27001 (Information Security).",
+        "Executive Accountability Requirement: Mandates active, documented C-suite and board oversight of AI risk tolerance and ethical impact assessments."
+      ]
+    },
+    {
+      "id": "stanford-foundation-model-transparency-index-2023",
+      "year": 2023,
+      "title": "The Foundation Model Transparency Index: Multi-Dimensional Evaluation Framework",
+      "authors": "Rishi Bommasani, Kevin Klyman, Shayne Longpre, Percy Liang, et al. (Stanford CRFM)",
+      "tags": [
+        "Transparency Index",
+        "Model Evaluation",
+        "Governance",
+        "CRFM"
+      ],
+      "paperUrl": "https://crfm.stanford.edu/fmti/",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "Ecosystem & Industry",
+      "teaser": "A multi-dimensional scoring framework assessing 10 leading commercial foundation model developers across 100 granular indicators of organizational and technical transparency.",
+      "summaryPoints": [
+        "The Transparency Deficit: Reveals severe industry-wide opacity, with developers averaging a composite transparency score of only 37% across 100 examined indicators.",
+        "Three Evaluation Tiers: Evaluates Upstream dimensions (data curation, labor compensation, compute), Model dimensions (architecture, capabilities), and Downstream dimensions (distribution, impact monitoring).",
+        "Data and Compute Opacity: Highlights that leading commercial developers actively conceal training data composition, copyright clearance, and hardware infrastructure metrics.",
+        "Downstream Governance Gaps: Identifies critical blind spots in how commercial vendors track model deployments, downstream harms, and user feedback loops.",
+        "Regulatory Benchmark: Serves as a primary empirical benchmark informing legislative transparency mandates in the European Union AI Act and international governance treaties."
+      ]
+    },
+    {
+      "id": "mit-cisr-enterprise-architecture-digital-dexterity-2022",
+      "year": 2022,
+      "title": "Enterprise Architecture as Strategy: The Digital Dexterity Evaluation Model",
+      "authors": "Jeanne W. Ross, Cynthia M. Beath, Martin Mocker (MIT CISR)",
+      "tags": [
+        "Digital Dexterity",
+        "Enterprise Architecture",
+        "MIT CISR",
+        "Capability Model"
+      ],
+      "paperUrl": "https://cisr.mit.edu/publication/2022_0301_DigitalDexterity_RossBeathMocker",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "Organization & Enterprise",
+      "teaser": "Research framework from MIT CISR establishing a diagnostic maturity model linking enterprise architectural maturity with organizational digital dexterity and rapid scaling.",
+      "summaryPoints": [
+        "Digital Dexterity Construct: Defines digital dexterity as the organizational ability to leverage digital technologies rapidly and iteratively to adapt to volatile market conditions.",
+        "Four Stages of Architectural Maturity: Siloed Applications, Standardized Technology, Optimized Core (Digitized Platform), and Componentized Digital Platform.",
+        "The Foundation Competency Trap: Proves that firms attempting rapid digital experimentation without an underlying digitized core experience chaotic failure and technical paralysis.",
+        "Componentization and Reusability: Models how modular microservices and standardized internal APIs enable business units to build autonomous digital solutions rapidly.",
+        "Governance Metric Scorecard: Delivers diagnostic assessment rubrics helping enterprise leadership evaluate IT portfolio readiness for advanced algorithmic technologies."
+      ]
+    },
+    {
+      "id": "cmu-sei-evaluating-autonomous-systems-2023",
+      "year": 2023,
+      "title": "Evaluating Autonomous Socio-Technical Systems: Verification, Validation, and Operational Trust",
+      "authors": "John E. Robert, Grace Lewis, Ipek Ozkaya (Carnegie Mellon University SEI)",
+      "tags": [
+        "CMU SEI",
+        "Autonomous Systems",
+        "Operational Trust",
+        "Verification"
+      ],
+      "paperUrl": "https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=886420",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "System Architecture & Operational",
+      "teaser": "Technical framework from Carnegie Mellon University SEI establishing verification, validation, and operational trust metrics for non-deterministic autonomous software systems.",
+      "summaryPoints": [
+        "The Non-Determinism Challenge: Demonstrates why legacy static software testing protocols collapse when applied to autonomous systems exhibiting continuous adaptive learning.",
+        "Multi-Layered Verification Architecture: Proposes layered testing incorporating formal mathematical runtime monitors, simulated synthetic worlds, and continuous telemetry auditing.",
+        "Operational Trust Metrics: Formulates quantitative telemetry scores tracking human operator intervention frequency, trust calibration, and system handover efficacy.",
+        "Safety Case Framework: Prescribes goal-structured evidence arguments for defending system safety to external military, civil aviation, and healthcare regulatory bodies.",
+        "Socio-Technical Co-Design: Emphasizes that autonomous software cannot be validated in isolation from the operational human command chain that supervises its execution."
+      ]
+    },
+    {
+      "id": "mgi-human-factor-tech-transformation-2023",
+      "year": 2023,
+      "title": "The Human Factor in Tech Transformation: A Behavioral Adoption Metric Framework",
+      "authors": "Rodney Zemmel, Kate Smaje, Eric Lamarre (McKinsey Global Institute)",
+      "tags": [
+        "Behavioral Adoption",
+        "Transformation Metrics",
+        "Capability Building",
+        "MGI"
+      ],
+      "paperUrl": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/rewired-to-outcompete",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Industry White Paper",
+      "levelOfAnalysis": "Enterprise & Transformation",
+      "teaser": "Empirical transformation playbook tracking 200+ enterprise transformations, establishing that 70% of tech value capture depends on human behavioral adoption rather than technology stack selection.",
+      "summaryPoints": [
+        "The Adoption Deficit: Documents that corporate IT transformations systematically achieve 90% technical deployment completion but realize less than 35% of projected financial returns.",
+        "The Rewired Operating Model: Prescribes six organizational capabilities: strategic alignment, talent bench building, operating model agility, technology modularity, data access, and change adoption.",
+        "Behavioral Adoption KPIs: Replaces vanity installation metrics with active behavioral utilization KPIs (e.g., weekly habitual mastery, process decision displacement).",
+        "Talent Density Imperative: Demonstrates that top-quartile digital outcompeters maintain high internal software talent density rather than outsourcing core digital IP.",
+        "Executive Scaling Blueprint: Provides a modular implementation roadmap for transitioning successful single-department proofs-of-concept into enterprise-wide operating standards."
+      ]
+    },
+    {
+      "id": "wef-enterprise-ai-governance-framework-2024",
+      "year": 2024,
+      "title": "Enterprise AI Governance Framework: Cross-Functional Metrics for Sociotechnical Safety",
+      "authors": "Cathy Li, Benjamin Larsen, et al. (World Economic Forum)",
+      "tags": [
+        "Governance Framework",
+        "Safety Metrics",
+        "WEF",
+        "Cross-Functional"
+      ],
+      "paperUrl": "https://www3.weforum.org/docs/WEF_AI_Governance_Alliance_Briefing_Paper_2024.pdf",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Institutional Policy Framework",
+      "levelOfAnalysis": "Enterprise & Governance",
+      "teaser": "Briefing paper by the WEF AI Governance Alliance detailing an operational governance blueprint connecting C-suite strategy, engineering verification, and societal impact.",
+      "summaryPoints": [
+        "Cross-Functional Governance Council: Recommends establishing an enterprise governance board uniting legal, security, engineering, HR, and business unit leaders.",
+        "Tiered Risk Assessment Gate: Establishes a four-tier risk classification taxonomy categorizing corporate use cases from minimal risk to high-stakes decision workflows.",
+        "Vendor and Supply Chain Due Diligence: Provides procurement checklists for auditing third-party model providers regarding data lineage, intellectual property indemnity, and bias.",
+        "Employee Rights and Transparency: Details requirements for notifying employees when algorithmic systems are utilized in performance evaluation, hiring, or promotion.",
+        "Continuous Monitoring Protocol: Mandates scheduled quarterly audits to detect performance degradation, model drift, and uncalibrated human trust dynamics."
+      ]
+    },
+    {
+      "id": "oii-auditing-algorithmic-systems-2023",
+      "year": 2023,
+      "title": "Auditing Algorithmic Systems in Workplace Deployments: An Empirical Socio-Technical Framework",
+      "authors": "Sandra Wachter, Brent Mittelstadt, Chris Russell (Oxford Internet Institute)",
+      "tags": [
+        "Algorithmic Audit",
+        "Workplace Deployment",
+        "OII",
+        "Accountability"
+      ],
+      "paperUrl": "https://www.oii.ox.ac.uk/research/publications/auditing-algorithms/",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "Workplace & Regulatory",
+      "teaser": "Methodological framework from the Oxford Internet Institute establishing counterfactual fairness audits and explainability standards for workplace algorithmic decision tools.",
+      "summaryPoints": [
+        "Counterfactual Explanations: Formulates counterfactual explanations as an actionable gold standard for workplace algorithmic transparency (what change in input leads to a favorable decision).",
+        "Auditing Bias in Hiring Algorithms: Details empirical audit protocols to uncover latent proxy variables that perpetuate gender and racial discrimination in recruitment software.",
+        "The Explainability-Accuracy Trade-off: Argues that in high-stakes human workplace contexts, interpretability and auditability must strictly supersede marginal accuracy gains.",
+        "Worker Right to Contestability: Formulates technical protocols that enable employees to contest algorithmic decisions with institutionalized human review.",
+        "Regulatory Compliance Architecture: Maps technical audit logs directly to compliance requirements under GDPR Article 22 and emergent international labor standards."
+      ]
+    },
+    {
+      "id": "world-bank-technological-diffusion-framework-2023",
+      "year": 2023,
+      "title": "Evaluating Technological Diffusion in Developing Economic Systems: The Institutional Infrastructure Model",
+      "authors": "Xavier Cirera, Diego Comin, Marcio Cruz (World Bank Policy Research)",
+      "tags": [
+        "Technological Diffusion",
+        "Institutional Capacity",
+        "World Bank",
+        "Economic Growth"
+      ],
+      "paperUrl": "https://doi.org/10.1596/1813-9450-9872",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Institutional Working Paper",
+      "levelOfAnalysis": "National & Macroeconomic",
+      "teaser": "Global macroeconomic framework based on firm-level data across 15 countries demonstrating that managerial capabilities and institutional trust dictate technology adoption velocity.",
+      "summaryPoints": [
+        "The Technology Adoption Index (FAT): Introduces a comprehensive firm-level technology adoption measurement index across basic, intermediate, and advanced digital technologies.",
+        "Managerial Capital as Bottleneck: Proves that lack of basic managerial capabilities and organizational skills is a far more severe barrier to technology diffusion than capital equipment costs.",
+        "Within-Firm Versus Across-Firm Gaps: Demonstrates that productivity gaps within identical industrial sectors in developing economies are driven by vast disparities in technology adoption.",
+        "Digital Infrastructure Complementarities: Shows that investments in broadband infrastructure yield zero firm productivity improvements unless paired with institutional management training.",
+        "Development Policy Blueprint: Advises international development agencies to pivot from subsidizing hardware procurement toward funding managerial and organizational capability building."
+      ]
+    },
+    {
+      "id": "deloitte-algorithmic-trust-framework-2024",
+      "year": 2024,
+      "title": "The Algorithmic Trust Framework: Operationalizing Transparency and Ethical Alignment in Public Systems",
+      "authors": "William D. Eggers, Mike Bechtel, et al. (Deloitte Center for Government Insights)",
+      "tags": [
+        "Algorithmic Trust",
+        "Transparency",
+        "Public Systems",
+        "Governance"
+      ],
+      "paperUrl": "https://www2.deloitte.com/us/en/insights/focus/tech-trends.html",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Industry White Paper",
+      "levelOfAnalysis": "Public Sector & Systemic",
+      "teaser": "Practical evaluation playbook for deploying autonomous and algorithmic systems across mission-critical public agencies and enterprise environments with verified stakeholder trust.",
+      "summaryPoints": [
+        "The Trust Deficit in Public AI: Examines public skepticism surrounding algorithmic decision-making in benefit disbursement, tax auditing, and automated judicial screening.",
+        "The Trust Architecture Model: Formulates a four-layer trust model: Strategic Intent (why build it), Data Integrity (what powers it), Algorithmic Rigor (how it calculates), and Human Oversight (who oversees it).",
+        "Citizen-Facing Transparency Portals: Prescribes creating public algorithm registers detailing system scope, training sources, and contact details for human appeal.",
+        "Bias and Drift Mitigation Playbook: Details automated monitoring triggers that halt model execution if error rate disparities across demographic groups exceed predefined bounds.",
+        "Government Transformation Runbook: Provides government agency directors with concrete milestone checklists for transitioning from experimental pilots to certified production systems."
       ]
     }
   ]

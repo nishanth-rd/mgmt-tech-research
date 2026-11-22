@@ -45,6 +45,8 @@ Append the new record using this structure:
   "tags": ["Tag1", "Tag2"],
   "paperUrl": "https://doi.org/...",
   "isRecommended": true,
+  "isPeerReviewed": true,
+  "publicationType": "Peer-Reviewed Article",
   "levelOfAnalysis": "Organization & Firm",
   "teaser": "One sentence academic thesis describing practical and empirical significance.",
   "summaryPoints": [

@@ -1,4 +1,4 @@
-// Management & Systems Pulse - SPA Engine
+// Management & Systems Pulse - SPA Engine (Nordic Forest Theme)
 let currentTab = 'adoption';
 const cache = {};
 let currentSearch = '';
@@ -75,7 +75,7 @@ function setupEventListeners() {
 
 // Fetch and Cache Tab Data
 async function loadTab(tabId) {
-  contentContainer.innerHTML = '<div style="text-align:center; padding: 3rem; color: #94a3b8;">Loading academic research catalogue...</div>';
+  contentContainer.innerHTML = '<div style="text-align:center; padding: 3rem; color: #7d968b;">Loading research catalogue...</div>';
 
   try {
     if (!cache[tabId]) {
@@ -92,9 +92,9 @@ async function loadTab(tabId) {
   } catch (error) {
     console.error('Failed to load tab data:', error);
     contentContainer.innerHTML = `
-      <div style="text-align:center; padding: 3rem; color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 12px; background: rgba(239, 68, 68, 0.05);">
-        <p style="font-weight: 600; margin-bottom: 0.5rem;">Failed to load academic data.</p>
-        <p style="font-size: 0.85rem; color: #94a3b8;">Please verify data files in <code>./data/</code> or check network status.</p>
+      <div style="text-align:center; padding: 3rem; color: #f69494; border: 1px solid rgba(224, 102, 102, 0.3); border-radius: 12px; background: rgba(224, 102, 102, 0.08);">
+        <p style="font-weight: 600; margin-bottom: 0.5rem;">Failed to load catalogue data.</p>
+        <p style="font-size: 0.85rem; color: #b5c7bf;">Please verify data files in <code>./data/</code> or check network status.</p>
       </div>
     `;
   }
@@ -163,12 +163,13 @@ function renderCurrentTab() {
     const matchAuthors = p.authors.toLowerCase().includes(currentSearch);
     const matchYear = String(p.year).includes(currentSearch);
     const matchLevel = (p.levelOfAnalysis || '').toLowerCase().includes(currentSearch);
+    const matchType = (p.publicationType || '').toLowerCase().includes(currentSearch);
     const matchPoints = (p.summaryPoints || []).some(pt => pt.toLowerCase().includes(currentSearch));
-    return matchTitle || matchTeaser || matchTags || matchAuthors || matchYear || matchLevel || matchPoints;
+    return matchTitle || matchTeaser || matchTags || matchAuthors || matchYear || matchLevel || matchType || matchPoints;
   });
 
   if (filteredPapers.length === 0) {
-    html += '<div style="text-align:center; padding: 3rem 1rem; color: #64748b;">No academic publications match your search or filter.</div>';
+    html += '<div style="text-align:center; padding: 3rem 1rem; color: #7d968b;">No publications match your search or filter.</div>';
     contentContainer.innerHTML = html;
     attachCardListeners(data);
     return;
@@ -181,7 +182,7 @@ function renderCurrentTab() {
     html += `
       <section class="year-section" id="year-${year}">
         <h3 class="year-heading">
-          <span>${year} Peer-Reviewed Milestones</span>
+          <span>${year} Research & Industry Milestones</span>
           <span class="year-count-badge">${yearPapers.length}</span>
         </h3>
         <div class="articles-stack">
@@ -212,10 +213,17 @@ function renderMacroTrendsCard(trends) {
   `;
 }
 
-// Render Article Tile
+// Render Article Tile with Red Notice for Non-Peer-Reviewed items
 function renderArticleTile(item) {
-  const badgeHtml = item.isRecommended 
-    ? `<span class="badge-recommended">★ Foundational / High-Impact</span>` 
+  let badgeHtml = '';
+  if (item.isPeerReviewed === false) {
+    badgeHtml = `<span class="badge-not-peer-reviewed">⚠️ Not Peer-Reviewed</span>`;
+  } else if (item.isRecommended) {
+    badgeHtml = `<span class="badge-recommended">★ Foundational / High-Impact</span>`;
+  }
+
+  const noticeHtml = (item.isPeerReviewed === false)
+    ? `<div class="article-notice-red">⚠️ Not Peer-Reviewed: ${escapeHtml(item.publicationType || 'Industry/University Report')}</div>`
     : '';
 
   const levelHtml = item.levelOfAnalysis
@@ -229,6 +237,7 @@ function renderArticleTile(item) {
         ${badgeHtml}
       </div>
       <div class="article-authors">${escapeHtml(item.authors || '')}</div>
+      ${noticeHtml}
       <p class="article-teaser">${escapeHtml(item.teaser)}</p>
       <div class="article-footer">
         <div class="tags-list">
@@ -236,7 +245,7 @@ function renderArticleTile(item) {
           ${item.tags.map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join('')}
         </div>
         <a href="${escapeHtml(item.paperUrl)}" class="tile-link-out" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
-          View Publication / DOI &nearr;
+          View Publication / Document &nearr;
         </a>
       </div>
     </div>
@@ -278,12 +287,17 @@ function openMacroTrendsModal(trends) {
   modalOverlay.classList.add('active');
 }
 
-// Open Paper Modal
+// Open Paper Modal (with Red Warning Box for Non-Peer-Reviewed items)
 function openPaperModal(item) {
   modalTitle.textContent = item.title;
   modalMeta.textContent = `${item.year} • ${item.authors || ''} • Level: ${item.levelOfAnalysis || 'General'}`;
 
-  modalWarningBox.style.display = 'none';
+  if (item.isPeerReviewed === false) {
+    modalWarningBox.style.display = 'block';
+    modalWarningBox.textContent = `⚠️ Non-Peer-Reviewed Material: This publication is a credible ${item.publicationType || 'industry white paper or university research report'}. It has not undergone formal academic peer review.`;
+  } else {
+    modalWarningBox.style.display = 'none';
+  }
 
   modalPointsList.innerHTML = item.summaryPoints.map(pt => {
     const parts = pt.split(': ');
@@ -296,7 +310,7 @@ function openPaperModal(item) {
   if (item.paperUrl) {
     modalPaperLink.style.display = 'inline-flex';
     modalPaperLink.href = item.paperUrl;
-    modalPaperLink.textContent = 'Read Original Publication / DOI ↗';
+    modalPaperLink.textContent = 'Read Original Publication / Document ↗';
   } else {
     modalPaperLink.style.display = 'none';
   }

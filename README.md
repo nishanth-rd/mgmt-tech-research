@@ -1,11 +1,13 @@
 # Management & Systems Pulse
 
 > **Academic Minimalist Research Portal & Systems Knowledge Base**  
-> High-density curation for researchers, PhD scholars, and technology executives. Zero fluff.
+> High-density curation for researchers, PhD scholars, and technology executives. Zero fluff.  
+> Styled in an authentic **Nordic Forest** color palette with clear demarcation between peer-reviewed literature and reputed industry/university reports.
 
-[![Content Guardrails](https://img.shields.io/badge/Guardrails-Passing-34d399?style=flat-square&logo=github)](validate.js)
-[![License: MIT & CC-BY-4.0](https://img.shields.io/badge/License-MIT%20%26%20CC--BY--4.0-38bdf8?style=flat-square)](LICENSE)
-[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero%20(Pure%20Node.js)-818cf8?style=flat-square)](serve.js)
+[![Content Guardrails](https://img.shields.io/badge/Guardrails-Passing-52b788?style=flat-square&logo=github)](validate.js)
+[![Theme: Nordic Forest](https://img.shields.io/badge/Theme-Nordic%20Forest-274136?style=flat-square)](css/style.css)
+[![License: MIT & CC-BY-4.0](https://img.shields.io/badge/License-MIT%20%26%20CC--BY--4.0-74c69d?style=flat-square)](LICENSE)
+[![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero%20(Pure%20Node.js)-d8b168?style=flat-square)](serve.js)
 
 ---
 

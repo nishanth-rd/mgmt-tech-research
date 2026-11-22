@@ -2,8 +2,8 @@
 
 /**
  * Automated Content Guardrails & Integrity Validator
- * Enforces schema compliance, academic URL validity, placeholder prevention,
- * personal absolute path prevention, and vendor-neutral commit messaging.
+ * Enforces schema compliance, academic & white paper URL validity, placeholder prevention,
+ * personal absolute path prevention, isPeerReviewed verification, and vendor-neutral commit messaging.
  */
 
 const fs = require('fs');
@@ -13,7 +13,7 @@ const ROOT_DIR = __dirname;
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const EXPECTED_TABS = ['adoption', 'frameworks', 'systems-innovation'];
 
-console.log('🔍 Running Management & Systems Pulse Guardrails...\n');
+console.log('🔍 Running Management & Systems Pulse Guardrails (Nordic Forest Edition)...\n');
 
 let hasErrors = false;
 const globalIds = new Set();
@@ -232,15 +232,26 @@ EXPECTED_TABS.forEach(tabId => {
     }
 
     if (!item.levelOfAnalysis || typeof item.levelOfAnalysis !== 'string') {
-      error(`${prefix}: missing valid levelOfAnalysis (e.g. Individual, Team, Organization, Systemic Architecture)`);
+      error(`${prefix}: missing valid levelOfAnalysis`);
     }
 
     if (!Array.isArray(item.summaryPoints) || item.summaryPoints.length < 3) {
       error(`${prefix}: summaryPoints must contain at least 3 bullet points`);
     }
+
+    // Peer-Reviewed vs Non-Peer-Reviewed Validation
+    if (typeof item.isPeerReviewed !== 'boolean') {
+      error(`${prefix}: missing boolean property isPeerReviewed`);
+    } else if (item.isPeerReviewed === false) {
+      if (!item.publicationType || typeof item.publicationType !== 'string' || item.publicationType.trim().length < 3) {
+        error(`${prefix}: non-peer-reviewed publication missing valid publicationType (e.g. Industry White Paper, University Report)`);
+      }
+    }
   });
 
-  success(`data/${fileName} passed all validations (${items.length} records).`);
+  const peerReviewedCount = items.filter(p => p.isPeerReviewed === true).length;
+  const nonPeerReviewedCount = items.filter(p => p.isPeerReviewed === false).length;
+  success(`data/${fileName} passed all validations (${items.length} records: ${peerReviewedCount} peer-reviewed, ${nonPeerReviewedCount} industry/university reports).`);
 });
 
 console.log(`\n📊 Total verified catalogue entries across all tabs: ${totalRecordCount}`);
