@@ -1,0 +1,394 @@
+{
+  "tabId": "frameworks",
+  "tabTitle": "Socio-Technical & Diffusion Evaluation Frameworks",
+  "macroTrends": {
+    "title": "Macro Trends: Evolution of Adoption & Socio-Technical Paradigms",
+    "timeframe": "Foundational to Contemporary Frontier",
+    "disclaimer": "⚠️ [AI-Generated Synthesis Notice]: Macro trends are synthesized by AI from cross-sectional academic literature and industry empirical datasets for executive decision-support.",
+    "points": [
+      "From Psychometrics to Systems Ecology: The field has evolved from individualistic behavioral models (TAM/UTAUT) toward multi-level socio-technical systems (STS, TOE, CFIR) that explicitly model organizational culture, institutional pressures, and material agency.",
+      "The Shift from Acceptance to Effective Use: Modern evaluation paradigms reject passive adoption (login frequency) in favor of deep representation theory and cognitive task-technology fit, measuring genuine organizational capability transformation.",
+      "Dynamic Isomorphism & Implementation Science: Contemporary technology rollouts are increasingly evaluated through implementation frameworks (CFIR 2.0, RE-AIM) that treat implementation fidelity, contextual adaptation, and sustainability as continuous feedback loops."
+    ]
+  },
+  "papers": [
+    {
+      "id": "davis-technology-acceptance-model-1989",
+      "year": 1989,
+      "title": "Perceived Usefulness, Perceived Ease of Use, and User Acceptance of Information Technology",
+      "authors": "Fred D. Davis (MIS Quarterly)",
+      "tags": ["TAM", "User Acceptance", "Perceived Usefulness", "Perceived Ease of Use"],
+      "paperUrl": "https://doi.org/10.2307/249008",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual & Behavioral",
+      "teaser": "The foundational seminal paper formulating the Technology Acceptance Model (TAM), establishing Perceived Usefulness and Perceived Ease of Use as primary determinants of system usage.",
+      "summaryPoints": [
+        "Theoretical Grounding: Adapts Fishbein and Ajzen's Theory of Reasoned Action (TRA) specifically to individual computer technology acceptance in organizational settings.",
+        "Core Constructs: Formally defines and validates measurement scales for Perceived Usefulness (PU) and Perceived Ease of Use (PEOU).",
+        "Empirical Primacy of Usefulness: Demonstrates across lab and field studies that Perceived Usefulness is roughly 1.5 times more influential on user adoption than Perceived Ease of Use.",
+        "Mediating Role of Ease: Proves that PEOU operates primarily as an antecedent to PU—tools that are easy to use are perceived as more useful, but ease cannot compensate for lack of utility.",
+        "Enduring Impact: Provided the foundational psychometric instrumentation utilized in tens of thousands of empirical information systems studies globally."
+      ]
+    },
+    {
+      "id": "venkatesh-davis-tam2-theoretical-extension-2000",
+      "year": 2000,
+      "title": "A Theoretical Extension of the Technology Acceptance Model: Four Longitudinal Field Studies (TAM2)",
+      "authors": "Viswanath Venkatesh, Fred D. Davis (Management Science)",
+      "tags": ["TAM2", "Social Influence", "Cognitive Instrumental", "Longitudinal"],
+      "paperUrl": "https://doi.org/10.1287/mnsc.46.2.186.11926",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual & Social",
+      "teaser": "Extends TAM into TAM2 by integrating social influence processes (subjective norm, voluntariness, image) and cognitive instrumental processes (job relevance, output quality, result demonstrability).",
+      "summaryPoints": [
+        "Theoretical Synthesis: Formulates TAM2 to explain the causal determinants driving Perceived Usefulness across longitudinal operational deployment cycles.",
+        "Social Influence Mechanics: Models how Subjective Norm impacts adoption directly in mandatory settings through compliance, and indirectly in voluntary settings through internalization and image.",
+        "Cognitive Instrumental Predictors: Establishes Job Relevance, Output Quality, and Result Demonstrability as significant predictors accounting for up to 60% of variance in perceived usefulness.",
+        "Temporal Moderation: Longitudinal field studies reveal that direct compliance effects of subjective norm attenuate over time as hands-on experiential knowledge accumulates.",
+        "Methodological Rigor: Validated across four diverse industry organizations at three distinct temporal post-adoption intervals."
+      ]
+    },
+    {
+      "id": "venkatesh-unified-theory-utaut-2003",
+      "year": 2003,
+      "title": "User Acceptance of Information Technology: Toward a Unified View (UTAUT)",
+      "authors": "Viswanath Venkatesh, Michael G. Morris, Gordon B. Davis, Fred D. Davis (MIS Quarterly)",
+      "tags": ["UTAUT", "Unified Model", "Performance Expectancy", "Facilitating Conditions"],
+      "paperUrl": "https://doi.org/10.2307/30036540",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual & Organizational",
+      "teaser": "Landmark synthesis reconciling eight prominent acceptance models (TRA, TAM, MM, TPB, C-TAM-TPB, MPCU, IDT, SCT) into the Unified Theory of Acceptance and Use of Technology (UTAUT).",
+      "summaryPoints": [
+        "Unifying Model Architecture: Synthesizes 32 disparate constructs from 8 foundational theories into 4 core determinants: Performance Expectancy, Effort Expectancy, Social Influence, and Facilitating Conditions.",
+        "Explanatory Power Leap: Demonstrates that UTAUT explains 70% of variance in behavioral intention to use technology, outperforming any individual predecessor framework (typically 30–40%).",
+        "Key Moderating Variables: Identifies four essential demographic and contextual moderators: Gender, Age, Experience, and Voluntariness of Use.",
+        "Direct Usage Determinants: Confirms that Behavioral Intention and Facilitating Conditions directly predict actual technological utilization.",
+        "Academic Standard: Established the preeminent global baseline instrument for quantitative technology evaluation in enterprise environments."
+      ]
+    },
+    {
+      "id": "venkatesh-thong-xu-utaut2-consumer-2012",
+      "year": 2012,
+      "title": "Consumer Acceptance and Use of Information Technology: Extending the Unified Theory of Acceptance and Use of Technology (UTAUT2)",
+      "authors": "Viswanath Venkatesh, James Y. L. Thong, Xin Xu (MIS Quarterly)",
+      "tags": ["UTAUT2", "Hedonic Motivation", "Price Value", "Habit", "Consumer Tech"],
+      "paperUrl": "https://doi.org/10.2307/41410412",
+      "isRecommended": false,
+      "levelOfAnalysis": "Individual & Market",
+      "teaser": "Adapts UTAUT from enterprise workplace contexts to consumer technology environments, incorporating Hedonic Motivation, Price Value, and Habit into the predictive model.",
+      "summaryPoints": [
+        "Contextual Paradigm Shift: Recognizes that consumer technology adoption differs fundamentally from organizational settings where systems are funded and mandated by corporate management.",
+        "Construct Innovation: Adds Hedonic Motivation (perceived enjoyment), Price Value (cost-benefit cognitive trade-off), and Habit (automaticity of prior learned behaviors).",
+        "Variance Expansion: Increases explained variance in technology use from 40% (baseline UTAUT) to 52% in consumer environments.",
+        "Habit Primacy: Demonstrates that as consumer experience matures, habitual automaticity becomes a more powerful direct predictor of continued usage than conscious intention.",
+        "Theoretical Boundary: Provides critical architectural guidance for designing digital platforms targeting voluntary end-user adoption and retention."
+      ]
+    },
+    {
+      "id": "rogers-diffusion-of-innovations-1995",
+      "year": 1995,
+      "title": "Diffusion of Innovations: Core Theoretical Framework for Attribute Perceptions and Adopter Categorization",
+      "authors": "Everett M. Rogers (Free Press / SAGE)",
+      "tags": ["Diffusion of Innovations", "Adopter Categories", "Perceived Attributes", "Social Systems"],
+      "paperUrl": "https://doi.org/10.1111/j.1467-6486.2004.00445.x",
+      "isRecommended": true,
+      "levelOfAnalysis": "Social System & Population",
+      "teaser": "The classic foundational macro-sociological theory explaining how technological innovations spread across populations through communication channels over time.",
+      "summaryPoints": [
+        "Innovation Attributes: Postulates that 49–87% of adoption rate variance is driven by 5 perceived attributes: Relative Advantage, Compatibility, Complexity, Trialability, and Observability.",
+        "Adopter Categorization Bell Curve: Mathematically segments populations across standard deviations into Innovators (2.5%), Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), and Laggards (16%).",
+        "The S-Curve Dynamic: Explains how adoption starts slowly, accelerates exponentially past the critical mass inflection point (10–20% adoption), and eventually saturates as an asymptote.",
+        "Opinion Leadership & Social Networks: Emphasizes that information flows not through formal media alone, but through subjective evaluations transmitted via homophilous interpersonal networks.",
+        "Re-invention Phenomenon: Formally models how adopters modify and adapt technology during implementation rather than adopting a static immutable product."
+      ]
+    },
+    {
+      "id": "tornatzky-fleischer-toe-framework-1990",
+      "year": 1990,
+      "title": "The Processes of Technological Innovation: Technological, Organizational, and Environmental (TOE) Framework",
+      "authors": "Louis G. Tornatzky, Mitchell Fleischer (Lexington Books)",
+      "tags": ["TOE Framework", "Firm-Level Adoption", "Environmental Context", "Organizational Context"],
+      "paperUrl": "https://doi.org/10.1016/0048-7333(91)90042-4",
+      "isRecommended": true,
+      "levelOfAnalysis": "Firm & Industry",
+      "teaser": "Foundational firm-level structural model categorizing the determinants of enterprise technology adoption into Technological, Organizational, and Environmental contexts.",
+      "summaryPoints": [
+        "Multi-Context Model: Formulates the TOE taxonomy separating adoption drivers into Technological Context (internal/external tech), Organizational Context (firm structure/resources), and Environmental Context (industry, market, regulatory).",
+        "Technological Context Dimensions: Evaluates availability, compatibility, and complexity of existing infrastructure versus candidate innovations.",
+        "Organizational Context Dimensions: Models firm size, managerial structure, slack resources, communication processes, and internal talent specialization.",
+        "Environmental Context Dimensions: Analyzes competitive intensity, regulatory mandates, supplier ecosystems, and institutional market structure.",
+        "Enterprise Synthesis: Serves as the premier conceptual framework for enterprise and B2B technology adoption studies, contrasting with individual-level psychometric models."
+      ]
+    },
+    {
+      "id": "trist-bamforth-socio-technical-systems-1951",
+      "year": 1951,
+      "title": "Some Social and Psychological Consequences of the Longwall Method of Coal-Getting: The Socio-Technical Paradigm",
+      "authors": "Eric L. Trist, Kenneth W. Bamforth (Human Relations / Tavistock)",
+      "tags": ["Socio-Technical Systems", "Joint Optimization", "Work Organization", "Tavistock"],
+      "paperUrl": "https://doi.org/10.1177/001872675100400101",
+      "isRecommended": true,
+      "levelOfAnalysis": "Workplace & Systemic",
+      "teaser": "The foundational birth of Socio-Technical Systems (STS) theory, demonstrating that modern mechanized technologies fail unless jointly optimized with human work social systems.",
+      "summaryPoints": [
+        "Foundational STS Insight: Documents the catastrophic failure of mechanizing coal mines when the engineering system dismantled informal social cohesion and self-regulating team dynamics.",
+        "The Joint Optimization Principle: Establishes that optimizing the technical subsystem in isolation leads to systemic sub-optimization; technology and social systems must be co-designed.",
+        "Social Subsystem Dimensions: Emphasizes psychological safety, autonomous task allocation, peer accountability, and craft pride as non-negotiable determinants of technological performance.",
+        "Critique of Taylorism: Directly refutes scientific management dogmas that treat workers as passive, interchangeable attachments to industrial machinery.",
+        "Modern Digital Relevance: Forms the philosophical origin for modern agile teams, platform sociotechnical architecture, and human-in-the-loop AI governance."
+      ]
+    },
+    {
+      "id": "orlikowski-duality-of-technology-1992",
+      "year": 1992,
+      "title": "The Duality of Technology: Rethinking the Concept of Technology in Organizations",
+      "authors": "Wanda J. Orlikowski (Organization Science)",
+      "tags": ["Structuration Theory", "Duality of Technology", "Sociomateriality", "Institutional"],
+      "paperUrl": "https://doi.org/10.1287/orsc.3.3.398",
+      "isRecommended": true,
+      "levelOfAnalysis": "Organization & Institutional",
+      "teaser": "Applies Giddens' structuration theory to information technology, establishing technology as both a product of human action and a medium that constrains and enables human action.",
+      "summaryPoints": [
+        "The Duality Principle: Argues that technology is physically constructed by actors in a specific social context, but once deployed, it constitutes structural properties that shape future action.",
+        "Interpretive Flexibility: Demonstrates that while technology has material constraints, users interpret, appropriate, or undermine its intended functionality based on institutional context.",
+        "Institutional Conditioning: Models how organizational power dynamics, institutional norms, and resource allocations condition how technologies are built and implemented.",
+        "Unintended Consequences: Explains how rigid software architectures inadvertently institutionalize pathological bureaucratic processes through repeated habitual usage.",
+        "Theoretical Grounding: Overcame the decades-long divide between technological determinism (technology drives organizations) and social constructivism (social forces drive technology)."
+      ]
+    },
+    {
+      "id": "orlikowski-technology-in-practice-2000",
+      "year": 2000,
+      "title": "Using Technology and Constituting Structures: A Practice Lens for Studying Technology in Organizations",
+      "authors": "Wanda J. Orlikowski (Organization Science)",
+      "tags": ["Practice Lens", "Enacted Technology", "Appropriation", "Qualitative"],
+      "paperUrl": "https://doi.org/10.1287/orsc.11.4.404.14600",
+      "isRecommended": false,
+      "levelOfAnalysis": "Practice & Routine",
+      "teaser": "Introduces a practice lens proposing that technological structures are not physically embedded within software artifacts, but are continuously enacted through situated human use.",
+      "summaryPoints": [
+        "Artifact Versus Practice: Distinguishes between the technology artifact (code, hardware) and technologies-in-practice (enacted behavioural structures emerging from repeated use).",
+        "Enactment Typology: Uncovers how users selectively enact three distinct genres of use: inertia (reproducing legacy habits), application (improving existing routines), and change (transforming work).",
+        "Improvisation in Routine: Shows how frontline workers continually improvise workarounds to overcome software rigidity, effectively re-architecting technology's real-world impact.",
+        "Anti-Essentialist Stance: Rejects the assumption that an IT application possesses an inherent 'spirit' or deterministic capability that guarantees uniform outcomes across adopting firms.",
+        "Methodological Directive: Mandates ethnographic, observational inquiry into actual everyday workplace practices rather than analyzing vendor technical specification documents."
+      ]
+    },
+    {
+      "id": "delone-mclean-is-success-model-1992",
+      "year": 1992,
+      "title": "Information Systems Success: The Quest for the Dependent Variable",
+      "authors": "William H. DeLone, Ephraim R. McLean (Information Systems Research)",
+      "tags": ["IS Success", "System Quality", "Information Quality", "Organizational Impact"],
+      "paperUrl": "https://doi.org/10.1287/isre.3.1.60",
+      "isRecommended": true,
+      "levelOfAnalysis": "System & Enterprise",
+      "teaser": "Seminal taxonomic framework establishing a multi-dimensional causal model to measure Information Systems success across technical, semantic, and effectiveness levels.",
+      "summaryPoints": [
+        "Taxonomic Synthesis: Evaluates 180 empirical papers to synthesize hundreds of disparate metrics into 6 interrelated dimensions of IS success.",
+        "The Six Dimensions: System Quality, Information Quality, Use, User Satisfaction, Individual Impact, and Organizational Impact.",
+        "Causal Interdependence: Proves that System Quality and Information Quality jointly drive Use and User Satisfaction, which sequentially determine Individual and Organizational Impact.",
+        "Clarifying the Dependent Variable: Resolved a historical crisis in IS scholarship where researchers measured technology success using arbitrary, non-comparable metrics.",
+        "Enterprise Governance Standard: Established the fundamental evaluation criteria adopted by corporate IT scorecards and benchmarking audits."
+      ]
+    },
+    {
+      "id": "delone-mclean-is-success-ten-year-update-2003",
+      "year": 2003,
+      "title": "The DeLone and McLean Model of Information Systems Success: A Ten-Year Update",
+      "authors": "William H. DeLone, Ephraim R. McLean (Journal of Management Information Systems)",
+      "tags": ["IS Success", "Service Quality", "E-Commerce", "Net Benefits"],
+      "paperUrl": "https://doi.org/10.1080/07421222.2003.11045748",
+      "isRecommended": false,
+      "levelOfAnalysis": "Enterprise & E-Business",
+      "teaser": "Major theoretical update to the D&M IS Success Model incorporating Service Quality and collapsing Individual/Organizational impacts into Net Benefits.",
+      "summaryPoints": [
+        "Inclusion of Service Quality: Adds Service Quality (system support, reliability, responsiveness) to account for the transition from centralized IT to internal/external service-oriented architectures.",
+        "Introduction of Net Benefits: Replaces narrow Individual and Organizational Impact silos with 'Net Benefits' to measure multidirectional impacts (workgroup, consumer, societal).",
+        "E-Commerce Adaptation: Validates the model's robustness for evaluating transactional internet platforms, web portals, and digital customer journeys.",
+        "Feedback Loop Dynamics: Formally models the feedback loop where Net Benefits actively reinforce or degrade subsequent User Satisfaction and System Intention-to-Use.",
+        "Evaluation Roadmap: Provides researchers with concrete guidelines for selecting appropriate contextual indicators for each dimension depending on system typology."
+      ]
+    },
+    {
+      "id": "damschroder-cfir-implementation-research-2009",
+      "year": 2009,
+      "title": "Fostering Implementation through the Consolidated Framework for Implementation Research (CFIR)",
+      "authors": "Laura J. Damschroder, David C. Aron, Rosalind E. Rosalind, et al. (Implementation Science)",
+      "tags": ["CFIR", "Implementation Science", "Inner Setting", "Outer Setting", "Process"],
+      "paperUrl": "https://doi.org/10.1186/1748-5908-4-50",
+      "isRecommended": true,
+      "levelOfAnalysis": "Organization & Ecosystem",
+      "teaser": "Metatheoretical framework synthesizing 19 implementation models into 39 operational constructs across 5 major domains to evaluate complex organizational rollouts.",
+      "summaryPoints": [
+        "Consolidated Architecture: Bridges fragmented implementation theories across health, technology, and organizational science into five overarching domains.",
+        "Domain 1 — Intervention Characteristics: Core components versus adaptable periphery, relative advantage, trialability, complexity, and design quality.",
+        "Domain 2 & 3 — Outer and Inner Setting: External economic/regulatory pressures versus internal structural characteristics, culture, leadership engagement, and implementation climate.",
+        "Domain 4 & 5 — Characteristics of Individuals & Process: Knowledge, self-efficacy, stage of change alongside active planning, engaging champions, executing, and evaluating.",
+        "Implementation Diagnostic: Serves as the premier qualitative and mixed-methods diagnostic tool for evaluating why identical technical systems succeed in one unit but fail in another."
+      ]
+    },
+    {
+      "id": "damschroder-cfir-2-updated-framework-2022",
+      "year": 2022,
+      "title": "The Updated Consolidated Framework for Implementation Research (CFIR 2.0)",
+      "authors": "Laura J. Damschroder, Claire M. Reardon, Maria A. Widerquist, et al. (Implementation Science)",
+      "tags": ["CFIR 2.0", "Implementation Science", "Recipient Needs", "Equity", "Adaptation"],
+      "paperUrl": "https://doi.org/10.1186/s13012-022-01245-0",
+      "isRecommended": false,
+      "levelOfAnalysis": "Organization & Ecosystem",
+      "teaser": "Comprehensive update to CFIR reflecting a decade of empirical research, refining constructs to better capture recipient feedback, structural power, and implementation adaptability.",
+      "summaryPoints": [
+        "Construct Refinement: Substantially overhauls constructs to distinguish between implementation outcomes (fidelity, penetration) and innovation outcomes (utility, efficiency).",
+        "Centering Innovation Deliverers & Recipients: Explicitly separates individuals delivering the innovation from recipients experiencing it, illuminating power differentials.",
+        "Tension Between Fidelity & Adaptation: Provides explicit guidance on documenting intentional planned adaptations versus chaotic implementation drift.",
+        "Inner Setting Overhaul: Expands organizational culture constructs into shared values, recipient-centeredness, learning climate, and leadership commitment.",
+        "Practical Utility: Offers standardized codebooks and quantitative scoring criteria for technology transformation programs."
+      ]
+    },
+    {
+      "id": "glasgow-re-aim-framework-1999",
+      "year": 1999,
+      "title": "Evaluating the Public Health Impact of Health Promotion Interventions: The RE-AIM Framework",
+      "authors": "Russell E. Glasgow, Thomas M. Vogt, Shawn M. Boles (American Journal of Public Health)",
+      "tags": ["RE-AIM", "Implementation Science", "Reach", "Efficacy", "Maintenance"],
+      "paperUrl": "https://doi.org/10.2105/ajph.89.9.1322",
+      "isRecommended": false,
+      "levelOfAnalysis": "Population & Organization",
+      "teaser": "Foundational evaluation framework measuring intervention impact through 5 critical dimensions: Reach, Efficacy/Effectiveness, Adoption, Implementation, and Maintenance.",
+      "summaryPoints": [
+        "Beyond Isolated Efficacy: Formulates a critical warning that high technological efficacy in a sterile lab setting yields negligible real-world impact if reach and adoption are poor.",
+        "The 5 Dimensions: Reach (proportion of target population participating), Efficacy (impact on intended outcomes), Adoption (proportion of settings willing to initiate), Implementation (fidelity of execution), Maintenance (institutionalization over time).",
+        "Multiplicative Impact Equation: Models overall intervention impact as a product of all five dimensions, showing how minor drops across stages compound into failure.",
+        "Setting-Level Versus Individual-Level: Distinguishes between organizational-level gatekeeping (Adoption by leaders) and end-user uptake (Reach to frontline workers).",
+        "Cross-Domain Adoption: Widely adopted beyond public health across software deployment, corporate wellness, and enterprise transformation audits."
+      ]
+    },
+    {
+      "id": "dimaggio-powell-iron-cage-isomorphism-1983",
+      "year": 1983,
+      "title": "The Iron Cage Revisited: Institutional Isomorphism and Collective Rationality in Organizational Fields",
+      "authors": "Paul J. DiMaggio, Walter W. Powell (American Sociological Review)",
+      "tags": ["Institutional Theory", "Isomorphism", "Legitimacy", "Mimetic Adoption"],
+      "paperUrl": "https://doi.org/10.2307/2095101",
+      "isRecommended": true,
+      "levelOfAnalysis": "Organizational Field & Sector",
+      "teaser": "Seminal neo-institutional theory explaining why organizations become strikingly homogeneous through three mechanisms of institutional isomorphism: Coercive, Mimetic, and Normative.",
+      "summaryPoints": [
+        "The Homogeneity Paradox: Investigates why modern organizations adopt similar technological structures and management fads regardless of whether they improve technical efficiency.",
+        "Coercive Isomorphism: Pressures exerted by government regulations, legal compliance mandates, and dominant monopolistic partners.",
+        "Mimetic Isomorphism: Under conditions of severe technological ambiguity and uncertainty, organizations uncritically imitate the technological adoptions of perceived industry leaders.",
+        "Normative Isomorphism: Professional networks, elite business school accreditations, and executive socialization that standardize acceptable managerial practices.",
+        "Decoupling Mechanics: Explains why firms frequently purchase enterprise software to signal institutional legitimacy to external markets while decoupling daily operations from using it."
+      ]
+    },
+    {
+      "id": "barley-technology-occasion-for-structuring-1986",
+      "year": 1986,
+      "title": "Technology as an Occasion for Structuring: Observations of CT Scanners in Radiology Departments",
+      "authors": "Stephen R. Barley (Administrative Science Quarterly)",
+      "tags": ["Structuration", "Technology as Trigger", "Social Order", "Ethnography"],
+      "paperUrl": "https://doi.org/10.2307/2392767",
+      "isRecommended": true,
+      "levelOfAnalysis": "Team & Professional",
+      "teaser": "Comparative ethnography demonstrating that identical technological systems deployed in identical settings produce radically divergent organizational structures depending on localized social scripts.",
+      "summaryPoints": [
+        "Technology as Social Trigger: Proves that technology is not a deterministic causal agent, but a social occasion that destabilizes institutionalized power relationships and role scripts.",
+        "Comparative Fieldwork: Studied identical whole-body CT scanners introduced into two comparable community hospital radiology departments.",
+        "Divergent Structural Trajectories: In Hospital A, junior technologists gained autonomy, producing a decentralized collaborative structure; in Hospital B, radiologists reinforced traditional authoritarian hierarchy.",
+        "Scripts and Role Interventions: Details how subtle interpersonal scripts during system breakdown events dictate long-term shifts in organizational authority.",
+        "Methodological Breakthrough: Established sequential interaction analysis as a gold standard methodology for tracking how technology adoption reshapes organizational sociology."
+      ]
+    },
+    {
+      "id": "goodhue-thompson-task-technology-fit-1995",
+      "year": 1995,
+      "title": "Task-Technology Fit and Individual Performance",
+      "authors": "Dale L. Goodhue, Ronald L. Thompson (MIS Quarterly)",
+      "tags": ["TTF", "Task-Technology Fit", "Individual Performance", "Technology-to-Performance"],
+      "paperUrl": "https://doi.org/10.2307/249689",
+      "isRecommended": false,
+      "levelOfAnalysis": "Individual & Task",
+      "teaser": "Integrates utilization models (TAM) with Task-Technology Fit (TTF) to establish the Technology-to-Performance Chain, demonstrating that utilization without fit fails to produce performance gains.",
+      "summaryPoints": [
+        "The Missing Link: Resolves a critical blind spot in TAM by establishing that high technology utilization does not lead to enhanced individual performance unless the system fits task requirements.",
+        "Task-Technology Fit Construct: Measures the degree to which a technology's capabilities assist an individual in performing their portfolio of tasks.",
+        "Eight Fit Dimensions: Quality, Locatability, Authorization, Compatibility, Ease of Use/Training, Production Timeliness, Systems Reliability, and Relationship with Users.",
+        "Technology-to-Performance Chain: Models Individual Characteristics, Task Requirements, and Technology Characteristics as joint antecedents to TTF, which determines Performance.",
+        "Mandatory Setting Validity: Explains why mandated technology usage in corporate environments frequently leads to productivity drops if the task-technology mapping is flawed."
+      ]
+    },
+    {
+      "id": "leonardi-human-material-imbrication-2011",
+      "year": 2011,
+      "title": "When Flexible Routines Meet Flexible Technologies: Affordance, Constraint, and Imbrication of Agencies",
+      "authors": "Paul M. Leonardi (MIS Quarterly)",
+      "tags": ["Sociomateriality", "Imbrication", "Affordances", "Organizational Routines"],
+      "paperUrl": "https://doi.org/10.2307/23043493",
+      "isRecommended": false,
+      "levelOfAnalysis": "Workplace & Routine",
+      "teaser": "Formulates the theory of sociomaterial imbrication, explaining how human agency and material technology agency interlock like overlapping roof tiles to generate organizational change.",
+      "summaryPoints": [
+        "The Imbrication Metaphor: Depicts organizational change not as a continuous smooth flow, but as an alternating sequence of human choices and material constraints interlocking over time.",
+        "Affordance and Constraint Dynamics: Defines technology affordances as possibilities for goal-directed action perceived by users, balanced against perceived material constraints.",
+        "Routines Versus Technology Mutability: Tracks an automotive crash-simulation engineering team choosing between modifying human work routines or altering digital software code.",
+        "The Drift Toward Stability: Demonstrates how repeated imbrications gradually ossify flexible routines and flexible code into rigid, institutionalized organizational practices.",
+        "Theoretical Grounding: Bridged the gap between abstract sociomaterial philosophy and actionable, empirical organizational analysis."
+      ]
+    },
+    {
+      "id": "venkatesh-bala-tam3-interventions-2008",
+      "year": 2008,
+      "title": "Technology Acceptance Model 3 and a Research Agenda on Interventions (TAM3)",
+      "authors": "Viswanath Venkatesh, Hillol Bala (Decision Sciences)",
+      "tags": ["TAM3", "Managerial Interventions", "Anchoring and Adjustment", "Field Research"],
+      "paperUrl": "https://doi.org/10.1111/j.1540-5915.2008.00192.x",
+      "isRecommended": false,
+      "levelOfAnalysis": "Individual & Management",
+      "teaser": "Unifies TAM2 with the determinants of Perceived Ease of Use into TAM3, establishing a concrete framework for managerial pre-implementation and post-implementation interventions.",
+      "summaryPoints": [
+        "Comprehensive nomological network: Combines TAM2's predictors of usefulness with anchoring and adjustment determinants of ease of use (computer self-efficacy, computer anxiety, computer playfulness, perceived enjoyment, objective usability).",
+        "Crossover Effects Disproven: Confirms across longitudinal field studies that perceived ease determinants do not cross-over to drive usefulness, preserving clean discriminant validity.",
+        "Intervention Taxonomy: Categorizes corporate managerial levers into Pre-Implementation Interventions (user participation, realistic previews) and Post-Implementation Interventions (peer support, feedback).",
+        "Targeted Diagnostic: Demonstrates that training interventions specifically enhance objective usability and reduce anxiety, whereas organizational championing elevates perceived usefulness.",
+        "Managerial Runbook: Provides IT directors and project managers with evidence-based intervention playbooks tailored to specific phase roadblocks."
+      ]
+    },
+    {
+      "id": "greenhalgh-diffusion-in-service-organizations-2004",
+      "year": 2004,
+      "title": "Diffusion of Innovations in Service Organizations: Systematic Review and Recommendations",
+      "authors": "Trisha Greenhalgh, Glenn Robert, Frank Macfarlane, Paul Bate, Olivia Kyriakidou (Milbank Quarterly)",
+      "tags": ["Systematic Review", "Diffusion", "Service Organizations", "Receptive Context"],
+      "paperUrl": "https://doi.org/10.1111/j.0887-378x.2004.00325.x",
+      "isRecommended": true,
+      "levelOfAnalysis": "Enterprise & Sector",
+      "teaser": "Exhaustive systematic synthesis of over 1,000 studies establishing a comprehensive conceptual model for innovation diffusion, spread, and sustainability in complex organizations.",
+      "summaryPoints": [
+        "Comprehensive Framework: Unifies perspectives across sociology, management, health, and psychology into an evidence-based roadmap.",
+        "The Receptive Context: Identifies leadership stability, vision clarity, absorptive capacity for new knowledge, and decentralized decision-making as prerequisites for adoption.",
+        "Linkage Mechanics: Highlights the critical boundary-spanning role of change agents, internal champions, and implementation teams operating at early project stages.",
+        "Hard Innovation Versus Soft Adaptation: Contrasts rigid technological artifacts with messy, socially negotiated implementation processes that require ongoing adaptation.",
+        "Sustainability Failures: Documents how innovations that achieve initial adoption collapse during the assimilation and institutional routinization phases due to unaligned incentives."
+      ]
+    },
+    {
+      "id": "burton-jones-effective-use-representation-theory-2013",
+      "year": 2013,
+      "title": "From Use to Effective Use: A Representation Theory Perspective",
+      "authors": "Andrew Burton-Jones, Camille Grange (Information Systems Research)",
+      "tags": ["Effective Use", "Representation Theory", "Deep Structure", "IS Use"],
+      "paperUrl": "https://doi.org/10.1287/isre.2013.0487",
+      "isRecommended": false,
+      "levelOfAnalysis": "Individual & Task",
+      "teaser": "Seminal theoretical shift defining 'effective use' as the application of a system to represent a domain of tasks faithfully, shifting focus from raw system usage to cognitive fidelity.",
+      "summaryPoints": [
+        "Critique of Lean Metrics: Rejects superficial quantitative metrics of technology adoption (frequency, duration of login) as poor proxies for organizational value realization.",
+        "Definition of Effective Use: Formally defines effective use as using a system in a way that enhances the user's ability to attain their task goals.",
+        "Three Representational Dimensions: Transparent Interaction (user interacts without cognitive software friction), Representational Fidelity (system faithfully mirrors real-world task domain), and Informed Action (acting upon representations effectively).",
+        "Representation Theory Foundation: Grounded in Wand and Weber's ontological models of information systems representation.",
+        "Evaluation Framework: Provides diagnostic instruments for identifying cognitive misrepresentations that cause users to execute incorrect actions despite heavy software utilization."
+      ]
+    }
+  ]
+}

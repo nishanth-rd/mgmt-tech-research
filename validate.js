@@ -1,0 +1,258 @@
+#!/usr/bin/env node
+
+/**
+ * Automated Content Guardrails & Integrity Validator
+ * Enforces schema compliance, academic URL validity, placeholder prevention,
+ * personal absolute path prevention, and vendor-neutral commit messaging.
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const ROOT_DIR = __dirname;
+const DATA_DIR = path.join(ROOT_DIR, 'data');
+const EXPECTED_TABS = ['adoption', 'frameworks', 'systems-innovation'];
+
+console.log('🔍 Running Management & Systems Pulse Guardrails...\n');
+
+let hasErrors = false;
+const globalIds = new Set();
+
+function error(msg) {
+  console.error(`❌ [GUARDRAIL ERROR] ${msg}`);
+  hasErrors = true;
+}
+
+function success(msg) {
+  console.log(`✅ ${msg}`);
+}
+
+// 1. Prohibited Personal Absolute Paths Guardrail
+const PROHIBITED_PATH_PATTERNS = [
+  /\/home\/[a-zA-Z0-9_.-]+/i,
+  /\/Users\/[a-zA-Z0-9_.-]+/i,
+  /[a-zA-Z]:\\[Uu]sers\\[a-zA-Z0-9_.-]+/i,
+  /file:\/\/\/(home|Users|[a-zA-Z]:)/i
+];
+
+function checkProhibitedPaths(text, context) {
+  PROHIBITED_PATH_PATTERNS.forEach(pattern => {
+    const match = text.match(pattern);
+    if (match) {
+      error(`Personal system absolute path detected in ${context}: "${match[0]}". Always use repository references (mgmt-tech-research) or relative paths.`);
+    }
+  });
+}
+
+// 2. Prohibited Corporate & Academic Brands in Commit Messages (Neutrality Guardrail)
+const PROHIBITED_COMMIT_ENTITIES = [
+  // Tech Corporates
+  'Google', 'Microsoft', 'Meta', 'Apple', 'OpenAI', 'DeepMind', 'NVIDIA', 'Amazon', 'AWS', 'Salesforce', 'IBM',
+  // Management Consultancies & Advisory
+  'McKinsey', 'BCG', 'Bain', 'Gartner', 'Forrester', 'Accenture', 'Deloitte', 'PwC', 'EY', 'KPMG',
+  // Universities & Business Schools
+  'Harvard', 'Stanford', 'MIT', 'Oxford', 'Cambridge', 'Wharton', 'INSEAD', 'Berkeley', 'Columbia', 'Princeton'
+];
+
+function validateCommitMessage(msg) {
+  if (!msg) return;
+  checkProhibitedPaths(msg, 'commit message');
+  const violated = PROHIBITED_COMMIT_ENTITIES.filter(entity => new RegExp(`\\b${entity}\\b`, 'i').test(msg));
+  if (violated.length > 0) {
+    error(`Commit message contains highlighted corporate/academic entities: [${violated.join(', ')}]. Keep commit messages strictly vendor-neutral.`);
+  } else {
+    success(`Commit message verified vendor-neutral: "${msg}"`);
+  }
+}
+
+// Process CLI flag --check-commit "<msg>"
+const checkCommitArgIdx = process.argv.indexOf('--check-commit');
+if (checkCommitArgIdx !== -1 && process.argv[checkCommitArgIdx + 1]) {
+  validateCommitMessage(process.argv[checkCommitArgIdx + 1]);
+}
+
+// 3. Validate Core Viewer Files Exist & Are Non-Empty
+const requiredViewerFiles = [
+  'index.html',
+  'css/style.css',
+  'js/app.js',
+  'serve.js',
+  'LICENSE',
+  'README.md',
+  'GEMINI.md',
+  'UPDATE.md',
+  'scripts/get_remote_time.js',
+  '.agents/skills/updatesite/SKILL.md'
+];
+
+// Prohibited Placeholder Tokens
+const prohibitedTokens = [
+  /\bTODO\b/i,
+  /\bFIXME\b/i,
+  /\bLOREM IPSUM\b/i,
+  /\bUNDEFINED\b/i,
+  /\[INSERT/i
+];
+
+function checkProhibitedTokens(text, context) {
+  if (context.endsWith('.js')) {
+    checkProhibitedPaths(text, context);
+    return;
+  }
+  prohibitedTokens.forEach(pattern => {
+    if (pattern.test(text)) {
+      error(`Prohibited placeholder token matching ${pattern} found in ${context}`);
+    }
+  });
+  checkProhibitedPaths(text, context);
+}
+
+requiredViewerFiles.forEach(file => {
+  const filePath = path.join(ROOT_DIR, file);
+  if (!fs.existsSync(filePath)) {
+    error(`Required file missing: ${file}`);
+  } else {
+    const stat = fs.statSync(filePath);
+    if (stat.size === 0) {
+      error(`Required file is empty: ${file}`);
+    } else {
+      try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        checkProhibitedTokens(content, file);
+        checkProhibitedPaths(content, file);
+      } catch (e) {
+        error(`Failed to read ${file}: ${e.message}`);
+      }
+    }
+  }
+});
+success('Core repository files verified.');
+
+// 4. Validate index.html Publish Timestamp
+const indexPath = path.join(ROOT_DIR, 'index.html');
+if (fs.existsSync(indexPath)) {
+  const indexHtml = fs.readFileSync(indexPath, 'utf-8');
+  const match = indexHtml.match(/data-publish-utc="(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)"/);
+  if (!match) {
+    error('index.html missing valid ISO 8601 UTC timestamp in data-publish-utc attribute.');
+  } else {
+    success(`index.html publication timestamp validated: ${match[1]}`);
+  }
+}
+
+// 5. Validate Domain Data Files in data/
+let totalRecordCount = 0;
+
+EXPECTED_TABS.forEach(tabId => {
+  const fileName = `${tabId}.json`;
+  const filePath = path.join(DATA_DIR, fileName);
+
+  if (!fs.existsSync(filePath)) {
+    error(`Missing required data file: data/${fileName}`);
+    return;
+  }
+
+  let data;
+  try {
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    checkProhibitedTokens(raw, `data/${fileName}`);
+    data = JSON.parse(raw);
+  } catch (e) {
+    error(`Failed to parse JSON in data/${fileName}: ${e.message}`);
+    return;
+  }
+
+  // Schema checks
+  if (data.tabId !== tabId) {
+    error(`data/${fileName} has mismatched tabId "${data.tabId}", expected "${tabId}"`);
+  }
+
+  if (!data.tabTitle || typeof data.tabTitle !== 'string') {
+    error(`data/${fileName} missing valid tabTitle`);
+  }
+
+  // Macro Trends Check
+  if (!data.macroTrends) {
+    error(`data/${fileName} missing macroTrends object`);
+  } else {
+    const mt = data.macroTrends;
+    if (!mt.title || !mt.timeframe || !Array.isArray(mt.points) || mt.points.length === 0) {
+      error(`data/${fileName} macroTrends has incomplete structure or empty points`);
+    }
+    if (!mt.disclaimer || !mt.disclaimer.includes('AI-Generated')) {
+      error(`data/${fileName} macroTrends missing required AI disclaimer text`);
+    }
+  }
+
+  // Item bounds check: minimum 20, maximum 50 records per tab
+  const items = data.papers || [];
+  if (items.length < 20) {
+    error(`data/${fileName} expected at least 20 academic records, found ${items.length}`);
+  }
+  if (items.length > 50) {
+    error(`data/${fileName} exceeds maximum 50 academic records, found ${items.length}`);
+  }
+  totalRecordCount += items.length;
+
+  items.forEach((item, idx) => {
+    const prefix = `data/${fileName} item #${idx + 1} (${item.id || 'unknown'})`;
+
+    if (!item.id || typeof item.id !== 'string') {
+      error(`${prefix}: missing valid id`);
+    } else {
+      if (globalIds.has(item.id)) {
+        error(`${prefix}: duplicate id detected "${item.id}" across catalogue`);
+      }
+      globalIds.add(item.id);
+    }
+
+    if (!item.title || item.title.trim().length < 5) {
+      error(`${prefix}: title too short or missing`);
+    }
+
+    const currentMaxYear = Math.max(2030, new Date().getUTCFullYear() + 1);
+    if (typeof item.year !== 'number' || item.year < 1950 || item.year > currentMaxYear) {
+      error(`${prefix}: invalid year "${item.year}". Must be between 1950 and ${currentMaxYear}.`);
+    }
+
+    if (!Array.isArray(item.tags) || item.tags.length === 0) {
+      error(`${prefix}: missing tags array`);
+    }
+
+    if (!item.paperUrl || !item.paperUrl.startsWith('https://')) {
+      error(`${prefix}: paperUrl must be a secure https:// link, found: "${item.paperUrl}"`);
+    }
+
+    if (/arxiv\.org\/abs\/.*(1234|0123|2345|3456|4567|5678|6789|7890|8901|9876|1122)/.test(item.paperUrl)) {
+      error(`${prefix}: suspicious placeholder link sequence: "${item.paperUrl}"`);
+    }
+
+    if (!item.teaser || item.teaser.trim().length < 10) {
+      error(`${prefix}: teaser is too short or missing`);
+    }
+
+    if (!item.levelOfAnalysis || typeof item.levelOfAnalysis !== 'string') {
+      error(`${prefix}: missing valid levelOfAnalysis (e.g. Individual, Team, Organization, Systemic Architecture)`);
+    }
+
+    if (!Array.isArray(item.summaryPoints) || item.summaryPoints.length < 3) {
+      error(`${prefix}: summaryPoints must contain at least 3 bullet points`);
+    }
+  });
+
+  success(`data/${fileName} passed all validations (${items.length} records).`);
+});
+
+console.log(`\n📊 Total verified catalogue entries across all tabs: ${totalRecordCount}`);
+
+if (totalRecordCount < 60 || totalRecordCount > 150) {
+  error(`Expected total catalogue records between 60 and 150, found ${totalRecordCount}`);
+}
+
+if (hasErrors) {
+  console.error('\n❌ Guardrail verification FAILED. Please correct errors before committing.\n');
+  process.exit(1);
+} else {
+  console.log('\n✅ ALL CONTENT & VIEWING GUARDRAILS PASSED SUCCESSFULLY.\n');
+  process.exit(0);
+}

@@ -1,0 +1,394 @@
+{
+  "tabId": "adoption",
+  "tabTitle": "Technology & AI Adoption in Organizations and Workplaces",
+  "macroTrends": {
+    "title": "Macro Trends: Algorithmic Reconfiguration of Modern Organizing",
+    "timeframe": "2024–2028 Strategic Horizon",
+    "disclaimer": "⚠️ [AI-Generated Synthesis Notice]: Macro trends are synthesized by AI from cross-sectional academic literature and industry empirical datasets for executive decision-support.",
+    "points": [
+      "The Automation-Augmentation Duality: Shift from discrete software tooling to continuous cognitive co-agents reconfigures decision rights, task boundaries, and managerial oversight across knowledge-intensive sectors.",
+      "Absorptive Capacity & Cognitive Friction: Empirical evidence demonstrates that uncalibrated model integration triggers organizational deskilling and epistemic opacity unless mitigated by structured institutional learning routines.",
+      "Algorithmic Control & Invisible Labor: Emerging workplace surveillance and metric-driven workflow optimization create contested terrains of autonomy, necessitating new frameworks for worker psychological safety and trust calibration."
+    ]
+  },
+  "papers": [
+    {
+      "id": "brynjolfsson-generative-ai-at-work-2023",
+      "year": 2023,
+      "title": "Generative AI at Work",
+      "authors": "Erik Brynjolfsson, Danielle Li, Lindsey R. Raymond (NBER)",
+      "tags": ["Generative AI", "Worker Productivity", "Knowledge Work", "Field Experiment"],
+      "paperUrl": "https://doi.org/10.3386/w31161",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual & Team",
+      "teaser": "First large-scale field evaluation of generative AI assistance across 5,000+ customer support agents, finding a 14% average boost in resolution rates disproportionately benefiting novice workers.",
+      "summaryPoints": [
+        "Empirical Identification: Staggered enterprise deployment of an LLM-based conversational assistant across 5,179 customer support agents over several months.",
+        "Productivity Dynamics: Resolved issues per hour increased by 14% overall, with bottom-quintile novice agents gaining 34% productivity while experienced agents experienced negligible direct gains.",
+        "Knowledge Codification: The system captured and redistributed tacit operational practices from top performers across the enterprise workforce.",
+        "Learning Curve Acceleration: Novice workers with AI assistance advanced along the experiential learning curve within two months equivalent to six months of unassisted tenure.",
+        "Managerial Implication: AI functions primarily as an organizational capability equalizer rather than an expert amplifier in standardized knowledge workflows."
+      ]
+    },
+    {
+      "id": "dellacqua-jagged-technological-frontier-2023",
+      "year": 2023,
+      "title": "Navigating the Jagged Technological Frontier: Field Experimental Evidence on LLMs in Knowledge Work",
+      "authors": "Fabrizio Dell'Acqua, Edward McFowland III, Ethan Mollick, Hila Lifshitz-Assaf, Katherine Kellogg, et al. (SSRN)",
+      "tags": ["LLM", "Knowledge Work", "Jagged Frontier", "Field Experiment", "Problem Solving"],
+      "paperUrl": "https://doi.org/10.2139/ssrn.4573321",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual & Firm",
+      "teaser": "Randomized controlled experiment with 758 elite management consultants mapping the 'jagged frontier' where AI dramatically elevates performance on inside-frontier tasks but degrades accuracy outside it.",
+      "summaryPoints": [
+        "Theoretical Construct: Introduces the 'jagged frontier' concept—tasks of seemingly identical cognitive complexity where AI excels at some while failing unpredictably at others.",
+        "Inside-Frontier Performance: For 18 realistic consulting tasks inside the frontier, consultants using AI were 25.1% faster, completed 12.2% more tasks, and produced 40% higher quality output.",
+        "Outside-Frontier Degradation: On business problem-solving tasks slightly beyond the frontier, consultants using AI were 19 percentage points less likely to identify the correct solution compared to unassisted peers.",
+        "Workforce Heterogeneity: Lower-baseline performers experienced a 43% quality improvement versus a 17% gain for top-tier performers, compressing expert-novice skill dispersion.",
+        "Socio-Technical Archetypes: Identifies two distinct user behavioral modes: 'Centaur' divide-and-conquer task allocation versus 'Cyborg' continuous real-time human-machine integration."
+      ]
+    },
+    {
+      "id": "noy-zhang-productivity-generative-ai-2023",
+      "year": 2023,
+      "title": "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence",
+      "authors": "Shakked Noy, Whitney Zhang (Science)",
+      "tags": ["Generative AI", "Writing Tasks", "Inequality", "Cognitive Automation"],
+      "paperUrl": "https://doi.org/10.1126/science.adh2586",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual",
+      "teaser": "Preregistered randomized controlled trial on 453 college-educated professionals completing realistic occupation-specific writing assignments with and without conversational AI tools.",
+      "summaryPoints": [
+        "Quantitative Performance: Access to assistive LLMs reduced task completion time by 40% (from 27 to 17 minutes) while increasing evaluated output quality by 0.45 standard deviations.",
+        "Skill Compression: Generative AI substantially reduced productivity dispersion by disproportionately benefiting workers with lower baseline writing abilities.",
+        "Labor Substitution Dynamics: Restructured time allocation from preliminary drafting toward final editing, cognitive evaluation, and strategic framing.",
+        "Subjective Well-Being: Participants reported marked increases in task satisfaction and job self-efficacy alongside reduced cognitive exhaustion during synthesis tasks.",
+        "Economic Takeaway: Demonstrates rapid technological substitution for low-level cognitive synthesis and text generation without harming qualitative coherence."
+      ]
+    },
+    {
+      "id": "raisch-krakowski-automation-augmentation-paradox-2021",
+      "year": 2021,
+      "title": "Artificial Intelligence and Management: The Automation-Augmentation Paradox",
+      "authors": "Sebastian Raisch, Sebastian Krakowski (Academy of Management Review)",
+      "tags": ["Automation", "Augmentation", "Paradox Theory", "Organizational Theory"],
+      "paperUrl": "https://doi.org/10.5465/amr.2018.0072",
+      "isRecommended": true,
+      "levelOfAnalysis": "Organization & Systemic",
+      "teaser": "Theoretical formulation challenging the binary distinction between machine automation and human augmentation, presenting a paradoxical framework where both processes co-evolve cyclically.",
+      "summaryPoints": [
+        "Theoretical Grounding: Critiques the prevailing dichotomy in management literature that treats AI automation (substituting labor) and augmentation (enhancing labor) as independent strategies.",
+        "Paradoxical Mechanics: Explains how automating foundational cognitive tasks simultaneously triggers complex demands for higher-order human interpretive oversight.",
+        "Cyclical Dynamic Model: Formulates a continuous loop where automated outputs generate novel organizational complexities requiring human exploration, which are subsequently codified.",
+        "Structural Integration: Advises organizational architects to establish ambivalent organizational designs that maintain structural separation while orchestrating contextual synthesis.",
+        "Governance Takeaway: Sustainable enterprise AI strategy requires balancing both poles of the paradox rather than optimizing unilaterally for near-term labor displacement."
+      ]
+    },
+    {
+      "id": "puranam-human-ai-organizations-2021",
+      "year": 2021,
+      "title": "Human-AI Organizations: A Design Perspective",
+      "authors": "Phanish Puranam (Strategy Science)",
+      "tags": ["Organization Design", "Human-AI Teaming", "Division of Labor", "Coordination"],
+      "paperUrl": "https://doi.org/10.1287/stsc.2021.0145",
+      "isRecommended": true,
+      "levelOfAnalysis": "Organization & Firm",
+      "teaser": "Applies fundamental organization design theory to treat algorithmic agents as structural organizational actors participating in division of labor, coordination, and reward allocation.",
+      "summaryPoints": [
+        "Design Lens: Maps algorithmic agents onto the universal problems of organizing: task division, task allocation, provision of rewards, and information distribution.",
+        "Agent Agency Classification: Distinguishes between algorithmic tools operating as informational conduits versus autonomous agents making non-deterministic binding choices.",
+        "Coordination Bottlenecks: Explores how machine learning systems undermine traditional exception-handling protocols because algorithmic errors differ fundamentally from human errors.",
+        "Authority Relations: Evaluates the institutional legitimacy of algorithm-to-human managerial authority versus traditional human supervisory hierarchies.",
+        "Design Blueprint: Proposes explicit organizational boundaries and verification nodes for hybrid human-algorithmic production workflows."
+      ]
+    },
+    {
+      "id": "leonardi-covid19-technologies-organizing-2021",
+      "year": 2021,
+      "title": "COVID-19 and the New Technologies of Organizing: Digital Exhaust, Algorithmic Management, and Remote Work",
+      "authors": "Paul M. Leonardi (Journal of Management Studies)",
+      "tags": ["Digital Exhaust", "Algorithmic Management", "Remote Work", "Surveillance"],
+      "paperUrl": "https://doi.org/10.1111/joms.12648",
+      "isRecommended": false,
+      "levelOfAnalysis": "Organization & Workplace",
+      "teaser": "Examines how the institutionalization of remote collaboration platforms produces voluminous digital exhaust, transforming performance measurement and worker surveillance.",
+      "summaryPoints": [
+        "Digital Exhaust Mechanics: Collaboration platforms unobtrusively harvest metadata trails that reveal communicative networks, attention spans, and workflow tempo.",
+        "Algorithmic Control Transition: Traditional observational supervisory control is replaced by automated metrics of responsiveness, keystroke velocity, and virtual availability.",
+        "Social Capital Erosion: Digital-first enterprise tooling impairs serendipitous communication, fracturing weak-tie networks vital for inter-departmental innovation.",
+        "Epistemic Visibility Asymmetry: While employees become increasingly visible to senior leadership through automated metrics, algorithmic evaluation criteria remain opaque to workers.",
+        "Organizational Remedy: Proposes deliberate design of communicative spaces that shield informal ideation from uncalibrated algorithmic scrutiny."
+      ]
+    },
+    {
+      "id": "kellogg-algorithms-at-work-2020",
+      "year": 2020,
+      "title": "Algorithms at Work: The New Contested Terrain of Control",
+      "authors": "Katherine C. Kellogg, Melissa A. Valentine, Angèle Christin (Academy of Management Annals)",
+      "tags": ["Algorithmic Management", "Workplace Control", "Resistance", "Labor Process"],
+      "paperUrl": "https://doi.org/10.5465/annals.2018.0174",
+      "isRecommended": true,
+      "levelOfAnalysis": "Workplace & Organization",
+      "teaser": "Comprehensive synthesis of algorithmic management literature, introducing the 6Rs framework of algorithmic control alongside frontline worker resistance tactics.",
+      "summaryPoints": [
+        "The 6Rs Control Taxonomy: Details how algorithms control work via Directing (Restricting, Recommending), Evaluating (Recording, Rating), and Disciplining (Replacing, Rewarding).",
+        "Algorithmic Opacity: Identifies how non-deterministic machine models obfuscate evaluation criteria, precluding conventional grievance and collective negotiation processes.",
+        "Worker Resistance Strategies: Classifies frontline counter-tactics: algorithmic gaming, obfuscation, system manipulation, and selective platform non-compliance.",
+        "Labor Process Theory Shift: Extends Edwards' classic theory of workplace control from technical and bureaucratic modes to continuous computational governance.",
+        "Research Agenda: Calls for empirical focus on professional and white-collar occupations increasingly subjected to automated productivity monitoring."
+      ]
+    },
+    {
+      "id": "lebovitz-role-of-expert-knowledge-2022",
+      "year": 2022,
+      "title": "To Incorporate or Not to Incorporate: The Role of Expert Knowledge in Evaluating Algorithmic Advice",
+      "authors": "Sarah Lebovitz, Hila Lifshitz-Assaf, Natalia Levina (Organization Science)",
+      "tags": ["Expert Knowledge", "Algorithmic Advice", "Decision Making", "Healthcare AI"],
+      "paperUrl": "https://doi.org/10.1287/orsc.2021.1539",
+      "isRecommended": false,
+      "levelOfAnalysis": "Individual & Professional",
+      "teaser": "Three-year ethnography examining how professional medical diagnosticians evaluate, interrogate, or reject machine learning diagnostic recommendations.",
+      "summaryPoints": [
+        "Epistemic Friction: Demonstrates how algorithmic advice grounded in opaque correlational models directly clashes with professional knowledge rooted in causal reasoning.",
+        "Interrogation Practices: Discovers that experts develop informal heuristic validation drills rather than passively accepting or outright rejecting model outputs.",
+        "Decoupled Validation: Diagnostic experts frequently agree with algorithmic scores while attributing completely distinct clinical justifications for their decisions.",
+        "The Knowledge Trap: Inexperienced practitioners uncritically incorporate algorithmic suggestions, suppressing the developmental acquisition of tacit expert judgment.",
+        "Implementation Guidance: Recommends engineering interactive AI explainability that exposes diagnostic evidence graphs rather than categorical confidence percentages."
+      ]
+    },
+    {
+      "id": "bailey-theorists-of-technology-2022",
+      "year": 2022,
+      "title": "We Are All Theorists of Technology Now: Emerging Technologies in Organization Studies",
+      "authors": "Diane E. Bailey, Samer Faraj, Pamela J. Hinds, Paul M. Leonardi, Georg von Krogh (Organization Theory)",
+      "tags": ["Organization Theory", "Emerging Tech", "Epistemology", "Methodology"],
+      "paperUrl": "https://doi.org/10.1177/26317877221109151",
+      "isRecommended": false,
+      "levelOfAnalysis": "Systemic & Theoretical",
+      "teaser": "Scholarly manifesto arguing that modern algorithmic, autonomous, and generative technologies require fundamental revisions to classic organizational ontologies.",
+      "summaryPoints": [
+        "Materiality Reconsidered: Argues that software opacity, non-determinism, and generative mutability dismantle traditional static conceptualizations of organizational tools.",
+        "Relational Agency: Emphasizes that agency in contemporary organizations is neither solely human nor purely algorithmic, but emergent through situated socio-material interactions.",
+        "Routines & Dynamism: Explains why traditional organizational routines destabilize when machine learning models alter decision parameters dynamically without human intervention.",
+        "Methodological Imperatives: Challenges management researchers to deploy computational ethnography and longitudinal tracking to capture algorithmic emergence.",
+        "Theoretical Synthesis: Unifies perspectives across information systems, sociology of technology, and institutional management theory."
+      ]
+    },
+    {
+      "id": "murray-conjoined-agency-2021",
+      "year": 2021,
+      "title": "Humans and Technology: Forms of Conjoined Agency in Organizations",
+      "authors": "Alex Murray, Scott Rhymer, David G. Sirmon (Academy of Management Review)",
+      "tags": ["Conjoined Agency", "Human-AI Interaction", "Agency Theory", "Strategy"],
+      "paperUrl": "https://doi.org/10.5465/amr.2019.0186",
+      "isRecommended": false,
+      "levelOfAnalysis": "Team & Organization",
+      "teaser": "Conceptual typology classifying human-technology agency into assisted, augmented, and autonomous configurations across operational and strategic domains.",
+      "summaryPoints": [
+        "Conjoined Agency Construct: Defines organizational action as the combined, interdependent exercise of intent and execution between human actors and intelligent technologies.",
+        "Typology of Configuration: Systematically categorizes agency into Assisted (human directed), Augmented (collaborative execution), and Autonomous (machine initiated).",
+        "Strategic Boundary Conditions: Details how variance in environmental uncertainty and task programmability dictates the optimal agency configuration.",
+        "Accountability Dilemmas: Analyzes structural breakdowns in legal, moral, and organizational liability when autonomous configurations execute disastrous actions.",
+        "Managerial Framework: Provides decision matrices for executives allocating discretionary decision rights across human specialists and automated algorithms."
+      ]
+    },
+    {
+      "id": "bessen-firm-level-ai-adoption-2023",
+      "year": 2023,
+      "title": "What Drives Firm-Level AI Adoption? Evidence from Startups",
+      "authors": "James E. Bessen, Stephen Michael Impink, Robert Seamans, Joern Stieglitz (Research Policy)",
+      "tags": ["Firm Adoption", "Proprietary Data", "Economics of Innovation", "Startups"],
+      "paperUrl": "https://doi.org/10.1016/j.respol.2022.104612",
+      "isRecommended": false,
+      "levelOfAnalysis": "Firm & Industry",
+      "teaser": "Empirical econometrics exploring organizational determinants of AI adoption, revealing that access to proprietary institutional data is a stronger predictor than raw computing capital.",
+      "summaryPoints": [
+        "Data Asset Primacy: Demonstrates that proprietary enterprise data repositories dominate over computational hardware access as the primary bottleneck to effective AI adoption.",
+        "Complementary Human Capital: Firms employing cross-functional staff possessing both domain institutional knowledge and machine learning capabilities exhibit 2.3x higher adoption efficacy.",
+        "Startup Advantage Dynamics: Examines how young entrepreneurial ventures leverage unencumbered architectural foundations to integrate modular AI tools faster than incumbent firms.",
+        "Competitive Moats: Concludes that standardized foundational models reduce baseline technical barriers while accentuating proprietary workflow data as the sole defensible moat.",
+        "Policy Implication: Discusses anti-trust concerns regarding data concentration among incumbent cloud platform conglomerates."
+      ]
+    },
+    {
+      "id": "felten-occupational-exposure-ai-2021",
+      "year": 2021,
+      "title": "Occupational Heterogeneity in Exposure to Complementary AI Technologies",
+      "authors": "Edward W. Felten, Manav Raj, Robert Seamans (Management Science)",
+      "tags": ["Labor Economics", "Occupational Exposure", "Skills", "Augmentation"],
+      "paperUrl": "https://doi.org/10.1287/mnsc.2023.4732",
+      "isRecommended": false,
+      "levelOfAnalysis": "Occupational & Industry",
+      "teaser": "Develops the AI Occupational Exposure (AIOE) index linking algorithmic progress across 10 capability benchmarks to 774 occupational skill profiles.",
+      "summaryPoints": [
+        "Methodological Indexing: Maps computer science model capabilities (e.g., visual recognition, language synthesis, abstract reasoning) to O*NET occupational task matrices.",
+        "Professional Vulnerability: Finds that highly educated, white-collar occupations (finance, legal, software, management) possess substantially higher exposure than manual labor.",
+        "Complementarity Versus Substitution: Disentangles tasks likely to experience labor displacement versus tasks where cognitive AI acts as a complementary productivity multiplier.",
+        "Firm Reorganization: Predicts enterprise restructuring where traditional apprentice roles are compressed while senior strategic evaluators manage larger automated spans.",
+        "Macro Labor Implications: Provides foundational empirical benchmark for academic economists modeling labor share shifts in the algorithmic economy."
+      ]
+    },
+    {
+      "id": "agrawal-prediction-decision-making-ai-2023",
+      "year": 2023,
+      "title": "Prediction, Decision Making, and Artificial Intelligence",
+      "authors": "Ajay Agrawal, Joshua S. Gans, Avi Goldfarb (NBER / Economics of AI)",
+      "tags": ["Economics of AI", "Decision Theory", "Prediction", "Judgment"],
+      "paperUrl": "https://doi.org/10.3386/w31168",
+      "isRecommended": true,
+      "levelOfAnalysis": "Organization & Executive",
+      "teaser": "Deconstructs business decision-making into prediction, judgment, action, and outcome, establishing how cheap algorithmic prediction increases the economic value of human judgment.",
+      "summaryPoints": [
+        "Economic Core Principle: Frames modern artificial intelligence strictly as a dramatic reduction in the marginal cost of statistical prediction.",
+        "Judgment-Prediction Complementarity: As machine prediction becomes ubiquitous and cheap, human judgment (evaluating the payoff matrix and ethical weights of actions) becomes scarce and valuable.",
+        "Decision Decomposition: Formally models how organizations partition legacy decisions into modular algorithmic prediction subroutines and human executive verification gates.",
+        "Systemic Redesign: Explains why simply plugging AI into existing business workflows yields muted returns until the entire institutional process is redesigned around prediction abundance.",
+        "Strategic Strategy: Recommends leaders focus organizational investments on defining payoff functions rather than attempting to compete with predictive algorithms."
+      ]
+    },
+    {
+      "id": "acemoglu-ai-and-jobs-vacancies-2022",
+      "year": 2022,
+      "title": "Artificial Intelligence and Jobs: Evidence from Online Vacancies",
+      "authors": "Daron Acemoglu, David Autor, Jonathon Hazell, Pascual Restrepo (Journal of Labor Economics)",
+      "tags": ["Labor Market", "Job Vacancies", "Task Displacement", "Macroeconomics"],
+      "paperUrl": "https://doi.org/10.1086/718327",
+      "isRecommended": false,
+      "levelOfAnalysis": "Market & Economy",
+      "teaser": "Econometric examination of 200M+ job postings demonstrating that establishments adopting AI reduce hiring in non-AI positions without yet creating aggregate employment windfalls.",
+      "summaryPoints": [
+        "Establishment-Level Econometrics: Evaluates firm-level postings between 2010 and 2018 using comprehensive Burning Glass vacancy datasets across the United States.",
+        "Task Replacement Evidence: Establishments with high AI exposure systematically decrease postings for tasks matching algorithmic capabilities, implying measurable labor substitution.",
+        "Net Employment Mute: Finds no statistically detectable aggregate employment expansion at the adopting establishment level during initial adoption phases.",
+        "Skill Polarization: Adopting establishments shift hiring composition toward specialized engineering roles while thinning junior administrative and analytical cadres.",
+        "Theoretical Grounding: Validates task-based economic frameworks of automation where technology substitutes for labor in routine cognitive task components."
+      ]
+    },
+    {
+      "id": "chui-economic-potential-generative-ai-2023",
+      "year": 2023,
+      "title": "The Economic Potential of Generative AI: The Next Productivity Frontier",
+      "authors": "Michael Chui, Eric Hazan, Roger Roberts, Alex Singla, Klemens Hjartar (Business Horizons / Review)",
+      "tags": ["Economic Value", "Productivity Frontier", "Enterprise Use Cases", "Functional Value"],
+      "paperUrl": "https://doi.org/10.1016/j.bushor.2023.08.003",
+      "isRecommended": false,
+      "levelOfAnalysis": "Industry & Firm",
+      "teaser": "Comprehensive cross-industry modeling estimating generative AI's annual value creation across customer operations, marketing, software engineering, and R&D.",
+      "summaryPoints": [
+        "Value Concentration: 75% of generative AI value potential is concentrated across four corporate functions: Software Engineering, Customer Operations, Marketing & Sales, and R&D.",
+        "Productivity Potential: Estimates an annual contribution of 2.6 trillion to 4.4 trillion dollars across 63 examined enterprise use cases globally.",
+        "Knowledge Work Acceleration: Highlights that automation potential has shifted drastically toward natural language communication and complex reasoning tasks.",
+        "Implementation Roadblocks: Identifies organizational inertia, data governance, intellectual property exposure, and hallucination risk as prime blockers to enterprise realization.",
+        "Executive Agenda: Prescribes a three-tier adoption architecture: Maker (custom foundation models), Shaper (fine-tuned models), and Taker (off-the-shelf APIs)."
+      ]
+    },
+    {
+      "id": "anthony-invisible-knowledge-work-2021",
+      "year": 2021,
+      "title": "When Knowledge Work Becomes Invisible: Managing Expertise in Hybrid and Algorithmic Organizations",
+      "authors": "Callen Anthony (Administrative Science Quarterly)",
+      "tags": ["Knowledge Work", "Expertise", "Invisibility", "Ethnography"],
+      "paperUrl": "https://doi.org/10.1177/00018392211025547",
+      "isRecommended": false,
+      "levelOfAnalysis": "Organization & Workplace",
+      "teaser": "In-depth longitudinal study of corporate technologists demonstrating how automating analytical workflows renders specialized professional expertise invisible to senior management.",
+      "summaryPoints": [
+        "Epistemic Invisibility: As analytical routines are encapsulated in automated black-box pipelines, the human labor required to curate, clean, and validate inputs becomes obscured.",
+        "Devaluation Dynamics: Management tends to credit algorithmic software for institutional breakthroughs while devaluing the human specialists maintaining system viability.",
+        "Defensive Re-articulation: Documents strategies deployed by experts to make their tacit interventions visible through formal architectural reviews and strategic posturing.",
+        "Cross-Functional Fracture: Highlights deep epistemological tensions between computational model builders and legacy domain specialists.",
+        "Organizational Design Warning: Alerts leadership that rendering expertise invisible leads to retention crises among the institutional knowledge holders foundational to system integrity."
+      ]
+    },
+    {
+      "id": "pachidi-coping-with-algorithmic-technologies-2021",
+      "year": 2021,
+      "title": "Make Way for the Algorithms: Coping with Algorithmic Technologies in Professional Work",
+      "authors": "Stella Pachidi, Hans Berends, Samer Faraj, Marleen Huysman (Organization Science)",
+      "tags": ["Algorithmic Technologies", "Professional Work", "Coping Mechanisms", "Ethnography"],
+      "paperUrl": "https://doi.org/10.1287/orsc.2020.1423",
+      "isRecommended": false,
+      "levelOfAnalysis": "Professional & Team",
+      "teaser": "Field investigation of a corporate enterprise introducing machine learning analytics, documenting how professionals experience professional identity threat and alter practices.",
+      "summaryPoints": [
+        "Jurisdictional Threat: Details how machine learning analytics encroach upon the professional jurisdiction and tacit intuition of corporate sales specialists.",
+        "Coping Taxonomy: Uncovers four distinct occupational coping mechanisms: Bypassing, Complying with Cynicism, Selective Exploitation, and Epistemic Reskilling.",
+        "Decoupled Adoption: Sales executives formally checked software compliance boxes while relying secretly on legacy personal heuristics to conduct negotiations.",
+        "Professional Stratification: Drives an intra-organizational wedge between quantitative analytics evangelists and seasoned frontline relationship managers.",
+        "Management Lesson: Mandated technology rollouts fail unless organizational change agents realign the technology with professional identity and autonomy."
+      ]
+    },
+    {
+      "id": "faraj-datafication-organization-science-2018",
+      "year": 2018,
+      "title": "Working and Organizing in the Digital Age: Next Steps in Datafication and Organization Science",
+      "authors": "Samer Faraj, Stella Pachidi, Karla Sayegh (Information and Organization)",
+      "tags": ["Datafication", "Algorithms", "Organization Science", "Epistemology"],
+      "paperUrl": "https://doi.org/10.1016/j.infoandorg.2018.10.001",
+      "isRecommended": false,
+      "levelOfAnalysis": "Systemic & Theoretical",
+      "teaser": "Seminal review formulating the transformative consequences of ubiquitous datafication, smart algorithms, and autonomous computation for organizational structures.",
+      "summaryPoints": [
+        "Datafication Shift: Traces the transformation of business phenomena from subjective human experiences into quantified, tradeable, and optimizable digital traces.",
+        "Algorithmic Re-ordering: Argues that machine learning models do not merely automate tasks; they actively re-order organizational knowledge hierarchies.",
+        "The Loss of Indeterminacy: Discusses how computational optimization eliminates the generative ambiguity and interpretive leeway vital for organizational innovation.",
+        "Emergence of Algorithmic Bureaucracy: Conceptualizes a novel institutional structure where algorithms execute rules continuously without human bureaucratic bias.",
+        "Foundational Research Imperatives: Outlines critical research directions concerning power asymmetries, deskilling, and ethical boundaries in data-driven organizing."
+      ]
+    },
+    {
+      "id": "shrestha-organizational-decision-making-ai-2019",
+      "year": 2019,
+      "title": "Organizational Decision-Making Structures in the Age of Artificial Intelligence",
+      "authors": "Yash Raj Shrestha, Shiko M. Ben-Menahem, Georg von Krogh (California Management Review)",
+      "tags": ["Decision Making", "Governance", "Delegation", "Executive Strategy"],
+      "paperUrl": "https://doi.org/10.1177/0008125619862257",
+      "isRecommended": false,
+      "levelOfAnalysis": "Organization & Governance",
+      "teaser": "Managerial framework delineating three archetype configurations for integrating AI into corporate decision-making: Full Delegation, Hybrid Sequential, and Aggregated Voting.",
+      "summaryPoints": [
+        "Decision Governance Archetypes: Identifies three core structures: Fully Delegated (automated execution), Sequential (human gatekeeper or machine pre-filter), and Aggregated (human-AI ensemble).",
+        "Contingency Factors: Links structure selection to decision reversibility, speed requirements, error cost asymmetry, and interpretability constraints.",
+        "Strategic Drift Mitigation: Analyzes governance protocols necessary to prevent algorithmic feedback loops from drifting away from corporate strategic intent.",
+        "Auditability Architecture: Prescribes institutional mechanisms for continuous algorithmic monitoring, calibration reviews, and emergency human overrides.",
+        "Executive Leadership Mandate: Argues that the senior executive role transitions from direct decision-making to the design and oversight of decision architectures."
+      ]
+    },
+    {
+      "id": "glikson-human-trust-in-ai-2020",
+      "year": 2020,
+      "title": "Human Trust in Artificial Intelligence: Review of Empirical Research",
+      "authors": "Ella Glikson, Anita Williams Woolley (Academy of Management Annals)",
+      "tags": ["Trust", "Human-AI Interaction", "Cognitive Psychology", "Anthropomorphism"],
+      "paperUrl": "https://doi.org/10.5465/annals.2018.0057",
+      "isRecommended": true,
+      "levelOfAnalysis": "Individual & Team",
+      "teaser": "Systematic synthesis of cognitive, emotional, and social factors governing human trust in artificial intelligence across robotic, virtual, and embedded embodiments.",
+      "summaryPoints": [
+        "Trust Anatomy: Distinguishes between cognitive trust (reliance based on perceived capability and integrity) and affective trust (relational psychological comfort).",
+        "Embodiment Dimensions: Maps how visual representation (robotic, graphical avatar, transparent code) dynamically alters user expectations and forgiveness thresholds.",
+        "Algorithm Aversion Versus Appreciation: Synthesizes empirical evidence regarding when humans irrationally reject algorithmic advice versus when they over-rely on it.",
+        "Explainability Paradox: Highlights that exposing raw algorithmic logic frequently decreases user trust unless contextualized within user-centric mental models.",
+        "Team Cohesion Impact: Analyzes how the introduction of intelligent agents alters psychological safety, status hierarchies, and collaborative norms within human work groups."
+      ]
+    },
+    {
+      "id": "sergeeva-epistemic-resistance-in-surgery-2020",
+      "year": 2020,
+      "title": "Through the Eyes of Artificial Intelligence: Professional Identity and Epistemic Resistance in Surgery",
+      "authors": "Anastasia V. Sergeeva, Marleen Huysman, Maura Soekijad, Bart van den Hooff (Information and Organization)",
+      "tags": ["Professional Identity", "Epistemic Resistance", "Healthcare AI", "Ethnography"],
+      "paperUrl": "https://doi.org/10.1016/j.infoandorg.2020.100298",
+      "isRecommended": false,
+      "levelOfAnalysis": "Professional & Workplace",
+      "teaser": "Field investigation exploring how surgical professionals experience algorithmic vision systems as challenges to professional identity, developing epistemic resistance strategies.",
+      "summaryPoints": [
+        "Epistemic Challenge: Demonstrates how real-time algorithmic guidance during surgical procedures challenges the sovereign embodiment and tacit judgment of expert surgeons.",
+        "Resistance Mechanisms: Uncovers practices where specialists dispute training data boundaries, highlight edge-case blind spots, and re-assert embodied intuition over pixel analytics.",
+        "Identity Threat Mediation: Explains how adoption succeeds only when AI is framed as an administrative record keeper rather than an autonomous peer in technical judgment.",
+        "Professional Socialization: Documents how junior residents exposed continuously to algorithmic prompts struggle to internalize visceral surgical confidence.",
+        "Socio-Technical Lesson: High-status professionals actively resist tools that threaten their institutionalized claims to authoritative epistemic superiority."
+      ]
+    }
+  ]
+}

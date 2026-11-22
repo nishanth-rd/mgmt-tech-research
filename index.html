@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management & Systems Pulse | R&D Knowledge Base</title>
+  <meta name="description" content="Academic research portal covering Technology & AI Adoption, Socio-Technical & Diffusion Frameworks, and Engineering Systems Design & Innovation.">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <main class="reading-container">
+    <!-- Header Section -->
+    <header class="header-section">
+      <div class="version-badge" data-publish-utc="2026-11-22T06:45:00Z">
+        Published: 2026-11-22T06:45:00Z
+      </div>
+      <h1 class="site-title">Management & Systems Pulse</h1>
+      <p class="site-subtitle">
+        Curated academic research milestones, formal socio-technical evaluation models, and systems engineering management paradigms for researchers, PhD scholars, and technology leaders.
+      </p>
+    </header>
+
+    <!-- Tab Navigation Tiles -->
+    <nav class="tab-tiles-grid" aria-label="Research Domains">
+      <button class="tab-tile active" data-tab="adoption" type="button">
+        <span class="tab-tile-title">Technology & AI Adoption in Organizations</span>
+        <span class="tab-tile-desc">Workplace Transformation, Human-AI Teaming, Absorptive Capacity, Algorithmic Management</span>
+      </button>
+
+      <button class="tab-tile" data-tab="frameworks" type="button">
+        <span class="tab-tile-title">Socio-Technical & Diffusion Frameworks</span>
+        <span class="tab-tile-desc">Formal Models: TAM, UTAUT, DOI, TOE, STS Theory, CFIR, Institutional Isomorphism</span>
+      </button>
+
+      <button class="tab-tile" data-tab="systems-innovation" type="button">
+        <span class="tab-tile-title">Engineering Systems Design & Innovation</span>
+        <span class="tab-tile-desc">Conway's Law, Modularity, Dynamic Capabilities, Platform Governance, Architectural Innovation</span>
+      </button>
+    </nav>
+
+    <!-- Real-Time Search Bar -->
+    <div class="search-container">
+      <input 
+        type="search" 
+        id="search-input" 
+        class="search-input" 
+        placeholder="Filter by keyword, framework, author, level of analysis (e.g. UTAUT, Conway, STS, GenAI, Modularity)..."
+        aria-label="Filter research papers"
+      >
+    </div>
+
+    <!-- Year Quick-Jump Filter Bar -->
+    <div class="year-filter-bar" id="year-filter-bar" aria-label="Filter by Year">
+      <!-- Injected dynamically by app.js -->
+    </div>
+
+    <!-- Dynamic Content Container -->
+    <div id="content-container" aria-live="polite">
+      <!-- Injected dynamically by app.js -->
+    </div>
+  </main>
+
+  <!-- Summary Modal Window -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button id="modal-close-btn" class="modal-close-btn" type="button" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Paper Title</h3>
+        <div id="modal-meta" class="modal-meta">Year • Authors • Level of Analysis</div>
+      </div>
+
+      <!-- AI Generated Disclaimer (Displayed only for Macro Trends) -->
+      <div id="modal-warning-box" class="ai-warning-box" style="display: none;"></div>
+
+      <!-- Summary Points -->
+      <ul id="modal-points-list" class="modal-points-list"></ul>
+
+      <div class="modal-footer">
+        <a id="modal-paper-link" href="#" class="modal-paper-btn" target="_blank" rel="noopener noreferrer">
+          Read Original Publication / DOI &nearr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      Maintained by <a href="https://github.com/nishanth-rd" target="_blank" rel="noopener noreferrer">@nishanth-rd</a> • 
+      Licensed under <a href="./LICENSE">MIT & CC-BY-4.0</a> • 
+      Zero-dependency static application
+    </p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
