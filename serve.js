@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Zero-dependency local development server for Management & Systems Pulse.
+ * Zero-dependency local development server for Strategic Technology Management & Adaptation.
  * Uses native node:http and node:fs modules (no npm install required).
  */
 
@@ -58,7 +58,7 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, '127.0.0.1', () => {
   console.log('\n======================================================');
-  console.log(`🚀 Management & Systems Pulse local server running!`);
+  console.log(`🚀 Strategic Technology Management & Adaptation local server running!`);
   console.log(`🌐 Local URL: http://localhost:${PORT}`);
   console.log(`📁 Serving directory: ${ROOT_DIR}`);
   console.log('   Press Ctrl+C to stop.');

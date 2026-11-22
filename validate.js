@@ -13,7 +13,7 @@ const ROOT_DIR = __dirname;
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const EXPECTED_TABS = ['adoption', 'frameworks', 'systems-innovation'];
 
-console.log('🔍 Running Management & Systems Pulse Guardrails (Nordic Forest Edition)...\n');
+console.log('🔍 Running Strategic Technology Management & Adaptation Guardrails (Nordic Forest Edition)...\n');
 
 let hasErrors = false;
 const globalIds = new Set();

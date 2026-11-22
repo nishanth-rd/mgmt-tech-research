@@ -1,4 +1,4 @@
-# Management & Systems Pulse
+# Strategic Technology Management & Adaptation
 
 > **Academic Minimalist Research Portal & Systems Knowledge Base**  
 > High-density curation for researchers, PhD scholars, and technology executives. Zero fluff.  

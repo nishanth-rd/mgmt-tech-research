@@ -1,7 +1,7 @@
 # Repository Runbook & Operational Guidelines
 
 ## Overview
-This repository hosts the **Management & Systems Pulse** static knowledge portal, an academic research portal tracking **Technology & AI Adoption**, **Socio-Technical & Diffusion Frameworks**, and **Engineering Systems Design & Innovation**.
+This repository hosts the **Strategic Technology Management & Adaptation** static knowledge portal, an academic research portal tracking **Technology & AI Adoption**, **Socio-Technical & Diffusion Frameworks**, and **Engineering Systems Design & Innovation**.
 
 ---
 

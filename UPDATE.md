@@ -1,6 +1,6 @@
-# Management & Systems Pulse: On-Demand Update Guide
+# Strategic Technology Management & Adaptation: On-Demand Update Guide
 
-This runbook documents how to update the **Management & Systems Pulse** static knowledge portal.
+This runbook documents how to update the **Strategic Technology Management & Adaptation** static knowledge portal.
 
 The update procedure is **on-demand and time-agnostic**. It is designed to be executed as-needed at any point in time—whether tomorrow, after a few weeks, months, or years into the future.
 

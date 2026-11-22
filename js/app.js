@@ -1,4 +1,4 @@
-// Management & Systems Pulse - SPA Engine (Nordic Forest Theme)
+// Strategic Technology Management & Adaptation - SPA Engine (Nordic Forest Theme)
 let currentTab = 'adoption';
 const cache = {};
 let currentSearch = '';
