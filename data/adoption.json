@@ -11,6 +11,19 @@
       "Algorithmic Control & Invisible Labor: Emerging workplace surveillance and metric-driven workflow optimization create contested terrains of autonomy, necessitating new frameworks for worker psychological safety and trust calibration."
     ]
   },
+  "topicRelevance": {
+    "title": "Topic Relevance Today: Technology & AI Adoption in Organizations",
+    "verifiedDate": "2026-11-28",
+    "verifiedUtc": "2026-11-28T07:04:30Z",
+    "timeServer": "time.cloudflare.com (NTP UDP:123)",
+    "verdict": "Anchor pillar of contemporary management scholarship: in late 2026, research has matured from short-term individual speedups toward longitudinal labor-pipeline erosion, cognitive deskilling, and team restructuring.",
+    "worthLookingInto": "Yes—vital for organizational theorists, labor economists, and CIOs. While early 2023 studies proved immediate individual task gains, 2025–2026 empirical evidence reveals puzzling aggregate P&L gaps, junior hiring slowdowns, and oversight atrophy.",
+    "publishingTrends": "Steady surge in top peer-reviewed journals (Organization Science 2026 Cybernetic Teammate; Management Science 2026 developer RCTs; Strategic Management Journal 2025 decision-learning; Economic Policy 2025 macro bounds; ACM CHI 2025 critical-thinking studies).",
+    "topResearchers": "Erik Brynjolfsson, Danielle Li & Lindsey Raymond (workplace productivity & labor 'canaries'); Fabrizio Dell'Acqua, Ethan Mollick & Karim Lakhani (jagged frontier & cybernetic teammates); Daron Acemoglu (macroeconomic task limits); Katherine Kellogg, Paul Leonardi & Sarah Lebovitz (algorithmic control & invisible work); Sebastian Raisch & Sebastian Krakowski (automation-augmentation paradox).",
+    "futureTrend": "Transition from single-task randomized trials toward multi-year panel econometrics tracking entry-level talent pipeline contraction, organizational learning traps, and how AI reshapes cross-functional team sizes.",
+    "researcherRelevance": "Strongly relevant for management, economics, and HCI scholars. However, avoid running generic 'does ChatGPT speed up writing' surveys (already saturated); high-impact studies isolate downstream quality verification costs, entry-level apprenticeship loss, or multi-month organizational adaptation.",
+    "coreOutcomes": "Causal estimates of novice-expert skill compression; identification of cognitive offloading ('falling asleep at the wheel'); evidence of early-career employment contraction in AI-exposed occupations; and actionable Centaur/Cyborg team designs."
+  },
   "papers": [
     {
       "id": "brynjolfsson-generative-ai-at-work-2023",
@@ -890,6 +903,81 @@
         "Empirical Findings: Private AI investment surged by over 127% with industry producing over 90% of notable frontier models, while specialized AI graduate programs grew alongside shifting labor skill requirements.",
         "Socio-Technical Mechanisms: Highlights a widening capabilities-governance gap as closed model transparency and compute concentration outpace standardized safety evaluations and educational adaptation.",
         "Executive & Practical Implications: Requires enterprise leaders to pair rapid AI capital allocation with independent evaluation harnesses, supply-chain resilience, and domain-specific governance protocols."
+      ]
+    },
+    {
+      "id": "dellacqua-falling-asleep-at-the-wheel-2022",
+      "year": 2022,
+      "title": "Falling Asleep at the Wheel: Human/AI Collaboration in a Field Experiment on HR Recruiters",
+      "authors": "Fabrizio Dell'Acqua (Harvard Business School / SSRN)",
+      "tags": [
+        "Automation Complacency",
+        "Deskilling",
+        "Oversight Atrophy",
+        "Field Experiment"
+      ],
+      "paperUrl": "https://doi.org/10.2139/ssrn.4149818",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Working Paper",
+      "levelOfAnalysis": "Individual & Decision Quality",
+      "teaser": "Field experiment with 181 HR recruiters demonstrating that higher-accuracy AI paradoxically induces human cognitive disengagement and worse final decisions when workers stop double-checking outputs.",
+      "summaryPoints": [
+        "Core Theoretical Model: Formulates the 'falling asleep at the wheel' mechanism linking AI reliability directly to reduced human cognitive vigilance and skill atrophy.",
+        "Methodology & Sample: Randomized field experiment with 181 professional recruiters evaluating candidates with either high-quality AI, moderate-quality AI, or no AI.",
+        "Empirical Findings: Recruiters paired with very accurate AI became complacent, skipped independent evaluation, and performed worse on subtle edge cases than peers assisted by moderately flawed AI.",
+        "Socio-Technical Mechanisms: Moderate friction preserves human epistemic engagement and continuous skill learning, whereas seamless automation erodes diagnostic capability.",
+        "Executive & Practical Implications: Leaders must design intentional verification friction and periodic unassisted audits into AI workflows to prevent workforce deskilling."
+      ]
+    },
+    {
+      "id": "lee-genai-critical-thinking-chi-2025",
+      "year": 2025,
+      "title": "The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers",
+      "authors": "Hao-Ping Lee, Advait Sarkar, Lev Tankelevitch, Ian Drosos, Sean Rintel, Richard Banks, Nicholas Wilson (ACM CHI)",
+      "tags": [
+        "Critical Thinking",
+        "Cognitive Offloading",
+        "Knowledge Work",
+        "CHI"
+      ],
+      "paperUrl": "https://doi.org/10.1145/3706598.3713778",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Individual & Cognitive Process",
+      "teaser": "CHI 2025 study of 319 knowledge workers across 936 GenAI use cases finding that higher trust in AI reduces critical thinking effort and shifts cognition toward task stewardship.",
+      "summaryPoints": [
+        "Core Theoretical Model: Maps how generative AI reshapes Bloom's taxonomy of cognitive effort from knowledge retrieval/drafting toward verification and task stewardship.",
+        "Methodology & Sample: Survey and qualitative analysis of 319 knowledge workers reporting 936 real-world workplace generative AI interactions.",
+        "Empirical Findings: Higher user confidence in GenAI significantly reduces self-reported critical thinking, whereas higher self-confidence in domain expertise increases critical oversight.",
+        "Socio-Technical Mechanisms: Documents the emergence of cognitive offloading and homogenization of intellectual output when workers accept fluent drafts uncritically.",
+        "Executive & Practical Implications: Calls on organizations to train workers in active response auditing and preserve domain mastery before scaling autonomous drafting tools."
+      ]
+    },
+    {
+      "id": "brynjolfsson-canaries-in-the-coal-mine-2025",
+      "year": 2025,
+      "title": "Canaries in the Coal Mine? Six Facts about the Recent Employment Effects of Artificial Intelligence",
+      "authors": "Erik Brynjolfsson, Bharat Chandar, Ruyu Chen (Stanford Digital Economy Lab)",
+      "tags": [
+        "Talent Pipeline",
+        "Entry-Level Employment",
+        "Labor Market",
+        "Payroll Data"
+      ],
+      "paperUrl": "https://siepr.stanford.edu/publications/canaries-coal-mine-six-facts-about-recent-employment-effects-artificial-intelligence",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "University Working Paper",
+      "levelOfAnalysis": "Firm & Labor Market",
+      "teaser": "High-frequency payroll evidence showing sharp 13–16% relative employment declines among early-career workers (ages 22–25) in highly AI-exposed occupations while senior employment holds steady.",
+      "summaryPoints": [
+        "Core Theoretical Model: Tests task-substitution versus augmentation hypotheses across career tenure cohorts using high-frequency administrative payroll microdata.",
+        "Methodology & Sample: Large-scale empirical analysis of U.S. ADP payroll records tracking employment and wage adjustments across occupations by AI exposure.",
+        "Empirical Findings: Early-career workers (ages 22–25) in AI-exposed roles experienced 13–16% relative employment contractions driven by hiring freezes rather than wage cuts, while senior workers remained stable.",
+        "Socio-Technical Mechanisms: Because generative AI codifies textbook explicit knowledge more readily than tacit institutional judgment, entry-level apprenticeship rungs absorb the initial shock.",
+        "Executive & Practical Implications: Warns executives that cutting junior hiring today creates a future leadership and senior-expertise pipeline crisis within five years."
       ]
     }
   ]

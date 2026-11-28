@@ -11,7 +11,7 @@ const path = require('path');
 
 const ROOT_DIR = __dirname;
 const DATA_DIR = path.join(ROOT_DIR, 'data');
-const EXPECTED_TABS = ['adoption', 'frameworks', 'systems-innovation'];
+const EXPECTED_TABS = ['adoption', 'frameworks', 'systems-innovation', 'agentic-organizing', 'ai-governance'];
 
 console.log('🔍 Running Strategic Technology Management & Adaptation Guardrails (Nordic Forest Edition)...\n');
 
@@ -140,6 +140,40 @@ if (fs.existsSync(indexPath)) {
   }
 }
 
+// Helper: Validate Topic Relevance Today Block
+function validateTopicRelevance(rel, context) {
+  if (!rel || typeof rel !== 'object') {
+    error(`${context} missing topicRelevance object`);
+    return;
+  }
+  if (!rel.title || typeof rel.title !== 'string') {
+    error(`${context} topicRelevance missing valid title`);
+  }
+  if (!rel.verifiedUtc || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(rel.verifiedUtc)) {
+    error(`${context} topicRelevance missing valid ISO 8601 UTC timestamp in verifiedUtc`);
+  }
+  if (!rel.verifiedDate || !/^\d{4}-\d{2}-\d{2}$/.test(rel.verifiedDate)) {
+    error(`${context} topicRelevance missing valid YYYY-MM-DD verifiedDate`);
+  }
+  if (!rel.timeServer || typeof rel.timeServer !== 'string') {
+    error(`${context} topicRelevance missing timeServer reference`);
+  }
+  const requiredFields = [
+    'verdict',
+    'worthLookingInto',
+    'publishingTrends',
+    'topResearchers',
+    'futureTrend',
+    'researcherRelevance',
+    'coreOutcomes'
+  ];
+  requiredFields.forEach(field => {
+    if (!rel[field] || typeof rel[field] !== 'string' || rel[field].trim().length < 15) {
+      error(`${context} topicRelevance missing or too short field "${field}"`);
+    }
+  });
+}
+
 // 5. Validate Domain Data Files in data/
 let totalRecordCount = 0;
 
@@ -183,6 +217,9 @@ EXPECTED_TABS.forEach(tabId => {
       error(`data/${fileName} macroTrends missing required AI disclaimer text`);
     }
   }
+
+  // Topic Relevance Today Check
+  validateTopicRelevance(data.topicRelevance, `data/${fileName}`);
 
   // Item bounds check: minimum 20, maximum 50 records per tab
   const items = data.papers || [];
@@ -256,8 +293,8 @@ EXPECTED_TABS.forEach(tabId => {
 
 console.log(`\n📊 Total verified catalogue entries across all tabs: ${totalRecordCount}`);
 
-if (totalRecordCount < 60 || totalRecordCount > 150) {
-  error(`Expected total catalogue records between 60 and 150, found ${totalRecordCount}`);
+if (totalRecordCount < 100 || totalRecordCount > 250) {
+  error(`Expected total catalogue records between 100 and 250, found ${totalRecordCount}`);
 }
 
 // 6. Validate Domain-Scoped Research & GenAI Tools (data/research-tools.json)
@@ -287,6 +324,8 @@ if (!fs.existsSync(toolsFilePath)) {
       error('data/research-tools.json macroTrends missing required AI disclaimer text');
     }
 
+    validateTopicRelevance(toolsData.topicRelevance, 'data/research-tools.json');
+
     const tools = toolsData.tools || [];
     if (tools.length < 15 || tools.length > 50) {
       error(`data/research-tools.json expected between 15 and 50 tools, found ${tools.length}`);
@@ -295,7 +334,9 @@ if (!fs.existsSync(toolsFilePath)) {
     const allowedTopics = new Set([
       'Technology & AI Adoption',
       'Socio-Technical Frameworks',
-      'Systems Design & Innovation'
+      'Systems Design & Innovation',
+      'Agentic AI & Multi-Agent Organizing',
+      'AI Governance & Assurance'
     ]);
 
     tools.forEach((tool, idx) => {

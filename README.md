@@ -13,16 +13,20 @@
 
 ## 1. Tracked Academic Domains
 
-This repository provides rigorous, peer-reviewed academic tracking across three interdependent domains:
+This repository provides rigorous, peer-reviewed and authoritative research tracking across five research domains plus an active scholarly toolchain directory:
 
 1. **Technology & AI Adoption in Organizations and Workplaces (`data/adoption.json`)**  
-   *Empirical research on workforce productivity, organizational absorptive capacity, human-AI teaming, the automation-augmentation paradox, and algorithmic workplace management.*
+   *Empirical research on workforce productivity, deskilling and entry-level talent pipeline effects, human-AI teaming, the automation-augmentation paradox, and algorithmic workplace management.*
 2. **Socio-Technical & Diffusion Evaluation Frameworks (`data/frameworks.json`)**  
-   *Formal adoption, acceptance, and implementation science frameworks including TAM, TAM2, TAM3, UTAUT, UTAUT2, Rogers' Diffusion of Innovations (DOI), TOE, Socio-Technical Systems (STS) theory, CFIR, RE-AIM, and Institutional Isomorphism.*
+   *Formal adoption, acceptance, and implementation science frameworks including TAM, TAM2, TAM3, UTAUT, UTAUT2, Rogers' Diffusion of Innovations (DOI), TOE, Socio-Technical Systems (STS) theory, CFIR 2.0, RE-AIM, and dynamic delegation models.*
 3. **Bridging Engineering Systems Design, Management & Innovation (`data/systems-innovation.json`)**  
-   *Socio-technical alignment, Conway's Law, product and software modularity (Baldwin & Clark, Ulrich, Ethiraj & Levinthal), dynamic capabilities, architectural innovation, platform governance, and systems engineering trade-offs.*
-4. **Academic & GenAI Research Tools (`data/research-tools.json`)**  
-   *Active empirical, structural modeling, qualitative coding, systems engineering (DSM/ABM/MSR), and source-grounded GenAI tools regularly used by professors, postdocs, and researchers across the three domains.*
+   *Socio-technical alignment, Conway's Law, product and software modularity (Baldwin & Clark, Ulrich, Ethiraj & Levinthal), dynamic capabilities, platform governance, compute infrastructure, and open-weight versus proprietary strategy.*
+4. **Agentic AI & Multi-Agent Organizing (`data/agentic-organizing.json`)**  
+   *Bidirectional human-agent delegation, context architecture, principal-agent mechanics, multi-agent coordination topologies, bounded autonomy, and synthetic organizational simulation.*
+5. **AI Governance, Regulation & Socio-Technical Assurance (`data/ai-governance.json`)**  
+   *EU AI Act compliance, harmonized standards, white-box and external algorithmic auditing, safetywashing diagnostics, compositional agent authorization, and liability imputation.*
+6. **Academic & GenAI Research Tools (`data/research-tools.json`)**  
+   *Active empirical, structural modeling, qualitative coding, systems engineering (DSM/ABM/MSR), evaluation harness, and source-grounded GenAI tools regularly used by professors, postdocs, and researchers across all five research domains.*
 
 ---
 

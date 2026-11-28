@@ -1,0 +1,754 @@
+{
+  "tabId": "agentic-organizing",
+  "tabTitle": "Agentic AI & Multi-Agent Organizing",
+  "macroTrends": {
+    "title": "Macro Trends: From Single-Turn Copilots to Agentic Collectives",
+    "timeframe": "2023–2028 Strategic Horizon",
+    "disclaimer": "⚠️ [AI-Generated Synthesis Notice]: Macro trends are synthesized by AI from cross-sectional academic literature and empirical benchmarks for executive decision-support.",
+    "points": [
+      "Delegation Over Tool Use: Organizational computing is shifting from passive software artifacts subordinate to human agency toward goal-directed agentic systems capable of task decomposition, external tool invocation, and recursive sub-agent delegation.",
+      "Context Architecture as Organizational Design: Multi-agent collectives rely on persistent state traces, schemas, validators, and standardized protocols (such as MCP) rather than human socialization—making context engineering a core determinant of coordination cost.",
+      "Principal-Agent Risks & Bounded Autonomy: Recursive delegation introduces classic moral hazard, compounding error cascades, and scope escalation, prompting organizations to enforce bounded autonomy and external authorization chains."
+    ]
+  },
+  "topicRelevance": {
+    "title": "Topic Relevance Today: Agentic AI & Multi-Agent Organizing",
+    "verifiedDate": "2026-11-28",
+    "verifiedUtc": "2026-11-28T07:04:30Z",
+    "timeServer": "time.cloudflare.com (NTP UDP:123)",
+    "verdict": "High-priority frontier research area: enterprise deployment has pivoted from single-prompt chatbots to multi-step agentic workflows, creating urgent gaps in organizational design, principal-agent theory, and delegation accountability.",
+    "worthLookingInto": "Yes—emphatically so. As of late 2026, agentic workflows have crossed from prototype benchmarks into production software engineering, procurement, and analytical orchestration, yet management and IS theories lag behind technical capability.",
+    "publishingTrends": "Explosive growth since 2023 across NeurIPS/ICLR/ACL (architectures & benchmarks like ReAct, MetaGPT, SWE-agent, OSWorld) and rapid migration into top management and IS outlets (MIS Quarterly 2025 delegation/ecology theories; 2025–2026 arXiv economics & organizational behavior papers).",
+    "topResearchers": "Aaron Baird & Likoebe Maruping (agentic IS delegation); Joon Sung Park & Michael S. Bernstein (generative agents); John J. Horton, Gillian Hadfield & Andrew Koh (agentic economic systems); Thomas Grisold, Nicholas Berente & Stefan Seidel (human-AI ecologies); Marta Stelmaszak & Carsten Sørensen (algorithmic delegation); Shunyu Yao (ReAct/Tau-bench); Nenad Tomašev & Simon Osindero (intelligent delegation).",
+    "futureTrend": "Convergence of organizational economics (incomplete contracting, nested principal-agent models) with formal multi-agent authorization protocols, shifting research focus from 'can an agent finish a benchmark task' to 'how hybrid human-agent organizations allocate liability, authority, and verification bandwidth.'",
+    "researcherRelevance": "Highly relevant for management, IS, economics, and systems scholars. Caution: pure prompt-wrapper benchmarks age out within 6–12 months as base models absorb scaffolding; enduring academic contributions must anchor on structural mechanisms (delegation boundaries, transaction costs, liability, or field RCTs) rather than model-specific tricks.",
+    "coreOutcomes": "Formal frameworks for human-agent delegation and bounded autonomy; empirical measurement of error cascades and verification overhead in multi-agent teams; economic models of emergent agent markets; and organizational architectures that preserve human accountability."
+  },
+  "papers": [
+    {
+      "id": "baird-maruping-agentic-is-delegation-2021",
+      "year": 2021,
+      "title": "The Next Generation of Research on IS Use: A Theoretical Framework of Delegation to and from Agentic IS Artifacts",
+      "authors": "Aaron Baird, Likoebe M. Maruping (MIS Quarterly)",
+      "tags": [
+        "Agentic IS Artifacts",
+        "Delegation Theory",
+        "Human-Agent Dyad",
+        "MIS Quarterly"
+      ],
+      "paperUrl": "https://doi.org/10.25300/MISQ/2021/15882",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Individual & Dyadic System",
+      "teaser": "Foundational IS theory relaxing the assumption of passive human-controlled tools to model bidirectional delegation between human actors and autonomous agentic IS artifacts.",
+      "summaryPoints": [
+        "Core Theoretical Model: Formulates an agentic IS delegation framework specifying agent endowments, preferences, and roles alongside appraisal, distribution, and coordination mechanisms.",
+        "Methodology & Sample: Conceptual and theoretical synthesis reframing three decades of Information Systems use literature for autonomous software artifacts.",
+        "Empirical Findings: Establishes analytical propositions distinguishing passive tool use from reciprocal delegation where software can both receive and initiate task transfers.",
+        "Socio-Technical Mechanisms: Highlights how agency shifts from unilateral human control toward negotiated human-agent task boundaries and shared accountability.",
+        "Executive & Practical Implications: Guides system designers and managers to explicitly specify decision rights and handoff protocols before deploying autonomous software."
+      ]
+    },
+    {
+      "id": "yao-react-synergizing-reasoning-acting-2022",
+      "year": 2022,
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "authors": "Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, Yuan Cao (ICLR / arXiv)",
+      "tags": [
+        "ReAct",
+        "Tool Use",
+        "Reasoning Traces",
+        "Agent Architecture"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2210.03629",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Model & Task Execution",
+      "teaser": "Seminal agent architecture interleaving verbal chain-of-thought reasoning with external environment actions to mitigate hallucination and enable verifiable tool use.",
+      "summaryPoints": [
+        "Core Theoretical Model: Unifies internal reasoning traces and external API/environment actions in a single interleaved decision loop.",
+        "Methodology & Sample: Experimental evaluation across multi-hop question answering, fact verification, and interactive decision-making benchmarks.",
+        "Empirical Findings: Outperforms reasoning-only and action-only baselines by grounding intermediate reasoning steps in external retrieved observations.",
+        "Socio-Technical Mechanisms: Produces human-inspectable thought-action-observation trajectories that improve auditability and failure diagnosis.",
+        "Executive & Practical Implications: Forms the foundational loop underlying enterprise agentic copilots, retrieval agents, and auditable workflow automation."
+      ]
+    },
+    {
+      "id": "park-generative-agents-simulacra-2023",
+      "year": 2023,
+      "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+      "authors": "Joon Sung Park, Joseph C. O'Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, Michael S. Bernstein (ACM UIST)",
+      "tags": [
+        "Generative Agents",
+        "Memory Architecture",
+        "Social Simulation",
+        "Reflection"
+      ],
+      "paperUrl": "https://doi.org/10.1145/3586183.3606763",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Multi-Agent Community",
+      "teaser": "Landmark architecture equipping LLM agents with episodic memory streams, reflection, and hierarchical planning to produce coherent emergent social coordination.",
+      "summaryPoints": [
+        "Core Theoretical Model: Combines a natural-language memory stream, relevance-recency-importance retrieval, periodic reflection synthesis, and dynamic planning.",
+        "Methodology & Sample: Controlled interactive sandbox of 25 generative agents inhabiting a simulated town ('Smallville') with human-evaluated behavioral believability.",
+        "Empirical Findings: Agents spontaneously diffused invitations, coordinated group events, and formed persistent social relationships without scripted rules.",
+        "Socio-Technical Mechanisms: Demonstrates that structured memory reflection transforms stateless language models into temporally coherent organizational actors.",
+        "Executive & Practical Implications: Enables organizational researchers and managers to prototype social coordination dynamics and policy rollouts in synthetic sandboxes."
+      ]
+    },
+    {
+      "id": "horton-homo-silicus-economic-agents-2023",
+      "year": 2023,
+      "title": "Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?",
+      "authors": "John J. Horton (NBER / arXiv)",
+      "tags": [
+        "Homo Silicus",
+        "Behavioral Simulation",
+        "Experimental Economics",
+        "NBER"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2301.07543",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Working Paper",
+      "levelOfAnalysis": "Microeconomic & Experimental",
+      "teaser": "Introduces 'Homo silicus'—using LLMs endowed with endowments and constraints to simulate behavioral economic experiments and market responses before costly field trials.",
+      "summaryPoints": [
+        "Core Theoretical Model: Treats pretrained LLMs as implicit computational models of human economic decision-making conditioned on scenario endowments.",
+        "Methodology & Sample: Replicates classic behavioral economics experiments (fairness, minimum wage, status quo bias) across prompt-varied synthetic cohorts.",
+        "Empirical Findings: Synthetic agents qualitatively reproduce directional comparative statics observed in landmark human behavioral experiments.",
+        "Socio-Technical Mechanisms: Exposes both the promise of rapid experimental pre-testing and the risk of training-corpus bias distorting synthetic behavior.",
+        "Executive & Practical Implications: Gives researchers and strategy teams a low-cost simulation layer to pilot incentive designs prior to live field experiments."
+      ]
+    },
+    {
+      "id": "schick-toolformer-language-models-2023",
+      "year": 2023,
+      "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "authors": "Timo Schick, Jane Dwivedi-Yu, Roberto Dessì, Roberta Raileanu, Maria Lomeli, et al. (NeurIPS / arXiv)",
+      "tags": [
+        "Tool Use",
+        "Self-Supervised APIs",
+        "Capability Extension",
+        "Agentic Foundations"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2302.04761",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Model & Tool Interface",
+      "teaser": "Demonstrates how language models can autonomously learn when and how to invoke external calculators, search engines, and calendars via self-supervised loss filtering.",
+      "summaryPoints": [
+        "Core Theoretical Model: Self-supervised API-call learning selecting external tool invocations that strictly reduce next-token prediction loss.",
+        "Methodology & Sample: Evaluation across arithmetic, QA, multilingual, and temporal reasoning benchmarks using tool-augmented 6.7B models.",
+        "Empirical Findings: Tool-augmented compact models substantially outperform much larger unassisted models on deterministic computation and factual lookup.",
+        "Socio-Technical Mechanisms: Marks the architectural separation between probabilistic language reasoning and deterministic enterprise system execution.",
+        "Executive & Practical Implications: Underscores that enterprise agent reliability depends on binding probabilistic models to deterministic APIs."
+      ]
+    },
+    {
+      "id": "li-camel-communicative-agents-2023",
+      "year": 2023,
+      "title": "CAMEL: Communicative Agents for 'Mind' Exploration of Large Language Model Society",
+      "authors": "Guohao Li, Hasan Abed Al Kader Hammoud, Hani Itani, Dmitrii Khizbullin, Bernard Ghanem (NeurIPS / arXiv)",
+      "tags": [
+        "Role-Playing",
+        "Multi-Agent Society",
+        "Inception Prompting",
+        "Autonomous Cooperation"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2303.17760",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Multi-Agent Dyad",
+      "teaser": "Introduces role-playing with inception prompting to coordinate autonomous assistant-user agent pairs across complex coding and planning tasks.",
+      "summaryPoints": [
+        "Core Theoretical Model: Structured role-playing communication pairing an AI User (task director) and AI Assistant (executor) constrained by inception prompts.",
+        "Methodology & Sample: Large-scale conversational multi-agent datasets across software development, scientific workflows, and decision tasks.",
+        "Empirical Findings: Role specialization sustains goal alignment across multi-turn dialogues while exposing failure modes like conversation loops and role flipping.",
+        "Socio-Technical Mechanisms: Shows how explicit role boundaries stabilize autonomous division of labor without continuous human prompting.",
+        "Executive & Practical Implications: Highlights the necessity of termination criteria and supervision guards in automated multi-agent loops."
+      ]
+    },
+    {
+      "id": "shinn-reflexion-verbal-reinforcement-2023",
+      "year": 2023,
+      "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+      "authors": "Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik Narasimhan, Shunyu Yao (NeurIPS / arXiv)",
+      "tags": [
+        "Self-Reflection",
+        "Episodic Memory",
+        "Verbal Feedback",
+        "Iterative Learning"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2303.11366",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Agent Learning Loop",
+      "teaser": "Equips language agents with verbal self-reflection stored in episodic memory, improving sequential task success without updating model weights.",
+      "summaryPoints": [
+        "Core Theoretical Model: Replaces scalar gradient updates with linguistic self-critique retained across trial episodes.",
+        "Methodology & Sample: Evaluated across sequential decision-making (AlfWorld), reasoning (HotpotQA), and code synthesis (HumanEval) benchmarks.",
+        "Empirical Findings: Achieves substantial pass-rate gains over single-pass baselines by converting execution failures into actionable verbal heuristics.",
+        "Socio-Technical Mechanisms: Mirrors organizational after-action reviews, encoding tacit error lessons into inspectable natural-language context.",
+        "Executive & Practical Implications: Demonstrates how organizations can accumulate operational reliability via structured agent memory rather than costly retraining."
+      ]
+    },
+    {
+      "id": "yao-tree-of-thoughts-2023",
+      "year": 2023,
+      "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+      "authors": "Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas L. Griffiths, Yuan Cao, Karthik Narasimhan (NeurIPS / arXiv)",
+      "tags": [
+        "Deliberate Search",
+        "Planning",
+        "Backtracking",
+        "Cognitive Architecture"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2305.10601",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Agent Reasoning Process",
+      "teaser": "Generalizes linear chain-of-thought prompting into tree search with lookahead evaluation and backtracking over coherent reasoning branches.",
+      "summaryPoints": [
+        "Core Theoretical Model: Frames problem solving as heuristic tree search (BFS/DFS) over intermediate language 'thoughts' with self-evaluation.",
+        "Methodology & Sample: Controlled comparisons on combinatorial planning, creative writing coherence, and multi-step deduction puzzles.",
+        "Empirical Findings: Raises task success dramatically on problems requiring non-myopic planning and revision where greedy decoding fails.",
+        "Socio-Technical Mechanisms: Parallels dual-process cognitive theory (System 2 deliberation) through inference-time compute allocation.",
+        "Executive & Practical Implications: Clarifies cost-accuracy trade-offs when managers deploy higher-latency deliberative agents for high-stakes planning."
+      ]
+    },
+    {
+      "id": "wang-voyager-embodied-agent-2023",
+      "year": 2023,
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "authors": "Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar (TMLR / arXiv)",
+      "tags": [
+        "Skill Library",
+        "Open-Ended Learning",
+        "Curriculum",
+        "Codified Routines"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2305.16291",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Agent & Capability Accumulation",
+      "teaser": "Demonstrates lifelong skill accumulation in open-ended environments through an automatic curriculum and a growing library of verified executable routines.",
+      "summaryPoints": [
+        "Core Theoretical Model: Combines automatic task curriculum generation, iterative code-execution verification, and a persistent vector-indexed skill library.",
+        "Methodology & Sample: Open-ended exploration experiments in Minecraft measuring technology-tree progression and zero-shot generalization.",
+        "Empirical Findings: Achieves far broader exploration and faster capability compounding than memoryless or RL-only agents.",
+        "Socio-Technical Mechanisms: Operationalizes organizational routine codification—turning one-off problem solving into reusable modular competencies.",
+        "Executive & Practical Implications: Illustrates how enterprise agents gain compounding value when verified tool scripts are curated into organizational skill libraries."
+      ]
+    },
+    {
+      "id": "qian-chatdev-communicative-agents-2023",
+      "year": 2023,
+      "title": "ChatDev: Communicative Agents for Software Development",
+      "authors": "Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, et al. (ACL / arXiv)",
+      "tags": [
+        "Multi-Agent Organization",
+        "Chat Chain",
+        "Software Lifecycle",
+        "Role Division"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2307.07924",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Synthetic Organization",
+      "teaser": "Models a virtual software firm using specialized CEO, CTO, programmer, and tester agents coordinating through structured waterfall chat chains.",
+      "summaryPoints": [
+        "Core Theoretical Model: Decomposes software production into sequential atomic subtasks negotiated between dyadic role agents ('chat chains').",
+        "Methodology & Sample: End-to-end generation and debugging across dozens of standalone software specifications with automated execution checks.",
+        "Empirical Findings: Role-separated critique and self-debugging reduce syntax defects and hallucinated dependencies compared to single-agent prompting.",
+        "Socio-Technical Mechanisms: Emulates functional division of labor and peer review loops inside a purely synthetic organizational topology.",
+        "Executive & Practical Implications: Provides an experimental testbed for studying how organizational structure shapes automated software output quality."
+      ]
+    },
+    {
+      "id": "zhou-webarena-autonomous-agents-2023",
+      "year": 2023,
+      "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+      "authors": "Shuyan Zhou, Frank F. Xu, Hao Zhu, Xuhui Zhou, Robert Lo, et al. (ICLR / arXiv)",
+      "tags": [
+        "WebArena",
+        "Autonomous Agents",
+        "Benchmark",
+        "Enterprise Workflows"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2307.13854",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Task & Environment Benchmark",
+      "teaser": "Self-hosted realistic web benchmark spanning e-commerce, forums, GitLab, and CMS apps revealing sharp reliability gaps in autonomous browser agents.",
+      "summaryPoints": [
+        "Core Theoretical Model: Evaluates long-horizon autonomous execution inside stateful, multi-domain enterprise web applications.",
+        "Methodology & Sample: 812 reproducible web tasks across four realistic functional environments with programmatic state verification.",
+        "Empirical Findings: Early frontier LLM agents achieved modest end-to-end success (~14%) relative to human baselines (~78%), failing on state tracking and recovery.",
+        "Socio-Technical Mechanisms: Exposes the gap between static benchmark accuracy and open-ended execution across messy real-world software interfaces.",
+        "Executive & Practical Implications: Warns leaders against premature autonomous deployment without deterministic verification and rollback controls."
+      ]
+    },
+    {
+      "id": "hong-metagpt-multi-agent-sop-2023",
+      "year": 2023,
+      "title": "MetaGPT: Meta Programming for a Multi-Agent Collaborative Framework",
+      "authors": "Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, et al. (ICLR / arXiv)",
+      "tags": [
+        "MetaGPT",
+        "Standard Operating Procedures",
+        "Multi-Agent Systems",
+        "Hallucination Mitigation"
+      ],
+      "paperUrl": "https://doi.org/10.48550/arXiv.2308.00352",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Multi-Agent Organization",
+      "teaser": "Encodes formal human Standard Operating Procedures (SOPs) and structured intermediate artifacts into multi-agent workflows to curb cascading hallucinations.",
+      "summaryPoints": [
+        "Core Theoretical Model: Replaces unstructured agent chat with SOP-governed roles communicating via standardized intermediate documents (PRDs, API specs, designs).",
+        "Methodology & Sample: Empirical benchmarking on software generation suites (HumanEval, MBPP, SoftwareDev) against single-agent and chat-based baselines.",
+        "Empirical Findings: Structured artifact handoffs significantly improve end-to-end executability and architectural coherence over free-form agent dialogue.",
+        "Socio-Technical Mechanisms: Demonstrates that classical bureaucratic standardization (SOPs and interface contracts) stabilizes probabilistic multi-agent collectives.",
+        "Executive & Practical Implications: Shows engineering managers that multi-agent reliability relies on formal interface schemas rather than open-ended agent chatter."
+      ]
+    },
+    {
+      "id": "wu-autogen-multi-agent-conversation-2023",
+      "year": 2023,
+      "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+      "authors": "Qingyun Wu, Gagan Bansal, Jieyu Zhang, Yiran Wu, Beibin Li, et al. (arXiv)",
+      "tags": [
+        "AutoGen",
+        "Conversable Agents",
+        "Human-in-the-Loop",
+        "Orchestration"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2308.08155",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Technical Preprint",
+      "levelOfAnalysis": "Multi-Agent Infrastructure",
+      "teaser": "Proposes customizable conversable agents integrating LLMs, code execution, and human-proxy oversight nodes into programmable conversation topologies.",
+      "summaryPoints": [
+        "Core Theoretical Model: Unifies agent orchestration around standardized message-passing interfaces with configurable human-proxy intervention points.",
+        "Methodology & Sample: Case evaluations across mathematical problem solving, coding, retrieval QA, and multi-agent supply-chain decision tasks.",
+        "Empirical Findings: Programmable conversation patterns outperform static single-agent prompts by enabling dynamic tool execution and human escalation.",
+        "Socio-Technical Mechanisms: Embeds human-in-the-loop checkpoints directly as first-class participants inside multi-agent message graphs.",
+        "Executive & Practical Implications: Provides an architectural blueprint for inserting supervisory approval gates within automated enterprise workflows."
+      ]
+    },
+    {
+      "id": "liu-agentbench-evaluating-llms-2023",
+      "year": 2023,
+      "title": "AgentBench: Evaluating LLMs as Agents",
+      "authors": "Xiao Liu, Hao Yu, Hanchen Zhang, Yifan Xu, Xuanyu Lei, et al. (ICLR / arXiv)",
+      "tags": [
+        "AgentBench",
+        "Evaluation",
+        "Multi-Environment",
+        "Reasoning Limits"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2308.03688",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Agent Capability Evaluation",
+      "teaser": "Multi-environment benchmark across OS terminals, databases, knowledge graphs, and web tasks exposing steep capability drops in long-horizon agent execution.",
+      "summaryPoints": [
+        "Core Theoretical Model: Multi-dimensional agent evaluation suite spanning eight interactive environments requiring multi-turn state tracking.",
+        "Methodology & Sample: Systematic benchmarking across 25+ commercial and open-weight models on terminal, SQL, web, and game environments.",
+        "Empirical Findings: Even top models struggle with multi-turn instruction adherence, error recovery, and strict environment formatting constraints.",
+        "Socio-Technical Mechanisms: Quantifies the capability gap between commercial frontier APIs and open-weight models in interactive agency.",
+        "Executive & Practical Implications: Helps technical leaders benchmark whether agentic reliability meets production thresholds before automating back-office pipelines."
+      ]
+    },
+    {
+      "id": "wang-survey-llm-autonomous-agents-2023",
+      "year": 2023,
+      "title": "A Survey on Large Language Model based Autonomous Agents",
+      "authors": "Lei Wang, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, et al. (Frontiers of Computer Science)",
+      "tags": [
+        "Autonomous Agents",
+        "Cognitive Architecture",
+        "Profile Memory Planning",
+        "Survey"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2308.11432",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Survey",
+      "levelOfAnalysis": "Field & Architectural Taxonomy",
+      "teaser": "Comprehensive taxonomy decomposing LLM autonomous agents into four core architectural pillars: Profiling, Memory, Planning, and Action.",
+      "summaryPoints": [
+        "Core Theoretical Model: Establishes a unified four-module reference architecture (Profile, Memory, Planning, Action) for autonomous language agents.",
+        "Methodology & Sample: Systematic synthesis of over a hundred agent architectures across social simulation, engineering, and natural-science domains.",
+        "Empirical Findings: Identifies memory retrieval bottlenecks, planning horizon decay, and evaluation subjectivity as primary structural constraints.",
+        "Socio-Technical Mechanisms: Connects computational agent design directly to social-science simulation needs and human-aligned role specialization.",
+        "Executive & Practical Implications: Provides a shared vocabulary for engineering architects and behavioral researchers evaluating agentic platforms."
+      ]
+    },
+    {
+      "id": "mialon-gaia-benchmark-assistants-2023",
+      "year": 2023,
+      "title": "GAIA: A Benchmark for General AI Assistants",
+      "authors": "Grégoire Mialon, Clémentine Fourrier, Craig Swift, Thomas Wolf, Yann LeCun, Thomas Scialom (ICLR / arXiv)",
+      "tags": [
+        "GAIA",
+        "General Assistants",
+        "Tool-Use Benchmark",
+        "Reliability"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2311.12983",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Assistant Capability & Benchmarking",
+      "teaser": "Benchmark of 466 real-world multi-step tasks conceptually simple for humans (~92% accuracy) yet highly challenging for tool-augmented AI assistants.",
+      "summaryPoints": [
+        "Core Theoretical Model: Evaluates real-world assistant robustness across web retrieval, multi-modality, code execution, and unambiguous fact synthesis.",
+        "Methodology & Sample: 466 human-curated questions stratified into three complexity levels with exact unambiguous ground-truth answers.",
+        "Empirical Findings: Demonstrated a massive initial human-AI gap (~92% human vs. ~15% early GPT-4 plugins), catalyzing subsequent agentic search breakthroughs.",
+        "Socio-Technical Mechanisms: Highlights how minor tool-use or retrieval errors early in a chain invalidate entire downstream assistant outputs.",
+        "Executive & Practical Implications: Supplies a realistic readiness yardstick for knowledge-work automation beyond synthetic academic exams."
+      ]
+    },
+    {
+      "id": "xie-osworld-multimodal-agents-2024",
+      "year": 2024,
+      "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "authors": "Tianbao Xie, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, et al. (NeurIPS / arXiv)",
+      "tags": [
+        "Computer-Use Agents",
+        "OSWorld",
+        "Multimodal GUI",
+        "Workflow Automation"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2404.07972",
+      "isRecommended": false,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Desktop & Application Workflow",
+      "teaser": "Scalable real-OS benchmark across Ubuntu, Windows, and macOS apps exposing the fragility of vision-language GUI agents on cross-application office tasks.",
+      "summaryPoints": [
+        "Core Theoretical Model: Tests end-to-end computer-use agents operating directly over real operating systems, GUIs, and bash/file workflows.",
+        "Methodology & Sample: 369 open-ended multi-app tasks evaluated inside virtualized OS environments with execution-based verification.",
+        "Empirical Findings: Initial multimodal agents succeeded on ~12% of tasks versus >72% for humans, struggling with GUI grounding and multi-app context switching.",
+        "Socio-Technical Mechanisms: Demonstrates why standardized APIs (such as MCP) outperform fragile pixel-level GUI automation in enterprise settings.",
+        "Executive & Practical Implications: Guides CIOs deciding between brittle screen-scraping computer agents and API-governed agent integrations."
+      ]
+    },
+    {
+      "id": "yang-swe-agent-aci-2024",
+      "year": 2024,
+      "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "authors": "John Yang, Carlos E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik Narasimhan, Ofir Press (NeurIPS / arXiv)",
+      "tags": [
+        "Agent-Computer Interface",
+        "Software Engineering",
+        "SWE-bench",
+        "Tool Ergonomics"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2405.15793",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Agent-Interface Ergonomics",
+      "teaser": "Introduces Agent-Computer Interface (ACI) design principles, proving that tailoring command interfaces for AI agents rivals raw model scaling on real GitHub bug resolution.",
+      "summaryPoints": [
+        "Core Theoretical Model: Formulates Agent-Computer Interface (ACI) ergonomics—compact, error-tolerant file viewers, linters, and search tools designed specifically for LM agents.",
+        "Methodology & Sample: Controlled evaluations on SWE-bench and HumanEvalFix comparing generic bash shells against ACI-optimized interfaces.",
+        "Empirical Findings: Purpose-built ACI design substantially boosts autonomous GitHub issue resolution rates across identical underlying foundation models.",
+        "Socio-Technical Mechanisms: Parallels Human-Computer Interaction (HCI) ergonomics—demonstrating that interface design co-determines agent competence.",
+        "Executive & Practical Implications: Engineering platforms must optimize internal tooling, linters, and feedback loops for agentic ergonomics alongside human DevEx."
+      ]
+    },
+    {
+      "id": "yao-tau-bench-tool-agent-user-2024",
+      "year": 2024,
+      "title": "Tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "authors": "Shunyu Yao, Noah Shinn, Pedram Razavi, Karthik Narasimhan (arXiv)",
+      "tags": [
+        "Tau-bench",
+        "Policy Compliance",
+        "User-Agent Interaction",
+        "Consistency"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2406.12045",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Service & Policy Compliance",
+      "teaser": "Evaluates tool-using agents interacting dynamically with simulated users under strict domain policies, exposing severe pass^k consistency failures.",
+      "summaryPoints": [
+        "Core Theoretical Model: Measures both single-run accuracy and pass^k reliability consistency across multi-turn user dialogues and database-mutating APIs.",
+        "Methodology & Sample: Realistic retail and airline customer-service policy benchmarks pairing LLM-simulated users with stateful backend APIs.",
+        "Empirical Findings: Even top models that solve a task once fail dramatically on pass^8 consistency and violate complex compound business policies.",
+        "Socio-Technical Mechanisms: Highlights how probabilistic policy adherence degrades rapidly across repeated real-world enterprise transactions.",
+        "Executive & Practical Implications: Requires deterministic rule engines and hard policy enforcement layers outside model prompts for customer-facing agents."
+      ]
+    },
+    {
+      "id": "park-generative-agent-simulations-1000-2024",
+      "year": 2024,
+      "title": "Generative Agent Simulations of 1,000 People",
+      "authors": "Joon Sung Park, Carolyn Q. Zou, Aaron Shaw, Benjamin Mako Hill, Carrie Cai, Meredith Ringel Morris, Robb Willer, Percy Liang, Michael S. Bernstein (arXiv)",
+      "tags": [
+        "Synthetic Populations",
+        "Qualitative Interviews",
+        "Social Science",
+        "Simulation Fidelity"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2411.10109",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Population & Social System",
+      "teaser": "Constructs 1,052 interview-grounded generative agents replicating human survey and behavioral experiment responses with 85% normalized fidelity.",
+      "summaryPoints": [
+        "Core Theoretical Model: Grounds generative agent personas in two-hour qualitative life interviews rather than crude demographic stereotypes.",
+        "Methodology & Sample: 1,052 real U.S. participants interviewed and re-tested two weeks later against their interview-conditioned agent twins across surveys and behavioral games.",
+        "Empirical Findings: Interview-grounded agents replicate participants' General Social Survey responses at 85% of human test-retest consistency and outperform demographic-only personas.",
+        "Socio-Technical Mechanisms: Bridges qualitative interview depth with computational multi-agent simulation while identifying limits on nuanced behavioral games.",
+        "Executive & Practical Implications: Opens new mixed-methods research and organizational policy-testing capabilities while raising informed-consent governance questions."
+      ]
+    },
+    {
+      "id": "stelmaszak-algorithms-delegate-to-humans-2025",
+      "year": 2025,
+      "title": "When Algorithms Delegate to Humans: Exploring Human-Algorithm Interaction at Uber",
+      "authors": "Marta Stelmaszak, Mareike Möhlmann, Carsten Sørensen (MIS Quarterly)",
+      "tags": [
+        "Algorithmic Delegation",
+        "Platform Work",
+        "Human-Algorithm Interaction",
+        "MIS Quarterly"
+      ],
+      "paperUrl": "https://doi.org/10.25300/MISQ/2024/17911",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Worker & Algorithmic Platform",
+      "teaser": "Empirical MIS Quarterly study reversing traditional delegation assumptions by analyzing how autonomous platform algorithms delegate tasks, timing, and risk to human workers.",
+      "summaryPoints": [
+        "Core Theoretical Model: Extends agentic IS delegation theory by conceptualizing reversed delegation from algorithmic dispatch engines to human workers.",
+        "Methodology & Sample: Qualitative field investigation of Uber drivers navigating opaque algorithmic dispatch, pricing, and routing delegations.",
+        "Empirical Findings: Identifies how workers interpret, contest, and selectively accept algorithmic delegations under asymmetric information.",
+        "Socio-Technical Mechanisms: Shows that reversed delegation reshapes worker autonomy through temporal nudges, opacity, and automated performance feedback.",
+        "Executive & Practical Implications: Warns platform designers that opaque algorithm-to-human task routing breeds distrust and strategic gaming."
+      ]
+    },
+    {
+      "id": "grisold-guardrails-human-ai-ecologies-2025",
+      "year": 2025,
+      "title": "Guardrails for Human-AI Ecologies: Norm-Based Coordination and Design for Predictability",
+      "authors": "Thomas Grisold, Nicholas Berente, Stefan Seidel (MIS Quarterly)",
+      "tags": [
+        "Human-AI Ecologies",
+        "Norm-Based Coordination",
+        "Predictability",
+        "MIS Quarterly"
+      ],
+      "paperUrl": "https://doi.org/10.25300/MISQ/2025/18058",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Socio-Technical Ecology",
+      "teaser": "MIS Quarterly design theory combining predictive processing and social norm theory to govern unpredictable interactions in shared human-AI ecologies.",
+      "summaryPoints": [
+        "Core Theoretical Model: Integrates predictive processing theory with organizational norm theory to design predictability in co-constituted human-AI environments.",
+        "Methodology & Sample: Formal information systems design-theory development addressing unstructured multi-agent and human coordination settings.",
+        "Empirical Findings: Derives testable design principles for encoding, surfacing, monitoring, and dynamically updating coordination norms as operational guardrails.",
+        "Socio-Technical Mechanisms: Treats norms—rather than rigid rules alone—as adaptive alignment interfaces when autonomous agents act in open contexts.",
+        "Executive & Practical Implications: Gives system architects an institutional framework for governing emergent agent behavior alongside human teams."
+      ]
+    },
+    {
+      "id": "tran-multi-agent-collaboration-survey-2025",
+      "year": 2025,
+      "title": "Multi-Agent Collaboration Mechanisms: A Survey of LLMs",
+      "authors": "Khanh-Tung Tran, Dung Dao, Minh-Duong Nguyen, Quoc-Viet Pham, Barry O'Sullivan, Hoang D. Nguyen (arXiv)",
+      "tags": [
+        "Multi-Agent Collaboration",
+        "Coordination Topology",
+        "Communication Protocols",
+        "Survey"
+      ],
+      "paperUrl": "https://doi.org/10.48550/arXiv.2501.06322",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Multi-Agent System",
+      "teaser": "Synthesizes coordination structures (centralized, decentralized, hierarchical), collaboration strategies, and collective memory mechanisms in LLM multi-agent systems.",
+      "summaryPoints": [
+        "Core Theoretical Model: Categorizes multi-agent collaboration along actors, collaboration modes (cooperative/competitive/coopetitive), structures, and protocols.",
+        "Methodology & Sample: Comprehensive cross-domain review of 2023–2025 LLM multi-agent coordination architectures and communication topologies.",
+        "Empirical Findings: Compares centralized orchestrators against peer-to-peer and hierarchical topologies across token efficiency and error resilience.",
+        "Socio-Technical Mechanisms: Connects computational message-passing protocols directly to organizational coordination trade-offs.",
+        "Executive & Practical Implications: Assists technical leaders in selecting minimal-overhead multi-agent topologies matched to task interdependence."
+      ]
+    },
+    {
+      "id": "ferrag-llm-reasoning-autonomous-agents-2025",
+      "year": 2025,
+      "title": "From LLM Reasoning to Autonomous AI Agents: A Comprehensive Review",
+      "authors": "Mohamed Amine Ferrag, Norbert Tihanyi, Mérouane Debbah (arXiv)",
+      "tags": [
+        "Agent Protocols",
+        "MCP",
+        "A2A",
+        "Autonomous Agents"
+      ],
+      "paperUrl": "https://doi.org/10.48550/arXiv.2504.19678",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Agent Protocol & Ecosystem",
+      "teaser": "Consolidates reasoning mechanisms, agent-to-tool protocols (MCP), and agent-to-agent interoperability standards (A2A/ACP) shaping modern agent ecosystems.",
+      "summaryPoints": [
+        "Core Theoretical Model: Maps the architectural evolution from standalone prompt reasoning to standardized interoperable multi-agent protocol stacks.",
+        "Methodology & Sample: Comprehensive technical review of 2019–2025 reasoning benchmarks, toolkits, and emerging open agent protocols.",
+        "Empirical Findings: Documents how standardized tool and agent interfaces (MCP, A2A) reduce custom integration glue while creating new cross-agent attack surfaces.",
+        "Socio-Technical Mechanisms: Illustrates how open interoperability standards shift agent ecosystems from monolithic silos toward modular service markets.",
+        "Executive & Practical Implications: Highlights protocol standardization as a strategic architectural decision for enterprise AI platform teams."
+      ]
+    },
+    {
+      "id": "hadfield-koh-economy-of-ai-agents-2025",
+      "year": 2025,
+      "title": "An Economy of AI Agents",
+      "authors": "Gillian K. Hadfield, Andrew Koh (arXiv)",
+      "tags": [
+        "Agent Economy",
+        "Market Design",
+        "Institutional Infrastructure",
+        "Economics"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2509.01063",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Working Paper",
+      "levelOfAnalysis": "Market & Institutional Ecosystem",
+      "teaser": "Economic and legal synthesis examining how markets, contracts, verification infrastructure, and firm boundaries transform when autonomous AI agents transact at scale.",
+      "summaryPoints": [
+        "Core Theoretical Model: Models an emergent economy populated by autonomous goal-directed software agents executing transactions, negotiations, and long-horizon plans.",
+        "Methodology & Sample: Economic theory and institutional design analysis integrating contract theory, mechanism design, and computer science.",
+        "Empirical Findings: Identifies asymmetric verification, collusion risks, and identity/reputation bottlenecks as central threats to agentic markets.",
+        "Socio-Technical Mechanisms: Argues that digital economic institutions—not just model weights—determine whether agentic automation generates broad welfare.",
+        "Executive & Practical Implications: Calls on platform architects and policymakers to build verifiable agent identity, dispute-resolution, and market-design rails."
+      ]
+    },
+    {
+      "id": "rauba-multi-agent-principal-agent-2026",
+      "year": 2026,
+      "title": "Multi-Agent Systems Should be Treated as Principal-Agent Problems",
+      "authors": "Paulius Rauba, Simonas Cepenas (arXiv)",
+      "tags": [
+        "Principal-Agent Theory",
+        "Moral Hazard",
+        "Multi-Agent Governance",
+        "Incomplete Contracts"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2601.23211",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Multi-Agent & Economic Governance",
+      "teaser": "Reframes multi-agent AI engineering through microeconomic principal-agent theory, modeling asymmetric information, moral hazard, and misaligned sub-agent incentives.",
+      "summaryPoints": [
+        "Core Theoretical Model: Maps multi-agent delegation hierarchies onto formal principal-agent contracts with hidden information and hidden action.",
+        "Methodology & Sample: Theoretical synthesis bridging contract theory, mechanism design, and multi-agent AI failure taxonomies.",
+        "Empirical Findings: Shows why purely software-engineering fixes miss emergent moral hazard, specification gaming, and covert misgeneralization across sub-agents.",
+        "Socio-Technical Mechanisms: Uses incentive alignment, monitoring budgets, and contractual verification mechanisms to constrain delegated agent drift.",
+        "Executive & Practical Implications: Urges technical leaders to pair agent orchestration code with economic monitoring and audit incentives."
+      ]
+    },
+    {
+      "id": "tomasev-intelligent-ai-delegation-2026",
+      "year": 2026,
+      "title": "Intelligent AI Delegation",
+      "authors": "Nenad Tomašev, Matija Franklin, Simon Osindero (arXiv)",
+      "tags": [
+        "Intelligent Delegation",
+        "Authority Transfer",
+        "Trust Management",
+        "Accountability"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2602.11865",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Human-Agent & Multi-Agent Network",
+      "teaser": "Formulates an adaptive delegation framework treating task decomposition as dynamic transfer of authority, responsibility, role boundaries, and trust.",
+      "summaryPoints": [
+        "Core Theoretical Model: Moves beyond heuristic prompt-routing to formalize delegation across authority transfer, capability verification, accountability, and trust calibration.",
+        "Methodology & Sample: Conceptual and systems-architecture synthesis across multi-agent AI networks and human-agent collaboration settings.",
+        "Empirical Findings: Demonstrates that robust multi-step execution requires dynamic re-allocation, explicit boundary contracts, and reversible authority grants.",
+        "Socio-Technical Mechanisms: Embeds organizational concepts of accountability and role clarity directly into multi-agent task-routing protocols.",
+        "Executive & Practical Implications: Offers enterprise architects a structured protocol for scaling agentic workflows without losing operational control."
+      ]
+    },
+    {
+      "id": "liu-organizational-behavior-agentic-ai-2026",
+      "year": 2026,
+      "title": "The Organizational Behavior of Agentic AI: Context, Boundaries, and Collective Intelligence in Human-Agent Workflows",
+      "authors": "Canhui Liu (arXiv)",
+      "tags": [
+        "Organizational Behavior",
+        "Context Architecture",
+        "Contextual Transaction Costs",
+        "Collective Intelligence"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2606.30986",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Agent Collective & Organization",
+      "teaser": "Analyzes agent collectives through organization theory, showing that context architecture—rather than social trust—governs coordination and contextual transaction costs.",
+      "summaryPoints": [
+        "Core Theoretical Model: Conceptualizes agentic collectives as partial organizational analogues sustained by context architecture (memory, schemas, validators, permissions).",
+        "Methodology & Sample: Organization-theoretic analysis contrasting human-imitation multi-agent hierarchies with shared-state adaptive topologies.",
+        "Empirical Findings: Naive mimicry of human org charts often underperforms due to lossy handoffs, correlated deliberation, and high verification overhead.",
+        "Socio-Technical Mechanisms: Introduces 'contextual transaction costs' to explain when shared-state architectures outperform multi-agent message-passing hierarchies.",
+        "Executive & Practical Implications: Advises engineering leaders against blindly copying human team structures into multi-agent prompt chains."
+      ]
+    },
+    {
+      "id": "wheeler-what-to-delegate-agentic-ai-2026",
+      "year": 2026,
+      "title": "What to Delegate, What to Preserve: Human Preferences for Agentic AI Across Everyday Life and Work",
+      "authors": "Sarah Wheeler, Veronica Rammouz, Yaoyao Qian, Zexuan Liu, Mengyi Wei, Anthony Rios, Tianzhi He, Kyrie Zhou (arXiv)",
+      "tags": [
+        "Bounded Autonomy",
+        "Delegation Preferences",
+        "Human Control",
+        "Empirical Survey"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2611.09730",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Research Preprint",
+      "levelOfAnalysis": "Individual & Workplace",
+      "teaser": "Empirical scenario study mapping human delegation boundaries across work and personal domains, revealing strong preference for bounded autonomy and retained oversight.",
+      "summaryPoints": [
+        "Core Theoretical Model: Models human agentic preferences along four dimensions—execution delegation, oversight retention, collaborative leadership, and accountability.",
+        "Methodology & Sample: Scenario-based empirical survey examining willingness to delegate structured versus high-stakes judgment tasks.",
+        "Empirical Findings: Respondents embrace extensive agent execution for routine workflows but insist on retaining final sign-off and boundary control ('bounded autonomy').",
+        "Socio-Technical Mechanisms: Demonstrates that perceived loss of moral agency or accountability triggers sharp resistance to fully autonomous delegation.",
+        "Executive & Practical Implications: Guides product and HR leaders to build explicit approval checkpoints and reversible execution into workplace agents."
+      ]
+    }
+  ]
+}

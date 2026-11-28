@@ -20,6 +20,9 @@ The application separates the static user interface from content data to optimiz
 * `data/adoption.json` - Technology & AI Adoption in Organizations and Workplaces.
 * `data/frameworks.json` - Socio-Technical & Diffusion Evaluation Frameworks.
 * `data/systems-innovation.json` - Bridging Engineering Systems Design, Management & Innovation.
+* `data/agentic-organizing.json` - Agentic AI & Multi-Agent Organizing.
+* `data/ai-governance.json` - AI Governance, Regulation & Socio-Technical Assurance.
+* `data/research-tools.json` - Academic & GenAI Research Tools across all five domains.
 * `.github/workflows/deploy.yml` - Automated GitHub Pages deployment pipeline with CI test gate.
 
 ---
@@ -29,9 +32,12 @@ The application separates the static user interface from content data to optimiz
 When requested to add or update research records, execute these steps in a single turn:
 
 ### 1. Select Target Data File
-* Workplace / AI Adoption / Productivity $\rightarrow$ `data/adoption.json`
+* Workplace / AI Adoption / Deskilling / Productivity $\rightarrow$ `data/adoption.json`
 * Formal Models / TAM / UTAUT / STS / TOE / CFIR $\rightarrow$ `data/frameworks.json`
-* Systems Design / Conway's Law / Modularity / Strategy $\rightarrow$ `data/systems-innovation.json`
+* Systems Design / Conway's Law / Modularity / Compute & Platform Strategy $\rightarrow$ `data/systems-innovation.json`
+* Agentic AI / Multi-Agent Coordination / Delegation / Context Architecture $\rightarrow$ `data/agentic-organizing.json`
+* AI Governance / EU AI Act / Auditing / Safety Assurance $\rightarrow$ `data/ai-governance.json`
+* Active Academic & GenAI Research Tools $\rightarrow$ `data/research-tools.json`
 
 ### 2. Record Schema
 Append the new record using this structure:
@@ -85,8 +91,8 @@ git add . && git commit -m "feat(data): update management research catalogue and
 
 ## On-Demand Trigger Command: `/updatesite`
 When `/updatesite` is mentioned in chat while operating in `mgmt-tech-research`:
-1. **Remote Atomic Time:** Run `node scripts/get_remote_time.js` to query atomic NTP/HTTPS servers and update `data-publish-utc` in `index.html`.
-2. **Audit Existing Records:** Verify data across all 3 domain collections (`data/*.json`).
+1. **Remote Atomic Time:** Run `node scripts/get_remote_time.js` to query atomic NTP/HTTPS servers and update `data-publish-utc` in `index.html` as well as `topicRelevance.verifiedUtc` / `verifiedDate` across `data/*.json`.
+2. **Audit Existing Records:** Verify data across all domain collections (`data/*.json`).
 3. **Gap & Sourcing Analysis:** Incorporate newly recognized top-tier publications without unnecessary paraphrasing of existing content.
 4. **Guardrail Audit:** Execute `node validate.js --check-commit "<msg>"`.
 5. **Neutral Commit:** Commit with vendor-neutral description.

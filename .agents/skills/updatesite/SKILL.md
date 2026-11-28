@@ -18,10 +18,10 @@ Use this procedure whenever the user mentions `/updatesite` in chat while operat
    ```bash
    node scripts/get_remote_time.js
    ```
-   Extract the verified atomic UTC date/time and update `data-publish-utc` in `index.html`.
+   Extract the verified atomic UTC date/time and update `data-publish-utc` in `index.html` as well as `topicRelevance.verifiedUtc` and `verifiedDate` across `data/*.json`.
 
 2. **Integrity Audit (Step 1):**
-   Verify the records across `data/adoption.json`, `data/frameworks.json`, and `data/systems-innovation.json`.
+   Verify the records across `data/adoption.json`, `data/frameworks.json`, `data/systems-innovation.json`, `data/agentic-organizing.json`, `data/ai-governance.json`, and `data/research-tools.json`.
 
 3. **Gap & Sourcing Analysis (Steps 2 & 3):**
    If top scholars recently published a widely recognized breakthrough paper in one of the 3 domains, update or append to the relevant year record. Strictly avoid arbitrary paraphrasing of already valid content.

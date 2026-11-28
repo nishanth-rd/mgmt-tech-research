@@ -11,6 +11,19 @@
       "From Linear Stage-Gate to Continuous Architectural Feedback: As technological cycle times compress, static gatekeeping governance yields to dynamic platform ecosystems where standardized API boundaries and internal developer platforms act as organizational coordination mechanisms."
     ]
   },
+  "topicRelevance": {
+    "title": "Topic Relevance Today: Engineering Systems Design & Innovation",
+    "verifiedDate": "2026-11-28",
+    "verifiedUtc": "2026-11-28T07:04:30Z",
+    "timeServer": "time.cloudflare.com (NTP UDP:123)",
+    "verdict": "Strategically decisive in late 2026: Carliss Baldwin's Design Rules Vol. 2, DORA's AI platform findings, and foundation-model compute economics make modularity and strategic bottleneck control the defining engineering-strategy questions.",
+    "worthLookingInto": "Yes—highly under-exploited relative to generic AI hype. Understanding where AI commoditizes software components versus where compute, data pipelines, and internal platforms create strategic bottlenecks drives real firm survival.",
+    "publishingTrends": "Landmark 2024 synthesis in MIT Press (Baldwin Design Rules Vol. 2), empirical engineering telemetry studies (DORA 2025 State of AI-Assisted Dev), ICML/Science policy-economics studies on open foundation models and compute governance (2024), and ongoing Strategic Management Journal dynamic-capability work.",
+    "topResearchers": "Carliss Y. Baldwin & Kim B. Clark (design rules & mirroring hypothesis); Rebecca Henderson & Michael Cusumano (architectural innovation & platforms); Alan MacCormack & Steven Eppinger (software DSMs & coupling); David Teece & Gary Pisano (dynamic capabilities & innovation strategy); Annabelle Gawer & Amrit Tiwana (platform governance); Sayash Kapoor & Girish Sastry (open vs. compute infrastructure).",
+    "futureTrend": "Extending Conway's Law and DSM modularity analysis to hybrid human-agent teams, open-weight vs. proprietary foundation-model stack control, and internal developer platforms as the primary multiplier of AI engineering productivity.",
+    "researcherRelevance": "Extremely relevant for engineering management, strategy, and systems scholars. Unlike transient prompt-engineering papers, structural studies of architectural coupling, platform envelopment, and compute-supply-chain bottlenecks endure across technology waves.",
+    "coreOutcomes": "Formal rules for deciding between vertical integration and modular open interfaces; empirical proof that AI amplifies underlying platform/CI-CD health rather than fixing broken architectures; and strategic frameworks for controlling foundation-model bottlenecks."
+  },
   "papers": [
     {
       "id": "conway-how-do-committees-invent-1968",
@@ -816,6 +829,106 @@
         "Empirical Findings: Despite roughly 90% adoption, around 30% of engineers express low trust in AI-generated code; AI accelerates high-performing pipelines while compounding chaos in fragile systems.",
         "Socio-Technical Mechanisms: Identifies seven distinct team profiles and proves that small batch sizes, automated test suites, and high-quality internal developer platforms govern whether AI improves stability.",
         "Executive & Practical Implications: Engineering leaders must invest in CI/CD reliability, architectural validation, and internal platforms before scaling AI coding tools to realize durable ROI."
+      ]
+    },
+    {
+      "id": "iansiti-lakhani-competing-age-of-ai-2020",
+      "year": 2020,
+      "title": "Competing in the Age of AI: How Machine Intelligence Changes the Rules of Business",
+      "authors": "Marco Iansiti, Karim R. Lakhani (Harvard Business Review)",
+      "tags": [
+        "AI Factory",
+        "Operating Architecture",
+        "Network Effects",
+        "Platform Strategy"
+      ],
+      "paperUrl": "https://hbr.org/2020/01/competing-in-the-age-of-ai",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Executive Strategy Monograph / Article",
+      "levelOfAnalysis": "Firm & Platform Architecture",
+      "teaser": "Articulates the 'AI Factory' operating architecture, demonstrating how unified data pipelines, experimentation platforms, and algorithmic loops break traditional industrial diminishing returns.",
+      "summaryPoints": [
+        "Core Theoretical Model: Contrasts traditional siloed operating models against digital AI Factories built on unified data lakes, algorithmic cores, and continuous experimentation.",
+        "Methodology & Sample: Comparative multi-firm architectural case studies across digital-native hyperscalers and incumbent industrial corporations.",
+        "Empirical Findings: AI-centric firms bypass conventional organizational scaling bottlenecks because software-automated decision loops scale at near-zero marginal cost.",
+        "Socio-Technical Mechanisms: Highlights how collision between digital network effects and legacy departmental silos forces architectural reorganization.",
+        "Executive & Practical Implications: Requires CEOs and CTOs to re-architect core data infrastructure and modular service APIs before layering AI initiatives."
+      ]
+    },
+    {
+      "id": "vipra-korinek-market-concentration-ai-2023",
+      "year": 2023,
+      "title": "Market Concentration Implications of Foundation Models",
+      "authors": "Jai Vipra, Anton Korinek (arXiv)",
+      "tags": [
+        "Market Concentration",
+        "Compute Economics",
+        "Foundation Models",
+        "Platform Monopoly"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2311.01550",
+      "isRecommended": false,
+      "isPeerReviewed": false,
+      "publicationType": "Working Paper",
+      "levelOfAnalysis": "Industry & Market Structure",
+      "teaser": "Economic analysis of extreme fixed-cost scaling, compute bottlenecks, and data network effects driving vertical integration and oligopolistic concentration in foundation models.",
+      "summaryPoints": [
+        "Core Theoretical Model: Analyzes increasing returns to scale across frontier training compute, proprietary data feedback loops, and cloud distribution bundling.",
+        "Methodology & Sample: Industrial organization and market-structure analysis of the global foundation-model and cloud-hyperscaler ecosystem.",
+        "Empirical Findings: Identifies steep capital barriers, specialized chip scarcity, and cloud-lab vertical partnerships as structural drivers of upstream concentration.",
+        "Socio-Technical Mechanisms: Demonstrates how upstream compute control cascades into downstream platform dependency and reduced architectural diversity.",
+        "Executive & Practical Implications: Helps corporate strategists evaluate vendor lock-in risks and multi-provider abstraction layers in AI platform architectures."
+      ]
+    },
+    {
+      "id": "sastry-compute-governance-ai-2024",
+      "year": 2024,
+      "title": "Computing Power and the Governance of Artificial Intelligence",
+      "authors": "Girish Sastry, Lennart Heim, Haydn Belfield, Markus Anderljung, Miles Brundage, et al. (arXiv)",
+      "tags": [
+        "Compute Infrastructure",
+        "Hardware Bottlenecks",
+        "Supply Chain",
+        "System Governance"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2402.08797",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Policy & Systems Preprint",
+      "levelOfAnalysis": "Infrastructure & Supply Chain",
+      "teaser": "Analyzes semiconductor fabrication concentration and hyperscale compute clusters as physically quantifiable choke points for governing and allocating frontier AI systems.",
+      "summaryPoints": [
+        "Core Theoretical Model: Exploits four physical properties of compute—detectability, excludability, quantifiability, and extreme supply-chain concentration—for infrastructure governance.",
+        "Methodology & Sample: Technical, semiconductor supply-chain, and policy systems analysis across lithography, packaging, and hyperscale data centers.",
+        "Empirical Findings: Shows that extreme bottlenecks in advanced AI accelerators make compute more observable and verifiable than opaque datasets or model weights.",
+        "Socio-Technical Mechanisms: Links physical chip-cluster architecture and telemetry directly to institutional capacity allocation and safety thresholds.",
+        "Executive & Practical Implications: Highlights semiconductor and sovereign-cloud supply-chain dependencies as strategic architectural risks for technology leaders."
+      ]
+    },
+    {
+      "id": "kapoor-societal-impact-open-foundation-2024",
+      "year": 2024,
+      "title": "On the Societal Impact of Open Foundation Models",
+      "authors": "Sayash Kapoor, Rishi Bommasani, Kevin Klyman, Shayne Longpre, Ashwin Ramaswami, et al. (ICML / arXiv)",
+      "tags": [
+        "Open-Weight Models",
+        "Platform Openness",
+        "Marginal Risk",
+        "ICML"
+      ],
+      "paperUrl": "https://arxiv.org/abs/2403.07918",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Conference Paper",
+      "levelOfAnalysis": "Platform Ecosystem & Innovation",
+      "teaser": "ICML 2024 framework evaluating open-weight versus closed API foundation models across five architectural properties—innovation distribution, auditability, irreversibility, and marginal risk.",
+      "summaryPoints": [
+        "Core Theoretical Model: Formulates a marginal-risk framework comparing open-weight model releases against existing closed commercial models and web baselines.",
+        "Methodology & Sample: Cross-disciplinary systems, security, and innovation-economics evaluation authored by Stanford CRFM and partner researchers.",
+        "Empirical Findings: Open-weight models accelerate decentralized customization, scientific auditability, and competition while introducing irreversible distribution once weights are released.",
+        "Socio-Technical Mechanisms: Mirrors classic open-source versus proprietary platform trade-offs in modular software ecosystems.",
+        "Executive & Practical Implications: Gives CTOs and architects a principled lens for choosing between open-weight self-hosted stacks and closed vendor APIs."
       ]
     }
   ]

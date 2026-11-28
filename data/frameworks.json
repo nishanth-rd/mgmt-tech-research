@@ -11,6 +11,19 @@
       "Dynamic Isomorphism & Implementation Science: Contemporary technology rollouts are increasingly evaluated through implementation frameworks (CFIR 2.0, RE-AIM) that treat implementation fidelity, contextual adaptation, and sustainability as continuous feedback loops."
     ]
   },
+  "topicRelevance": {
+    "title": "Topic Relevance Today: Socio-Technical & Diffusion Frameworks",
+    "verifiedDate": "2026-11-28",
+    "verifiedUtc": "2026-11-28T07:04:30Z",
+    "timeServer": "time.cloudflare.com (NTP UDP:123)",
+    "verdict": "Foundational theoretical engine undergoing structural renewal: classic TAM/UTAUT acceptance scales are insufficient for probabilistic GenAI, driving a 2024–2026 shift toward dynamic delegation models, affordance imbrication, and socio-technical risk standards.",
+    "worthLookingInto": "Yes—essential if grounded in modern adaptations. While naive replication of 1989 TAM surveys adds little value, longitudinal delegation models, CFIR 2.0 implementation studies, and representation-theory evaluations remain central to top IS journals.",
+    "publishingTrends": "Strong shift in MIS Quarterly and ISR from static cross-sectional intention surveys toward Hidden Markov delegation dynamics (Liu et al. 2025), NIST AI 600-1/RMF risk profiles (2024), and CFIR 2.0 implementation science.",
+    "topResearchers": "Viswanath Venkatesh & Fred Davis (TAM/UTAUT foundations); Wanda Orlikowski, Paul Leonardi & Stephen Barley (practice lens & sociomaterial imbrication); Andrew Burton-Jones (effective use & representation theory); Laura Damschroder (CFIR 2.0); Junming Liu, Wei Thoo Yue & Alvin Leung (dynamic delegation HMM).",
+    "futureTrend": "Replacing binary 'adopt vs. non-adopt' dependent variables with continuous calibration metrics—measuring trust oscillation, effective use under stochastic outputs, and organizational compliance with formal socio-technical risk frameworks.",
+    "researcherRelevance": "Relevant only when researchers avoid 'questionnaire boilerplate.' Submitting another cross-sectional student survey adding 'Trust' to UTAUT for ChatGPT now faces desk-rejection in top journals; instead, study longitudinal usage trajectories, organizational institutionalization, or task-technology calibration.",
+    "coreOutcomes": "Validated multi-level evaluation instruments (individual, organizational, institutional); longitudinal feedback-loop models of trust and delegation; and auditable risk-management baselines bridging academic STS theory with enterprise standards."
+  },
   "papers": [
     {
       "id": "davis-technology-acceptance-model-1989",

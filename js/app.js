@@ -23,13 +23,17 @@ const TABS = {
   adoption: { file: './data/adoption.json' },
   frameworks: { file: './data/frameworks.json' },
   'systems-innovation': { file: './data/systems-innovation.json' },
+  'agentic-organizing': { file: './data/agentic-organizing.json' },
+  'ai-governance': { file: './data/ai-governance.json' },
   'research-tools': { file: './data/research-tools.json' }
 };
 
 const TOOL_TOPICS = [
   'Technology & AI Adoption',
   'Socio-Technical Frameworks',
-  'Systems Design & Innovation'
+  'Systems Design & Innovation',
+  'Agentic AI & Multi-Agent Organizing',
+  'AI Governance & Assurance'
 ];
 
 // Initialize Application
@@ -206,9 +210,14 @@ function renderCurrentTab() {
   const availableYears = [...new Set(items.map(p => p.year))].sort((a, b) => b - a);
   const latestYearStr = availableYears.length > 0 ? String(availableYears[0]) : '';
 
-  // 1. Render Macro Trends Card (shown if 'all' or latest year, and query matches or is empty)
-  if (data.macroTrends && (selectedYear === 'all' || selectedYear === latestYearStr) && (!currentSearch || 'macro trends theoretical shifts horizon'.includes(currentSearch))) {
-    html += renderMacroTrendsCard(data.macroTrends);
+  // 1. Render Hero Insights Grid (Macro Trends + Topic Relevance Today)
+  const showMacro = data.macroTrends && (selectedYear === 'all' || selectedYear === latestYearStr) && (!currentSearch || 'macro trends theoretical shifts horizon'.includes(currentSearch));
+  const showRel = data.topicRelevance && (selectedYear === 'all' || selectedYear === latestYearStr) && (!currentSearch || 'relevance today publishing trends researchers future outcomes worth'.includes(currentSearch));
+  if (showMacro || showRel) {
+    html += '<div class="hero-insights-grid">';
+    if (showMacro) html += renderMacroTrendsCard(data.macroTrends);
+    if (showRel) html += renderRelevanceTodayCard(data.topicRelevance);
+    html += '</div>';
   }
 
   // 2. Filter and Group Papers
@@ -260,15 +269,36 @@ function renderCurrentTab() {
 function renderMacroTrendsCard(trends) {
   return `
     <div class="macro-trends-card" data-action="macro-trends">
-      <div class="macro-trends-header">
-        <div class="macro-trends-title">
-          <span>⚡</span>
-          <span>${escapeHtml(trends.title)}</span>
+      <div>
+        <div class="macro-trends-header">
+          <div class="macro-trends-title">
+            <span>⚡</span>
+            <span>${escapeHtml(trends.title)}</span>
+          </div>
+          <span class="macro-trends-timeframe">${escapeHtml(trends.timeframe)}</span>
         </div>
-        <span class="macro-trends-timeframe">${escapeHtml(trends.timeframe)}</span>
+        <p class="macro-trends-teaser">${escapeHtml(trends.points[0])}</p>
       </div>
-      <p class="macro-trends-teaser">${escapeHtml(trends.points[0])}</p>
       <span class="click-hint">Click for full executive & theoretical synthesis &rarr;</span>
+    </div>
+  `;
+}
+
+// Render Topic Relevance Today Card
+function renderRelevanceTodayCard(rel) {
+  return `
+    <div class="relevance-today-card" data-action="topic-relevance">
+      <div>
+        <div class="macro-trends-header">
+          <div class="macro-trends-title">
+            <span>🧭</span>
+            <span>${escapeHtml(rel.title)}</span>
+          </div>
+          <span class="relevance-date-pill">Verified ${escapeHtml(rel.verifiedDate)} UTC</span>
+        </div>
+        <p class="macro-trends-teaser">${escapeHtml(rel.verdict)}</p>
+      </div>
+      <span class="click-hint">Click for publishing trends, top scholars & outcomes &rarr;</span>
     </div>
   `;
 }
@@ -317,8 +347,13 @@ function renderToolsTab(data) {
   let html = '';
   const tools = data.tools || [];
 
-  if (data.macroTrends && (selectedToolFilter === 'all' || selectedToolFilter === 'genai') && (!currentSearch || 'macro trends hybrid genai toolchain'.includes(currentSearch))) {
-    html += renderMacroTrendsCard(data.macroTrends);
+  const showMacro = data.macroTrends && (selectedToolFilter === 'all' || selectedToolFilter === 'genai') && (!currentSearch || 'macro trends hybrid genai toolchain'.includes(currentSearch));
+  const showRel = data.topicRelevance && (selectedToolFilter === 'all' || selectedToolFilter === 'genai') && (!currentSearch || 'relevance today publishing trends researchers future outcomes worth'.includes(currentSearch));
+  if (showMacro || showRel) {
+    html += '<div class="hero-insights-grid">';
+    if (showMacro) html += renderMacroTrendsCard(data.macroTrends);
+    if (showRel) html += renderRelevanceTodayCard(data.topicRelevance);
+    html += '</div>';
   }
 
   const filteredTools = tools.filter(t => {
@@ -440,6 +475,13 @@ function attachCardListeners(data) {
     });
   }
 
+  const relCard = contentContainer.querySelector('[data-action="topic-relevance"]');
+  if (relCard && data.topicRelevance) {
+    relCard.addEventListener('click', () => {
+      openRelevanceModal(data.topicRelevance);
+    });
+  }
+
   const tiles = contentContainer.querySelectorAll('.article-tile');
   tiles.forEach(tile => {
     tile.addEventListener('click', () => {
@@ -464,8 +506,39 @@ function openMacroTrendsModal(trends) {
   modalWarningBox.style.display = 'block';
   modalWarningBox.textContent = trends.disclaimer;
 
+  modalPointsList.className = 'modal-points-list';
   modalPointsList.innerHTML = trends.points.map(pt => `
     <li class="modal-point-item">${escapeHtml(pt)}</li>
+  `).join('');
+
+  modalPaperLink.style.display = 'none';
+  modalOverlay.classList.add('active');
+}
+
+// Open Topic Relevance Today Modal
+function openRelevanceModal(rel) {
+  modalTitle.textContent = rel.title;
+  modalMeta.textContent = `Verified UTC: ${rel.verifiedUtc} • Time Source: ${rel.timeServer}`;
+
+  modalWarningBox.classList.add('genai-advantage-box');
+  modalWarningBox.style.display = 'block';
+  modalWarningBox.textContent = `🕒 Time-Server Verified Assessment (${rel.verifiedDate}): ${rel.verdict}`;
+
+  const qaItems = [
+    { q: 'Is This Topic Worth Looking Into?', a: rel.worthLookingInto },
+    { q: 'What Are the Publishing Trends?', a: rel.publishingTrends },
+    { q: 'Who Are the Top / Leading Researchers?', a: rel.topResearchers },
+    { q: 'What Is the Future Trend of This Topic?', a: rel.futureTrend },
+    { q: 'Does This Topic Remain Relevant for Researchers to Pursue (and Caveats)?', a: rel.researcherRelevance },
+    { q: 'What Are the Most Potential / Critical / Core Outcomes?', a: rel.coreOutcomes }
+  ];
+
+  modalPointsList.className = 'relevance-qa-list';
+  modalPointsList.innerHTML = qaItems.map(item => `
+    <li class="relevance-qa-item">
+      <div class="relevance-qa-label">${escapeHtml(item.q)}</div>
+      <div class="relevance-qa-answer">${escapeHtml(item.a)}</div>
+    </li>
   `).join('');
 
   modalPaperLink.style.display = 'none';
@@ -485,6 +558,7 @@ function openPaperModal(item) {
     modalWarningBox.style.display = 'none';
   }
 
+  modalPointsList.className = 'modal-points-list';
   modalPointsList.innerHTML = item.summaryPoints.map(pt => {
     const parts = pt.split(': ');
     if (parts.length > 1) {
@@ -525,6 +599,7 @@ function openToolModal(tool) {
     { label: 'How Researchers Use It', value: tool.howResearchersUse }
   ];
 
+  modalPointsList.className = 'modal-points-list';
   modalPointsList.innerHTML = points.map(pt => `
     <li class="modal-point-item"><strong>${escapeHtml(pt.label)}:</strong> ${escapeHtml(pt.value)}</li>
   `).join('');

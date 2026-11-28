@@ -11,6 +11,19 @@
       "Socio-Technical Mirroring & Simulation Toolchains: Engineering systems researchers integrate Design Structure Matrix tools (Cambridge Advanced Modeller), repository miners (PyDriller, CodeScene), and agent-based simulators (Mesa, NetLogo, Vensim) to test Conway's Law and architectural modularity at scale."
     ]
   },
+  "topicRelevance": {
+    "title": "Toolchain Relevance Today: Active Scholarly & GenAI Stack",
+    "verifiedDate": "2026-11-28",
+    "verifiedUtc": "2026-11-28T07:04:30Z",
+    "timeServer": "time.cloudflare.com (NTP UDP:123)",
+    "verdict": "High methodological leverage in late 2026: researchers who combine verified causal/structural suites (Stata, R lavaan, SmartPLS 4, CAM) with source-grounded GenAI and agent-evaluation harnesses dramatically compress replication and review cycles.",
+    "worthLookingInto": "Yes—vital for research productivity and methodological rigor. Adopting modern open scholarly graphs (OpenAlex), local-LLM CAQDAS (MAXQDA Local AI), and automated eval harnesses (Inspect AI) avoids obsolete tools while satisfying journal replication standards.",
+    "publishingTrends": "Top journals (MISQ, ISR, Management Science, FAccT) increasingly require open R/Python/Stata replication packages, PRISMA-audited screening (Covidence), and standardized safety/agent evaluation suites (Inspect AI, Promptfoo).",
+    "topResearchers": "Christian Ringle & Marko Sarstedt (SmartPLS 4); Yves Rosseel (R lavaan); Nick Danks & Soumya Ray (SEMinR); Nees Jan van Eck & Ludo Waltman (VOSviewer); UK AI Security Institute (Inspect AI); John Clarkson & Cambridge EDC (Cambridge Advanced Modeller).",
+    "futureTrend": "Deeper convergence between empirical IDEs (Cursor, Claude Code), Model Context Protocol (MCP) connectors into statistical/CAQDAS tools, and reproducible AI-assisted simulation and red-teaming pipelines.",
+    "researcherRelevance": "Essential for PhD students, postdocs, and PIs—provided tools remain domain-anchored and auditable. Never use ungrounded chatbots for citations or unapproved cloud uploads for IRB-protected interview transcripts; favor OpenAlex, NotebookLM, MAXQDA Local AI, and scripted R/Python/Stata workflows.",
+    "coreOutcomes": "Zero-hallucination literature synthesis; peer-auditable SEM/econometric/ABM replication repositories; IRB-compliant qualitative acceleration; and reproducible evaluation of agentic and governance hypotheses."
+  },
   "tools": [
     {
       "id": "tool-notebooklm",
@@ -110,7 +123,9 @@
       "topicAlignment": [
         "Technology & AI Adoption",
         "Socio-Technical Frameworks",
-        "Systems Design & Innovation"
+        "Systems Design & Innovation",
+        "Agentic AI & Multi-Agent Organizing",
+        "AI Governance & Assurance"
       ],
       "isGenAI": true,
       "isRecommended": true,
@@ -156,7 +171,8 @@
       "topicAlignment": [
         "Technology & AI Adoption",
         "Systems Design & Innovation",
-        "Socio-Technical Frameworks"
+        "Socio-Technical Frameworks",
+        "Agentic AI & Multi-Agent Organizing"
       ],
       "isGenAI": true,
       "isRecommended": true,
@@ -177,7 +193,8 @@
       "name": "oTree",
       "category": "Behavioral & Field Experimentation",
       "topicAlignment": [
-        "Technology & AI Adoption"
+        "Technology & AI Adoption",
+        "Agentic AI & Multi-Agent Organizing"
       ],
       "isGenAI": false,
       "isRecommended": true,
@@ -199,7 +216,9 @@
       "category": "Participant Sampling & AI Evaluation",
       "topicAlignment": [
         "Technology & AI Adoption",
-        "Socio-Technical Frameworks"
+        "Socio-Technical Frameworks",
+        "Agentic AI & Multi-Agent Organizing",
+        "AI Governance & Assurance"
       ],
       "isGenAI": false,
       "isRecommended": true,
@@ -610,6 +629,50 @@
       "whereItHelps": "Operationalizing Teece dynamic capabilities, Cooper stage-gate R&D pipeline congestion, platform network effects, and organizational deskilling/learning delays.",
       "topicFeatures": "Causal loop and stock-flow diagramming; SyntheSim instant sensitivity testing; Monte Carlo calibration and optimization against longitudinal firm or industry time-series.",
       "howResearchersUse": "Systems strategy researchers calibrate stock-and-flow models in Vensim to explain counterintuitive dynamics—such as why rushing short-term AI deployment erodes long-term engineering capability accumulation."
+    },
+    {
+      "id": "tool-inspect-ai",
+      "name": "Inspect AI (UK AISI)",
+      "category": "Agentic & Governance Evaluation Harness",
+      "topicAlignment": [
+        "AI Governance & Assurance",
+        "Agentic AI & Multi-Agent Organizing"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://inspect.aisi.org.uk/",
+      "tags": [
+        "Safety Evaluation",
+        "Agent Benchmarks",
+        "UK AISI",
+        "Reproducible Evals"
+      ],
+      "whyUsed": "Open-source Python evaluation framework created by the UK AI Security Institute to run reproducible capability, safety, and autonomous-agent tool-use benchmarks.",
+      "whereItHelps": "Auditing agentic reliability, testing safetywashing claims (Ren et al. 2024), running sandboxed multi-step agent evaluations, and executing formal assurance checks.",
+      "topicFeatures": "Sandboxed Docker/tool-execution environments for agentic tasks; extensible solver-scorer pipelines separating task execution from grading; full transcript logging for white-box and external audit trails.",
+      "howResearchersUse": "AI governance and agentic systems researchers write standardized Python eval suites in Inspect AI to benchmark autonomous delegation failures, policy adherence, and prompt-injection resilience across open and frontier models."
+    },
+    {
+      "id": "tool-promptfoo",
+      "name": "Promptfoo (Red Teaming & Evals)",
+      "category": "Adversarial Red Teaming & Guardrail Testing",
+      "topicAlignment": [
+        "AI Governance & Assurance",
+        "Agentic AI & Multi-Agent Organizing"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://www.promptfoo.dev/docs/red-team/",
+      "tags": [
+        "GenAI",
+        "Red Teaming",
+        "NIST AI 600-1",
+        "OWASP LLM"
+      ],
+      "whyUsed": "Open-source automated red-teaming and regression-testing suite enabling researchers and governance auditors to probe LLM applications and agents for policy, privacy, and injection vulnerabilities.",
+      "whereItHelps": "Operationalizing NIST AI 600-1 / AI 100-2 adversarial risk testing, evaluating human-AI ecology guardrails, and measuring failure rates across multi-turn agent tool calls.",
+      "topicFeatures": "Automated adversarial prompt generation aligned with OWASP LLM and NIST frameworks; deterministic assertion matrices across models; local execution supporting sensitive enterprise or lab prototypes.",
+      "howResearchersUse": "Empirical AI governance and systems researchers use Promptfoo to run reproducible red-team stress tests against RAG and agentic prototypes—comparing guardrail effectiveness before and after compositional authorization controls."
     }
   ]
 }
