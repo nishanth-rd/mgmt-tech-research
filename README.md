@@ -21,6 +21,8 @@ This repository provides rigorous, peer-reviewed academic tracking across three 
    *Formal adoption, acceptance, and implementation science frameworks including TAM, TAM2, TAM3, UTAUT, UTAUT2, Rogers' Diffusion of Innovations (DOI), TOE, Socio-Technical Systems (STS) theory, CFIR, RE-AIM, and Institutional Isomorphism.*
 3. **Bridging Engineering Systems Design, Management & Innovation (`data/systems-innovation.json`)**  
    *Socio-technical alignment, Conway's Law, product and software modularity (Baldwin & Clark, Ulrich, Ethiraj & Levinthal), dynamic capabilities, architectural innovation, platform governance, and systems engineering trade-offs.*
+4. **Academic & GenAI Research Tools (`data/research-tools.json`)**  
+   *Active empirical, structural modeling, qualitative coding, systems engineering (DSM/ABM/MSR), and source-grounded GenAI tools regularly used by professors, postdocs, and researchers across the three domains.*
 
 ---
 

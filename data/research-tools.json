@@ -1,0 +1,615 @@
+{
+  "tabId": "research-tools",
+  "tabTitle": "Academic & GenAI Research Tools",
+  "macroTrends": {
+    "title": "Macro Trends: Hybrid Empirical-GenAI Research Workflows",
+    "timeframe": "2024–2026 Scholarly Toolchain",
+    "disclaimer": "⚠️ [AI-Generated Synthesis Notice]: Tool evaluations are synthesized from active academic methodological literature and scholarly software practices across Technology Adoption, Socio-Technical Frameworks, and Systems Engineering.",
+    "points": [
+      "Reproducible Causal & Structural Pipelines: Professors and postdocs pair specialized econometric and structural equation tools (Stata, R lavaan/SEMinR, SmartPLS 4, fsQCA) with Git-versioned repositories and AI coding IDEs (Cursor, Claude) to eliminate manual script fragility.",
+      "Source-Grounded Qualitative & Literature Synthesis: Rather than using unconstrained chatbots, scholars adopt source-locked workspaces (NotebookLM, Elicit, Consensus, Scite) and IRB-compliant CAQDAS suites (MAXQDA Local AI, NVivo AURA, ATLAS.ti) to accelerate coding without sacrificing construct validity.",
+      "Socio-Technical Mirroring & Simulation Toolchains: Engineering systems researchers integrate Design Structure Matrix tools (Cambridge Advanced Modeller), repository miners (PyDriller, CodeScene), and agent-based simulators (Mesa, NetLogo, Vensim) to test Conway's Law and architectural modularity at scale."
+    ]
+  },
+  "tools": [
+    {
+      "id": "tool-notebooklm",
+      "name": "NotebookLM (Gemini Notebook)",
+      "category": "GenAI Source-Grounded Analysis",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://notebook.google.com/",
+      "tags": [
+        "GenAI",
+        "Source-Grounded RAG",
+        "Qualitative Transcripts",
+        "Zero External Bleed"
+      ],
+      "whyUsed": "Provides a strictly source-grounded GenAI workspace locked exclusively to uploaded PDFs, interview transcripts, and field notes, preventing hallucinated citations during deep scholarly reading.",
+      "whereItHelps": "Early literature synthesis, cross-document comparison of theoretical constructs (e.g., TAM vs. UTAUT vs. STS), and interrogating qualitative workplace interview corpora.",
+      "topicFeatures": "Inline passage-level citations back to exact PDF pages or transcript lines; multi-document thematic synthesis across up to dozens of papers or field case dossiers; structured study guides and briefing tables.",
+      "howResearchersUse": "Professors and postdocs upload a curated corpus—such as 30 workplace AI field-study interviews or a cluster of modularity papers—and query contradictions, construct definitions, or boundary conditions as a rapid verification advantage before formal CAQDAS coding."
+    },
+    {
+      "id": "tool-elicit",
+      "name": "Elicit",
+      "category": "GenAI Systematic Review & Extraction",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://elicit.com/",
+      "tags": [
+        "GenAI",
+        "Systematic Review",
+        "Data Extraction",
+        "Evidence Matrix"
+      ],
+      "whyUsed": "Automates structured evidence extraction across large scholarly corpora, turning unstructured empirical PDFs into auditable comparison tables of methods, samples, and effect sizes.",
+      "whereItHelps": "Systematic literature reviews, meta-analyses of TAM/UTAUT/CFIR determinants, and benchmarking empirical AI productivity experiments across occupations.",
+      "topicFeatures": "Custom column extraction (e.g., sample size, identification strategy, level of analysis, moderator variables); semantic screening criteria; shared team research workspaces with traceable source quotes.",
+      "howResearchersUse": "Scholars feed inclusion-screened papers on workplace GenAI adoption or implementation science into Elicit to extract standardized study tables in hours instead of weeks, then audit every extracted cell against the linked quote."
+    },
+    {
+      "id": "tool-consensus",
+      "name": "Consensus",
+      "category": "GenAI Peer-Reviewed Evidence Search",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://consensus.app/",
+      "tags": [
+        "GenAI",
+        "Peer-Reviewed Search",
+        "Consensus Meter",
+        "Evidence Triangulation"
+      ],
+      "whyUsed": "Queries over 400 million peer-reviewed scholarly records to synthesize empirical consensus and surface conflicting findings without pulling unvetted web content.",
+      "whereItHelps": "Hypotheses formulation, checking empirical consensus on contested propositions (e.g., automation vs. augmentation effects, algorithmic control resistance, modularity-performance trade-offs), and grant background framing.",
+      "topicFeatures": "Consensus Meter quantifying supporting, mixed, and contradicting empirical evidence; study-design filters (RCT, longitudinal, meta-analysis); multi-step research agent synthesis restricted to scholarly publishers.",
+      "howResearchersUse": "Postdocs and PhD researchers run directional empirical queries during paper framing to spot whether a proposed moderator in UTAUT or dynamic capabilities already has settled empirical support or remains an unresolved gap."
+    },
+    {
+      "id": "tool-scite",
+      "name": "Scite",
+      "category": "GenAI Citation Context & Verification",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Technology & AI Adoption",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://scite.ai/",
+      "tags": [
+        "GenAI",
+        "Smart Citations",
+        "Replication Check",
+        "Literature Validation"
+      ],
+      "whyUsed": "Classifies citation contexts ('Smart Citations') to show whether subsequent papers support, contrast, or merely mention a foundational theory or empirical finding.",
+      "whereItHelps": "Critical literature reviews, peer-review rebuttal preparation, and verifying whether seminal claims (such as the Mirroring Hypothesis or jagged frontier effects) have held up in follow-up replications.",
+      "topicFeatures": "Supporting vs. contrasting citation classification; snippet-level citation statements; evidence-aware AI Assistant grounded in verified citation graphs.",
+      "howResearchersUse": "Researchers inspect Smart Citations on landmark papers (e.g., Henderson & Clark 1990, Venkatesh et al. 2003, Colfer & Baldwin 2016) to identify empirical exceptions and boundary conditions that strengthen their theoretical contribution."
+    },
+    {
+      "id": "tool-claude",
+      "name": "Claude / Claude Code (with Projects)",
+      "category": "GenAI Empirical Coding & Reasoning",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://claude.ai/",
+      "tags": [
+        "GenAI",
+        "Econometric Scripts",
+        "Codebook Prototyping",
+        "Theoretical Synthesis"
+      ],
+      "whyUsed": "High-reasoning foundation model and terminal coding agent favored by quantitative and qualitative scholars for complex statistical programming, simulation scaffolding, and abductive codebook iteration.",
+      "whereItHelps": "Writing and debugging Stata/R/Python scripts, prototyping qualitative coding trees, translating formal mathematical models into simulation code, and drafting structured referee responses.",
+      "topicFeatures": "Long-context Projects storing variable dictionaries, pre-analysis plans, and theoretical constructs; terminal-level refactoring for R `lavaan`, Python `Mesa`, and econometric pipelines; structured JSON/LaTeX table generation.",
+      "howResearchersUse": "Empirical scholars place de-identified schema specifications and regression outputs into Claude Projects to write robustness checks (e.g., staggered DiD diagnostics, clustered standard errors) and test alternative theoretical explanations."
+    },
+    {
+      "id": "tool-chatgpt-edu",
+      "name": "ChatGPT (Deep Research & Edu)",
+      "category": "GenAI Multi-Step Research & Simulation",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": true,
+      "isRecommended": false,
+      "toolUrl": "https://chatgpt.com/",
+      "tags": [
+        "GenAI",
+        "Deep Research",
+        "University Governance",
+        "Experimental Design"
+      ],
+      "whyUsed": "Provides multi-step Deep Research synthesis, Python code execution, and university-governed data privacy (ChatGPT Edu) for institutional research teams.",
+      "whereItHelps": "Cross-disciplinary scoping across management, IS, and engineering literatures, generating synthetic pilot vignettes for Qualtrics pre-testing, and exploratory data diagnostics.",
+      "topicFeatures": "Zero-training institutional data isolation in university Edu workspaces; autonomous multi-source Deep Research briefings; sandboxed Python data visualization and mathematical derivation checks.",
+      "howResearchersUse": "Research groups use ChatGPT Edu under IRB-approved protocols to stress-test survey vignette wording, check mathematical proofs in platform competition models, and generate preliminary cross-industry policy maps."
+    },
+    {
+      "id": "tool-cursor",
+      "name": "Cursor",
+      "category": "GenAI Research Code & Pipeline IDE",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Systems Design & Innovation",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": true,
+      "isRecommended": true,
+      "toolUrl": "https://cursor.com/",
+      "tags": [
+        "GenAI",
+        "AI Code Editor",
+        "Reproducible Pipelines",
+        "Repository Mining"
+      ],
+      "whyUsed": "AI-native code editor enabling quantitative economists, systems modelers, and IS researchers to author, debug, and refactor multi-file empirical and simulation repositories.",
+      "whereItHelps": "End-to-end replication packages, Git repository mining for Conway's Law studies, agent-based simulation parameter sweeps, and LaTeX manuscript automation synced with empirical tables.",
+      "topicFeatures": "Codebase-wide context indexing across R, Python, Stata, and LaTeX files; automated unit-test generation for ABM/DSM algorithms; seamless Git diff auditing for reproducible science.",
+      "howResearchersUse": "Postdocs and computational researchers run their entire empirical workflow inside Cursor—asking the IDE agent to align regression scripts with preregistration specs, optimize PyDriller mining loops, and export publication-grade figures."
+    },
+    {
+      "id": "tool-otree",
+      "name": "oTree",
+      "category": "Behavioral & Field Experimentation",
+      "topicAlignment": [
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.otree.org/",
+      "tags": [
+        "RCT",
+        "Human-AI Interaction",
+        "Experimental Economics",
+        "Python"
+      ],
+      "whyUsed": "Open-source Python framework specifically built to implement controlled interactive experiments, human-AI delegation tasks, and randomized workplace simulations.",
+      "whereItHelps": "Testing human-AI teaming dynamics (e.g., centaur vs. cyborg workflows, jagged-frontier task allocation, algorithmic advice adherence) under strict randomization.",
+      "topicFeatures": "Real-time multi-player and human-bot interaction states; seamless integration with live LLM APIs inside experimental pages; native export of millisecond-level interaction logs and Prolific completion redirects.",
+      "howResearchersUse": "Professors and behavioral lab directors program realistic decision tasks in oTree where treated participants interact with an embedded AI co-agent while control participants work unassisted, logging delegation choices and quality outcomes."
+    },
+    {
+      "id": "tool-prolific",
+      "name": "Prolific (incl. HUMAINE Evaluation)",
+      "category": "Participant Sampling & AI Evaluation",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.prolific.com/",
+      "tags": [
+        "Participant Pool",
+        "Field & Online Experiments",
+        "HUMAINE",
+        "Stratified Sampling"
+      ],
+      "whyUsed": "High-integrity academic participant recruitment platform offering verified occupational pre-screening and specialized human-in-the-loop AI evaluation infrastructure.",
+      "whereItHelps": "Recruiting domain-specific knowledge workers (software engineers, managers, healthcare staff) for randomized AI adoption experiments and validating trust/TAM/UTAUT psychometric instruments.",
+      "topicFeatures": "Granular occupational and industry demographic filters; HUMAINE human-AI evaluation tooling for measuring trust calibration, automation complacency, and model safety perceptions; attention-check and bot-prevention controls.",
+      "howResearchersUse": "Scholars connect Prolific to oTree or Qualtrics to run preregistered randomized trials on realistic writing, coding, or managerial evaluation tasks with stratified professional cohorts."
+    },
+    {
+      "id": "tool-qualtrics",
+      "name": "Qualtrics XM",
+      "category": "Survey Instrumentation & Field Vignettes",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.qualtrics.com/",
+      "tags": [
+        "Longitudinal Surveys",
+        "Vignette Experiments",
+        "TAM / UTAUT Scales",
+        "Synthetic Pre-Testing"
+      ],
+      "whyUsed": "Enterprise-grade academic survey and experimental vignette platform supporting complex randomization blocks, longitudinal panels, and institutional IRB compliance.",
+      "whereItHelps": "Administering multi-wave TAM/UTAUT/CFIR organizational readiness surveys, randomized scenario experiments on algorithmic management, and pre-deployment attitude tracking.",
+      "topicFeatures": "Embedded experimental randomization and piping; longitudinal panel contact triggers for pre/post technology rollout waves; Synthetic Personas pre-testing and AI text analytics on open-ended responses.",
+      "howResearchersUse": "Organizational researchers deploy multi-wave Qualtrics instruments at T1 (pre-rollout), T2 (30 days), and T3 (90 days) across partner firms to separate initial novelty compliance from sustained perceived usefulness."
+    },
+    {
+      "id": "tool-stata",
+      "name": "Stata (StataNow & PyStata)",
+      "category": "Econometric & Causal Inference",
+      "topicAlignment": [
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.stata.com/",
+      "tags": [
+        "Causal Inference",
+        "Staggered DiD",
+        "Panel Econometrics",
+        "PyStata"
+      ],
+      "whyUsed": "Gold-standard statistical software in management, economics, and IS for panel econometrics, staggered difference-in-differences, and reproducible causal identification.",
+      "whereItHelps": "Estimating firm-level and worker-level productivity effects of staggered AI rollouts, heterogeneity across tenure quintiles, and labor-market vacancy shifts.",
+      "topicFeatures": "Native `xthdidregress` / `didregress` for staggered adoption designs; H2OML integration for causal forest and CATE heterogeneity estimation; PyStata bridge for combining Python ML embeddings with econometric regressions.",
+      "howResearchersUse": "Applied economists write version-controlled `.do` pipelines in Stata to analyze millions of customer-support tickets, GitHub commits, or firm-level AI adoption panels with rigorous robustness checks and publication tables."
+    },
+    {
+      "id": "tool-nvivo",
+      "name": "NVivo (with AURA AI)",
+      "category": "Qualitative & Socio-Material Coding",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://lumivero.com/products/nvivo/",
+      "tags": [
+        "CAQDAS",
+        "Ethnography",
+        "Audit Trail",
+        "Epistemic Resistance"
+      ],
+      "whyUsed": "Leading qualitative data analysis suite supporting deep inductive coding, inter-coder reliability auditing, and traceable theoretical abstraction across field studies.",
+      "whereItHelps": "Analyzing semi-structured interviews and ethnographic field notes on algorithmic control, invisible knowledge work, epistemic resistance, and technology-in-practice.",
+      "topicFeatures": "Hierarchical node/code matrices aligned with Gioia methodology; inter-rater Cohen's kappa calculation across co-authors; AURA AI assistant for traceable transcript summarization and codebook suggestions requiring researcher confirmation.",
+      "howResearchersUse": "Qualitative management scholars import hundreds of transcribed interviews with clinicians, engineers, or platform workers to iteratively code first-order informant terms into second-order socio-technical mechanisms."
+    },
+    {
+      "id": "tool-maxqda",
+      "name": "MAXQDA (with AI Assist & Local AI)",
+      "category": "Privacy-Preserving Mixed-Methods CAQDAS",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.maxqda.com/",
+      "tags": [
+        "Mixed Methods",
+        "Local AI",
+        "IRB Compliance",
+        "Qualitative Coding"
+      ],
+      "whyUsed": "Mixed-methods qualitative software featuring on-device Local AI execution so researchers with strict NDA or IRB human-subjects restrictions never transmit data to cloud LLMs.",
+      "whereItHelps": "Proprietary corporate field studies of AI rollout, hospital/clinical implementation science (CFIR), and mixed-methods triangulation linking survey scores with interview codes.",
+      "topicFeatures": "Local AI routing through offline/local language models for zero-cloud-leakage coding; joint displays linking quantitative adoption metrics to qualitative quotes; automated subcode and memo synthesis.",
+      "howResearchersUse": "Field researchers studying sensitive enterprise or surgical AI deployments use MAXQDA Local AI to accelerate initial segment coding offline while maintaining full institutional ethics compliance."
+    },
+    {
+      "id": "tool-atlasti",
+      "name": "ATLAS.ti (with Intentional AI & MCP)",
+      "category": "Grounded Theory & Abductive Coding",
+      "topicAlignment": [
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": false,
+      "toolUrl": "https://atlasti.com/",
+      "tags": [
+        "Grounded Theory",
+        "Network Views",
+        "Intentional AI Coding",
+        "Affordance Analysis"
+      ],
+      "whyUsed": "Visual network-centric qualitative analysis platform ideal for building relational grounded-theory diagrams of human-material imbrication and organizational routines.",
+      "whereItHelps": "Mapping how flexible technological affordances and constraints reshape organizational roles, professional identity, and socio-technical structuration.",
+      "topicFeatures": "Intentional AI Coding steered by explicit research questions; visual code-co-occurrence network editors; Model Context Protocol (MCP) hooks allowing controlled external assistant queries within project boundaries.",
+      "howResearchersUse": "Organization theorists construct visual relational networks connecting observed workplace workarounds, artifact constraints, and managerial interventions across multi-site field data."
+    },
+    {
+      "id": "tool-smartpls",
+      "name": "SmartPLS 4",
+      "category": "Composite Structural Equation Modeling",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.smartpls.com/",
+      "tags": [
+        "PLS-SEM",
+        "TAM / UTAUT",
+        "Moderated Mediation",
+        "HTMT Validity"
+      ],
+      "whyUsed": "De facto standard for Partial Least Squares Structural Equation Modeling (PLS-SEM) in Information Systems and Technology Management journals.",
+      "whereItHelps": "Estimating complex extended TAM, UTAUT/UTAUT2, Task-Technology Fit, and DeLone & McLean IS Success models with formative constructs and interaction moderators.",
+      "topicFeatures": "Graphical path-model builder with bootstrapping, HTMT discriminant validity, VIF collinearity diagnostics, PLSpredict out-of-sample predictive power, and multi-group analysis (MGA) across adopter segments.",
+      "howResearchersUse": "IS and management scholars test multi-construct adoption hypotheses on organizational survey data, validating reliability, convergent validity, and conditional indirect effects across firm sizes or experience levels."
+    },
+    {
+      "id": "tool-r-lavaan-seminr",
+      "name": "R (lavaan & SEMinR)",
+      "category": "Open-Source CB-SEM & PLS-SEM",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://lavaan.ugent.be/",
+      "tags": [
+        "CB-SEM",
+        "PLS-SEM",
+        "Reproducible R",
+        "CFA / Measurement Invariance"
+      ],
+      "whyUsed": "Gold-standard open-source R ecosystem (`lavaan` for covariance-based SEM and `SEMinR` for composite PLS-SEM) ensuring fully scripted, peer-auditable psychometric modeling.",
+      "whereItHelps": "Confirmatory Factor Analysis (CFA), measurement invariance testing across cultures or cohorts, and rigorous CB-SEM / PLS-SEM comparison in top-tier MISQ/ISR submissions.",
+      "topicFeatures": "Full-information maximum likelihood (FIML), robust Satorra-Bentler standard errors, multi-group invariance testing (configural/metric/scalar), and syntax-driven higher-order construct specification in `SEMinR`.",
+      "howResearchersUse": "Quantitative IS methodologists publish open R Markdown / Quarto scripts using `lavaan` and `SEMinR` so reviewers can reproduce every fit index (CFI, RMSEA, SRMR) and structural path directly."
+    },
+    {
+      "id": "tool-fsqca",
+      "name": "fsQCA (Fuzzy-Set Qualitative Comparative Analysis)",
+      "category": "Configurational & Complexity Modeling",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://sites.socsci.uci.edu/~cragin/fsQCA/",
+      "tags": [
+        "fsQCA",
+        "Equifinality",
+        "TOE Framework",
+        "Asymmetric Causality"
+      ],
+      "whyUsed": "Set-theoretic configurational analysis tool that uncovers multiple equifinal combinations ('recipes') of technological, organizational, and environmental conditions driving adoption or innovation.",
+      "whereItHelps": "Evaluating TOE, CFIR, and dynamic capability frameworks where linear net-effects regressions fail to capture conjunctural causation and asymmetric barriers.",
+      "topicFeatures": "Fuzzy-set calibration (direct/indirect thresholds), truth-table minimization via Quine-McCluskey algorithm, necessity/sufficiency consistency and coverage diagnostics, and intermediate vs. parsimonious solutions.",
+      "howResearchersUse": "Innovation and IS researchers calibrate firm readiness, leadership support, and external pressure variables into fuzzy sets to identify distinct causal configurations separating high-adoption firms from laggards."
+    },
+    {
+      "id": "tool-covidence",
+      "name": "Covidence",
+      "category": "Systematic Review & Implementation Synthesis",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": false,
+      "toolUrl": "https://www.covidence.org/",
+      "tags": [
+        "PRISMA",
+        "Systematic Review",
+        "CFIR / RE-AIM",
+        "Dual Screening"
+      ],
+      "whyUsed": "Collaborative systematic-review governance platform enforcing blinded dual-reviewer screening, conflict resolution, and PRISMA flow-diagram auditing.",
+      "whereItHelps": "Multi-author systematic reviews of CFIR 2.0 / RE-AIM technology implementations, Greenhalgh-style service diffusion syntheses, and organizational AI adoption meta-reviews.",
+      "topicFeatures": "Blinded title/abstract and full-text voting; customizable PICO/CFIR data-extraction templates; automated deduplication and real-time PRISMA flow generation.",
+      "howResearchersUse": "Research teams upload deduplicated search exports from OpenAlex/Scopus into Covidence, independently screen thousands of candidate papers, and resolve inclusion disagreements before quantitative synthesis."
+    },
+    {
+      "id": "tool-vosviewer",
+      "name": "VOSviewer (with OpenAlex Integration)",
+      "category": "Bibliometric & Intellectual Landscape Mapping",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Systems Design & Innovation",
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.vosviewer.com/",
+      "tags": [
+        "Bibliometrics",
+        "Co-Citation",
+        "OpenAlex API",
+        "Keyword Evolution"
+      ],
+      "whyUsed": "Standard scientometric visualization software for mapping co-citation clusters, bibliographic coupling, and temporal keyword evolution across scholarly domains.",
+      "whereItHelps": "Tracing how diffusion paradigms (TAM -> UTAUT -> STS/CFIR) or modularity scholarship (Baldwin & Clark -> platform ecosystems) split, merge, and evolve over decades.",
+      "topicFeatures": "Direct OpenAlex API querying without legacy proprietary export bottlenecks; modularity-based clustering; time-overlay visualizations showing emerging research fronts.",
+      "howResearchersUse": "Professors and PhD students generate co-citation and term-co-occurrence maps for state-of-the-field review articles to empirically demonstrate paradigm shifts across decades."
+    },
+    {
+      "id": "tool-openalex",
+      "name": "OpenAlex",
+      "category": "Open Scholarly Graph & Citation API",
+      "topicAlignment": [
+        "Socio-Technical Frameworks",
+        "Technology & AI Adoption",
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://openalex.org/",
+      "tags": [
+        "Open Metadata",
+        "Citation Graph",
+        "Diffusion Tracking",
+        "REST API"
+      ],
+      "whyUsed": "Open, actively maintained catalog of hundreds of millions of scholarly works, authors, institutions, and citation links—replacing retired legacy graphs like Microsoft Academic Graph.",
+      "whereItHelps": "Large-scale empirical studies of scientific knowledge diffusion, institutional AI adoption trends, and reproducible systematic review retrieval.",
+      "topicFeatures": "Free high-throughput REST API and bulk snapshots; hierarchical concept/topic tagging; open-access status, funding, and institutional affiliation disambiguation.",
+      "howResearchersUse": "Computational social scientists and scientometricians query OpenAlex via Python/R or VOSviewer to construct open, replicable citation networks without paywalled database lock-in."
+    },
+    {
+      "id": "tool-cam",
+      "name": "Cambridge Advanced Modeller (CAM)",
+      "category": "Design Structure Matrix & Systems Modeling",
+      "topicAlignment": [
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://camtoolkit.eng.cam.ac.uk/",
+      "tags": [
+        "DSM",
+        "Modularity",
+        "Change Propagation",
+        "Systems Architecture"
+      ],
+      "whyUsed": "University-backed modeling environment built specifically for Design Structure Matrix (DSM), Domain Mapping Matrix (DMM), and complex engineering dependency analysis.",
+      "whereItHelps": "Operationalizing Baldwin & Clark design rules, Sosa/Eppinger/Rowles architecture-organization alignment, and engineering change-propagation risk.",
+      "topicFeatures": "Native DSM/DMM matrix editors; automated clustering and sequencing algorithms to uncover modular boundaries; Monte Carlo simulation of engineering task iteration and change cascades.",
+      "howResearchersUse": "Engineering systems researchers map component interfaces alongside team communication matrices in CAM to pinpoint architectural-organizational misalignments and calculate modularity indices."
+    },
+    {
+      "id": "tool-pydriller",
+      "name": "PyDriller",
+      "category": "Software Repository Mining",
+      "topicAlignment": [
+        "Systems Design & Innovation",
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://pydriller.readthedocs.io/",
+      "tags": [
+        "MSR",
+        "Git Mining",
+        "Mirroring Hypothesis",
+        "Python"
+      ],
+      "whyUsed": "Python framework for Mining Software Repositories (MSR) that extracts commit histories, developer collaboration graphs, and structural code evolution from Git repositories.",
+      "whereItHelps": "Testing Conway's Law and the Mirroring Hypothesis (MacCormack et al., Colfer & Baldwin), plus measuring real-world developer throughput shifts after AI coding-assistant adoption.",
+      "topicFeatures": "Commit-by-commit traversal of diffs, modified files, cyclomatic complexity (via Lizard), and author-file co-modification edges convertible into architectural DSMs.",
+      "howResearchersUse": "Empirical software and strategy researchers mine hundreds of open-source or enterprise Git repositories with PyDriller to compute propagation cost, co-change coupling, and organizational mirroring metrics."
+    },
+    {
+      "id": "tool-codescene",
+      "name": "CodeScene",
+      "category": "Behavioral Code & Conway Alignment Analytics",
+      "topicAlignment": [
+        "Systems Design & Innovation"
+      ],
+      "isGenAI": false,
+      "isRecommended": false,
+      "toolUrl": "https://codescene.com/",
+      "tags": [
+        "Conway's Law",
+        "Temporal Coupling",
+        "Architectural Health",
+        "Team Topologies"
+      ],
+      "whyUsed": "Behavioral software analytics platform combining version-control social patterns with code-health metrics to evaluate team-architecture alignment.",
+      "whereItHelps": "Diagnosing Conway's Law violations, invisible temporal coupling across microservices/modules, and technical-debt drag in AI-accelerated engineering organizations.",
+      "topicFeatures": "Automated hotspot and temporal-coupling detection across architectural components; team-ownership and knowledge-distribution maps; CodeHealth degradation tracking.",
+      "howResearchersUse": "Applied systems engineering researchers and industry-academic consortia analyze enterprise codebases with CodeScene to measure whether Inverse Conway team restructurings reduce cross-team coordination overhead."
+    },
+    {
+      "id": "tool-gephi",
+      "name": "Gephi",
+      "category": "Complex Network & Modularity Visualization",
+      "topicAlignment": [
+        "Systems Design & Innovation",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://gephi.org/",
+      "tags": [
+        "Network Analysis",
+        "Modularity Clustering",
+        "Centrality",
+        "Socio-Technical Graphs"
+      ],
+      "whyUsed": "Open-source graph exploration platform for computing network modularity, betweenness centrality, and structural holes in large socio-technical dependency graphs.",
+      "whereItHelps": "Visualizing developer-module bipartite networks, organizational communication structures, platform API ecosystems, and institutional diffusion ties.",
+      "topicFeatures": "Louvain modularity community detection; ForceAtlas2 spatialization exposing tightly coupled component clusters; dynamic timeline filtering for longitudinal network evolution.",
+      "howResearchersUse": "Scholars import adjacency matrices from CAM, PyDriller, or OpenAlex into Gephi to visually inspect structural bottlenecks, bridge actors, and architectural decoupling over product generations."
+    },
+    {
+      "id": "tool-mesa",
+      "name": "Mesa (Python ABM Framework)",
+      "category": "Agent-Based Simulation Modeling",
+      "topicAlignment": [
+        "Systems Design & Innovation",
+        "Technology & AI Adoption",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://mesa.readthedocs.io/",
+      "tags": [
+        "ABM",
+        "NK Landscapes",
+        "Python",
+        "Computational Organization"
+      ],
+      "whyUsed": "Modern Python agent-based modeling framework enabling researchers to pair computational organization and innovation simulations directly with Python ML, NetworkX, and SciPy ecosystems.",
+      "whereItHelps": "Simulating NK fitness landscapes (Ethiraj & Levinthal), platform tipping dynamics, boundedly rational technology diffusion, and LLM-agent organizational behavior.",
+      "topicFeatures": "BatchRunner parameter sweeps across thousands of seeds; NetworkX graph grids for structural mirroring simulations; direct integration with PyTorch/LLM APIs for generative agent experiments.",
+      "howResearchersUse": "Computational organization theorists formalize analytical propositions in Mesa, executing large parameter sweeps across modular vs. interdependent architectures to test emergent performance under turbulence."
+    },
+    {
+      "id": "tool-netlogo",
+      "name": "NetLogo",
+      "category": "Multi-Agent Systems Simulation",
+      "topicAlignment": [
+        "Systems Design & Innovation",
+        "Socio-Technical Frameworks"
+      ],
+      "isGenAI": false,
+      "isRecommended": true,
+      "toolUrl": "https://www.netlogo.org/",
+      "tags": [
+        "Agent-Based Modeling",
+        "Innovation Diffusion",
+        "BehaviorSpace",
+        "Complex Systems"
+      ],
+      "whyUsed": "Accessible, battle-tested multi-agent modeling environment widely standardized across complexity science, technology diffusion, and organizational simulation journals.",
+      "whereItHelps": "Modeling Rogers-style social contagion and threshold adoption cascades, decentralized exploration-exploitation trade-offs, and socio-technical resilience.",
+      "topicFeatures": "BehaviorSpace automated factorial experiment runner; real-time spatial and network state inspection; Python bridging via Netlogopy for hybrid ML-ABM workflows.",
+      "howResearchersUse": "Professors and PhD scholars build transparent, replicable BehaviorSpace simulations in NetLogo (often archived on CoMSES Net) to verify boundary conditions of diffusion and organizational adaptation theories."
+    },
+    {
+      "id": "tool-vensim",
+      "name": "Vensim",
+      "category": "System Dynamics & Feedback Modeling",
+      "topicAlignment": [
+        "Systems Design & Innovation",
+        "Technology & AI Adoption"
+      ],
+      "isGenAI": false,
+      "isRecommended": false,
+      "toolUrl": "https://vensim.com/",
+      "tags": [
+        "System Dynamics",
+        "Dynamic Capabilities",
+        "Feedback Loops",
+        "Capability Traps"
+      ],
+      "whyUsed": "Premier System Dynamics simulation environment for modeling continuous stock-and-flow accumulations, reinforcing feedback loops, and delayed capability traps.",
+      "whereItHelps": "Operationalizing Teece dynamic capabilities, Cooper stage-gate R&D pipeline congestion, platform network effects, and organizational deskilling/learning delays.",
+      "topicFeatures": "Causal loop and stock-flow diagramming; SyntheSim instant sensitivity testing; Monte Carlo calibration and optimization against longitudinal firm or industry time-series.",
+      "howResearchersUse": "Systems strategy researchers calibrate stock-and-flow models in Vensim to explain counterintuitive dynamics—such as why rushing short-term AI deployment erodes long-term engineering capability accumulation."
+    }
+  ]
+}

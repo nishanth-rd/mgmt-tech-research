@@ -3,6 +3,7 @@ let currentTab = 'adoption';
 const cache = {};
 let currentSearch = '';
 let selectedYear = 'all';
+let selectedToolFilter = 'all';
 
 // DOM Elements
 const contentContainer = document.getElementById('content-container');
@@ -21,8 +22,15 @@ const modalPaperLink = document.getElementById('modal-paper-link');
 const TABS = {
   adoption: { file: './data/adoption.json' },
   frameworks: { file: './data/frameworks.json' },
-  'systems-innovation': { file: './data/systems-innovation.json' }
+  'systems-innovation': { file: './data/systems-innovation.json' },
+  'research-tools': { file: './data/research-tools.json' }
 };
+
+const TOOL_TOPICS = [
+  'Technology & AI Adoption',
+  'Socio-Technical Frameworks',
+  'Systems Design & Innovation'
+];
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -83,6 +91,14 @@ async function loadTab(tabId) {
       if (!response.ok) throw new Error(`HTTP error ${response.status}`);
       cache[tabId] = await response.json();
     }
+
+    if (tabId === 'research-tools') {
+      selectedToolFilter = 'all';
+      renderToolFilterPills();
+      renderCurrentTab();
+      return;
+    }
+
     const items = cache[tabId].papers || [];
     const availableYears = [...new Set(items.map(p => p.year))].sort((a, b) => b - a);
     selectedYear = availableYears.length > 0 ? String(availableYears[0]) : 'all';
@@ -136,10 +152,54 @@ function renderYearPills() {
   });
 }
 
+// Render Tool Domain / GenAI Filter Bar
+function renderToolFilterPills() {
+  if (!yearFilterBar) return;
+  const data = cache['research-tools'];
+  if (!data) return;
+
+  const tools = data.tools || [];
+  const genaiCount = tools.filter(t => t.isGenAI).length;
+
+  let pillsHtml = `
+    <button class="year-pill ${selectedToolFilter === 'all' ? 'active' : ''}" data-filter="all" type="button">
+      All Tools (${tools.length})
+    </button>
+    <button class="year-pill ${selectedToolFilter === 'genai' ? 'active' : ''}" data-filter="genai" type="button">
+      ✦ GenAI Advantage (${genaiCount})
+    </button>
+  `;
+
+  TOOL_TOPICS.forEach(topic => {
+    const count = tools.filter(t => (t.topicAlignment || []).includes(topic)).length;
+    pillsHtml += `
+      <button class="year-pill ${selectedToolFilter === topic ? 'active' : ''}" data-filter="${escapeHtml(topic)}" type="button">
+        ${escapeHtml(topic)} (${count})
+      </button>
+    `;
+  });
+
+  yearFilterBar.innerHTML = pillsHtml;
+
+  yearFilterBar.querySelectorAll('.year-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      selectedToolFilter = pill.getAttribute('data-filter');
+      yearFilterBar.querySelectorAll('.year-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      renderCurrentTab();
+    });
+  });
+}
+
 // Render Current Tab
 function renderCurrentTab() {
   const data = cache[currentTab];
   if (!data) return;
+
+  if (currentTab === 'research-tools') {
+    renderToolsTab(data);
+    return;
+  }
 
   let html = '';
   const items = data.papers || [];
@@ -252,6 +312,125 @@ function renderArticleTile(item) {
   `;
 }
 
+// Render Tools Tab
+function renderToolsTab(data) {
+  let html = '';
+  const tools = data.tools || [];
+
+  if (data.macroTrends && (selectedToolFilter === 'all' || selectedToolFilter === 'genai') && (!currentSearch || 'macro trends hybrid genai toolchain'.includes(currentSearch))) {
+    html += renderMacroTrendsCard(data.macroTrends);
+  }
+
+  const filteredTools = tools.filter(t => {
+    if (selectedToolFilter === 'genai' && !t.isGenAI) return false;
+    if (selectedToolFilter !== 'all' && selectedToolFilter !== 'genai' && !(t.topicAlignment || []).includes(selectedToolFilter)) {
+      return false;
+    }
+    if (!currentSearch) return true;
+    const haystack = [
+      t.name,
+      t.category,
+      ...(t.topicAlignment || []),
+      ...(t.tags || []),
+      t.whyUsed,
+      t.whereItHelps,
+      t.topicFeatures,
+      t.howResearchersUse,
+      t.isGenAI ? 'genai generative ai' : ''
+    ].join(' ').toLowerCase();
+    return haystack.includes(currentSearch);
+  });
+
+  if (filteredTools.length === 0) {
+    html += '<div style="text-align:center; padding: 3rem 1rem; color: #7d968b;">No research tools match your search or filter.</div>';
+    contentContainer.innerHTML = html;
+    attachCardListeners(data);
+    return;
+  }
+
+  const sections = [];
+  const genaiTools = filteredTools.filter(t => t.isGenAI);
+  const nonGenaiTools = filteredTools.filter(t => !t.isGenAI);
+
+  if (genaiTools.length > 0) {
+    const genaiHeading = (selectedToolFilter !== 'all' && selectedToolFilter !== 'genai')
+      ? `GenAI Research Accelerators for ${selectedToolFilter}`
+      : 'GenAI Tools & Research Accelerators (Methodological Advantage)';
+    sections.push({ heading: genaiHeading, items: genaiTools });
+  }
+
+  if (selectedToolFilter !== 'all' && selectedToolFilter !== 'genai') {
+    if (nonGenaiTools.length > 0) {
+      sections.push({
+        heading: `${selectedToolFilter} — Empirical & Modeling Toolchains`,
+        items: nonGenaiTools
+      });
+    }
+  } else {
+    TOOL_TOPICS.forEach(topic => {
+      const topicTools = nonGenaiTools.filter(t => (t.topicAlignment || [])[0] === topic);
+      if (topicTools.length > 0) {
+        sections.push({
+          heading: `${topic} — Empirical & Modeling Toolchains`,
+          items: topicTools
+        });
+      }
+    });
+  }
+
+  sections.forEach(sec => {
+    html += `
+      <section class="year-section">
+        <h3 class="year-heading">
+          <span>${escapeHtml(sec.heading)}</span>
+          <span class="year-count-badge">${sec.items.length}</span>
+        </h3>
+        <div class="articles-stack">
+          ${sec.items.map(tool => renderToolTile(tool)).join('')}
+        </div>
+      </section>
+    `;
+  });
+
+  contentContainer.innerHTML = html;
+  attachCardListeners(data);
+}
+
+// Render Individual Research Tool Tile
+function renderToolTile(tool) {
+  let badgeHtml = '';
+  if (tool.isGenAI) {
+    badgeHtml = '<span class="badge-genai">✦ GenAI Advantage</span>';
+  } else if (tool.isRecommended) {
+    badgeHtml = '<span class="badge-recommended">★ Standard Research Tool</span>';
+  }
+
+  const topicPills = (tool.topicAlignment || [])
+    .map(topic => `<span class="tag-level">${escapeHtml(topic)}</span>`)
+    .join('');
+
+  return `
+    <div class="article-tile" data-item-id="${escapeHtml(tool.id)}">
+      <div class="article-tile-header">
+        <h4 class="article-title">${escapeHtml(tool.name)}</h4>
+        ${badgeHtml}
+      </div>
+      <div class="article-authors">${escapeHtml(tool.category)}</div>
+      <p class="article-teaser">${escapeHtml(tool.whyUsed)}</p>
+      <p class="tool-preview-line"><strong>Where it helps:</strong> ${escapeHtml(tool.whereItHelps)}</p>
+      <div class="article-footer">
+        <div class="tags-list">
+          ${topicPills}
+          ${tool.tags.map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join('')}
+        </div>
+        <a href="${escapeHtml(tool.toolUrl)}" class="tile-link-out" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+          Open Tool Portal &nearr;
+        </a>
+      </div>
+    </div>
+  `;
+}
+
 // Attach Event Listeners
 function attachCardListeners(data) {
   const macroCard = contentContainer.querySelector('[data-action="macro-trends"]');
@@ -265,8 +444,13 @@ function attachCardListeners(data) {
   tiles.forEach(tile => {
     tile.addEventListener('click', () => {
       const id = tile.getAttribute('data-item-id');
-      const item = (data.papers || []).find(p => p.id === id);
-      if (item) openPaperModal(item);
+      if (currentTab === 'research-tools') {
+        const tool = (data.tools || []).find(t => t.id === id);
+        if (tool) openToolModal(tool);
+      } else {
+        const item = (data.papers || []).find(p => p.id === id);
+        if (item) openPaperModal(item);
+      }
     });
   });
 }
@@ -276,6 +460,7 @@ function openMacroTrendsModal(trends) {
   modalTitle.textContent = trends.title;
   modalMeta.textContent = `Horizon: ${trends.timeframe}`;
   
+  modalWarningBox.classList.remove('genai-advantage-box');
   modalWarningBox.style.display = 'block';
   modalWarningBox.textContent = trends.disclaimer;
 
@@ -292,6 +477,7 @@ function openPaperModal(item) {
   modalTitle.textContent = item.title;
   modalMeta.textContent = `${item.year} • ${item.authors || ''} • Level: ${item.levelOfAnalysis || 'General'}`;
 
+  modalWarningBox.classList.remove('genai-advantage-box');
   if (item.isPeerReviewed === false) {
     modalWarningBox.style.display = 'block';
     modalWarningBox.textContent = `⚠️ Non-Peer-Reviewed Material: This publication is a credible ${item.publicationType || 'industry white paper or university research report'}. It has not undergone formal academic peer review.`;
@@ -311,6 +497,42 @@ function openPaperModal(item) {
     modalPaperLink.style.display = 'inline-flex';
     modalPaperLink.href = item.paperUrl;
     modalPaperLink.textContent = 'Read Original Publication / Document ↗';
+  } else {
+    modalPaperLink.style.display = 'none';
+  }
+
+  modalOverlay.classList.add('active');
+}
+
+// Open Research Tool Modal
+function openToolModal(tool) {
+  modalTitle.textContent = tool.name;
+  modalMeta.textContent = `${tool.category} • Domains: ${(tool.topicAlignment || []).join(' / ')}`;
+
+  if (tool.isGenAI) {
+    modalWarningBox.classList.add('genai-advantage-box');
+    modalWarningBox.style.display = 'block';
+    modalWarningBox.textContent = '✦ GenAI Research Accelerator: Used by professors, postdocs, and PhD scholars alongside human verification to accelerate synthesis, coding, and empirical modeling.';
+  } else {
+    modalWarningBox.classList.remove('genai-advantage-box');
+    modalWarningBox.style.display = 'none';
+  }
+
+  const points = [
+    { label: 'Why It Is Used', value: tool.whyUsed },
+    { label: 'Where It Helps', value: tool.whereItHelps },
+    { label: 'Features Connected to the Topic', value: tool.topicFeatures },
+    { label: 'How Researchers Use It', value: tool.howResearchersUse }
+  ];
+
+  modalPointsList.innerHTML = points.map(pt => `
+    <li class="modal-point-item"><strong>${escapeHtml(pt.label)}:</strong> ${escapeHtml(pt.value)}</li>
+  `).join('');
+
+  if (tool.toolUrl) {
+    modalPaperLink.style.display = 'inline-flex';
+    modalPaperLink.href = tool.toolUrl;
+    modalPaperLink.textContent = 'Open Official Tool Portal ↗';
   } else {
     modalPaperLink.style.display = 'none';
   }

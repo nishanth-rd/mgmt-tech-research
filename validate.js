@@ -260,6 +260,84 @@ if (totalRecordCount < 60 || totalRecordCount > 150) {
   error(`Expected total catalogue records between 60 and 150, found ${totalRecordCount}`);
 }
 
+// 6. Validate Domain-Scoped Research & GenAI Tools (data/research-tools.json)
+const toolsFilePath = path.join(DATA_DIR, 'research-tools.json');
+if (!fs.existsSync(toolsFilePath)) {
+  error('Missing required data file: data/research-tools.json');
+} else {
+  let toolsData;
+  try {
+    const rawTools = fs.readFileSync(toolsFilePath, 'utf-8');
+    checkProhibitedTokens(rawTools, 'data/research-tools.json');
+    toolsData = JSON.parse(rawTools);
+  } catch (e) {
+    error(`Failed to parse JSON in data/research-tools.json: ${e.message}`);
+  }
+
+  if (toolsData) {
+    if (toolsData.tabId !== 'research-tools') {
+      error(`data/research-tools.json has mismatched tabId "${toolsData.tabId}", expected "research-tools"`);
+    }
+    if (!toolsData.tabTitle || typeof toolsData.tabTitle !== 'string') {
+      error('data/research-tools.json missing valid tabTitle');
+    }
+    if (!toolsData.macroTrends || !toolsData.macroTrends.title || !Array.isArray(toolsData.macroTrends.points) || toolsData.macroTrends.points.length === 0) {
+      error('data/research-tools.json missing complete macroTrends object');
+    } else if (!toolsData.macroTrends.disclaimer || !toolsData.macroTrends.disclaimer.includes('AI-Generated')) {
+      error('data/research-tools.json macroTrends missing required AI disclaimer text');
+    }
+
+    const tools = toolsData.tools || [];
+    if (tools.length < 15 || tools.length > 50) {
+      error(`data/research-tools.json expected between 15 and 50 tools, found ${tools.length}`);
+    }
+
+    const allowedTopics = new Set([
+      'Technology & AI Adoption',
+      'Socio-Technical Frameworks',
+      'Systems Design & Innovation'
+    ]);
+
+    tools.forEach((tool, idx) => {
+      const prefix = `data/research-tools.json item #${idx + 1} (${tool.id || 'unknown'})`;
+      if (!tool.id || typeof tool.id !== 'string') {
+        error(`${prefix}: missing valid id`);
+      } else {
+        if (globalIds.has(tool.id)) {
+          error(`${prefix}: duplicate id detected "${tool.id}" across catalogue`);
+        }
+        globalIds.add(tool.id);
+      }
+      if (!tool.name || tool.name.trim().length < 2) {
+        error(`${prefix}: name too short or missing`);
+      }
+      if (!tool.category || typeof tool.category !== 'string') {
+        error(`${prefix}: missing valid category`);
+      }
+      if (!Array.isArray(tool.topicAlignment) || tool.topicAlignment.length === 0 || tool.topicAlignment.some(t => !allowedTopics.has(t))) {
+        error(`${prefix}: topicAlignment must contain valid domain topic names`);
+      }
+      if (typeof tool.isGenAI !== 'boolean') {
+        error(`${prefix}: missing boolean property isGenAI`);
+      }
+      if (!tool.toolUrl || !tool.toolUrl.startsWith('https://')) {
+        error(`${prefix}: toolUrl must be a secure https:// link, found: "${tool.toolUrl}"`);
+      }
+      if (!Array.isArray(tool.tags) || tool.tags.length === 0) {
+        error(`${prefix}: missing tags array`);
+      }
+      ['whyUsed', 'whereItHelps', 'topicFeatures', 'howResearchersUse'].forEach(field => {
+        if (!tool[field] || typeof tool[field] !== 'string' || tool[field].trim().length < 15) {
+          error(`${prefix}: missing or too short field "${field}"`);
+        }
+      });
+    });
+
+    const genAiCount = tools.filter(t => t.isGenAI).length;
+    success(`data/research-tools.json passed all validations (${tools.length} active tools: ${genAiCount} GenAI research accelerators, ${tools.length - genAiCount} empirical/modeling tools).`);
+  }
+}
+
 if (hasErrors) {
   console.error('\n❌ Guardrail verification FAILED. Please correct errors before committing.\n');
   process.exit(1);

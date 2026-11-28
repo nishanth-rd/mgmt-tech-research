@@ -390,6 +390,39 @@ body {
   white-space: nowrap;
 }
 
+/* GenAI Research Tool Amber Badge */
+.badge-genai {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #f1d08a;
+  background: rgba(216, 177, 104, 0.15);
+  border: 1px solid rgba(216, 177, 104, 0.4);
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.tool-preview-line {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
+.tool-preview-line strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.ai-warning-box.genai-advantage-box {
+  background: rgba(82, 183, 136, 0.12);
+  border-color: rgba(82, 183, 136, 0.35);
+  color: #95d5b2;
+}
+
 .article-authors {
   font-size: 0.83rem;
   color: var(--text-muted);
