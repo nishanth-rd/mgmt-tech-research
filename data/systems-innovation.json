@@ -767,6 +767,56 @@
         "Scenario Planning Integration: Demonstrates how to link technology roadmaps with alternative macro-economic and regulatory scenarios to evaluate system architectural resilience.",
         "Global Corporate Standard: Deployed across 300+ multinational engineering corporations to align multi-billion-dollar R&D capital investments with long-term strategic visions."
       ]
+    },
+    {
+      "id": "baldwin-design-rules-vol2-organizations-2024",
+      "year": 2024,
+      "title": "Design Rules, Volume 2: How Technology Shapes Organizations",
+      "authors": "Carliss Y. Baldwin (MIT Press)",
+      "tags": [
+        "Design Rules",
+        "Complementarity",
+        "Platform Ecosystems",
+        "Strategic Bottlenecks"
+      ],
+      "paperUrl": "https://doi.org/10.7551/mitpress/7374.001.0001",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Monograph",
+      "levelOfAnalysis": "System, Firm & Ecosystem",
+      "teaser": "Landmark sequel generalizing design-rule modularity theory across flow processes and digital platforms, showing how task networks and complementarities dictate firm boundaries and strategic bottlenecks.",
+      "summaryPoints": [
+        "Core Theoretical Model: Formalizes the economy as networks of technical tasks and transfers, linking strong versus weak complementarity along a spectrum to unified hierarchies versus modular ecosystems.",
+        "Methodology & Sample: Historical and structural economic synthesis spanning industrial flow production, layered modular software systems, open-source communities, and multi-sided digital platforms.",
+        "Empirical Findings: Distinguishes value creation (resolving technical bottlenecks) from value capture (controlling unique strategic bottlenecks) and maps ecosystem maneuvering such as envelopment and bypassing.",
+        "Socio-Technical Mechanisms: Explains how transaction-free zones and distributed supermodular complementarity allow independent actors to coordinate innovation without traditional employment hierarchies.",
+        "Executive & Practical Implications: Equips chief architects and strategists with formal tools to identify where vertical integration is technically mandatory versus where open modular interfaces create real options."
+      ]
+    },
+    {
+      "id": "dora-state-of-ai-assisted-dev-2025",
+      "year": 2025,
+      "title": "State of AI-Assisted Software Development 2025: The Amplifier Effect and Internal Platforms",
+      "authors": "DORA (DevOps Research and Assessment)",
+      "tags": [
+        "DORA",
+        "Platform Engineering",
+        "Delivery Stability",
+        "AI Capabilities Model"
+      ],
+      "paperUrl": "https://dora.dev",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Industry Engineering Research Report",
+      "levelOfAnalysis": "Engineering Team & Platform",
+      "teaser": "Global empirical engineering study of nearly 5,000 professionals demonstrating that AI acts as an amplifier of existing engineering system health rather than a standalone fix for delivery bottlenecks.",
+      "summaryPoints": [
+        "Core Theoretical Model: Formulates the DORA AI Capabilities Model linking AI coding adoption to software delivery throughput, stability, and internal developer platform maturity.",
+        "Methodology & Sample: Mixed-methods empirical investigation combining survey responses from nearly 5,000 global IT professionals with over 100 hours of qualitative interviews.",
+        "Empirical Findings: Despite roughly 90% adoption, around 30% of engineers express low trust in AI-generated code; AI accelerates high-performing pipelines while compounding chaos in fragile systems.",
+        "Socio-Technical Mechanisms: Identifies seven distinct team profiles and proves that small batch sizes, automated test suites, and high-quality internal developer platforms govern whether AI improves stability.",
+        "Executive & Practical Implications: Engineering leaders must invest in CI/CD reliability, architectural validation, and internal platforms before scaling AI coding tools to realize durable ROI."
+      ]
     }
   ]
 }

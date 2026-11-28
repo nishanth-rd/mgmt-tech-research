@@ -766,6 +766,131 @@
         "Total Cost of Ownership (TCO): Warns that inference token costs and continuous evaluation harness maintenance frequently exceed initial vendor license budgets.",
         "Implementation Phasing: Prescribes a three-horizon rollout roadmap: Everyday AI (productivity apps), Game-Changing AI (custom workflows), and Frontier AI (autonomous agents)."
       ]
+    },
+    {
+      "id": "dellacqua-cybernetic-teammate-2026",
+      "year": 2026,
+      "title": "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise",
+      "authors": "Fabrizio Dell'Acqua, Charles Ayoubi, Hila Lifshitz, Raffaella Sadun, Ethan Mollick, et al. (Organization Science)",
+      "tags": [
+        "Human-AI Teaming",
+        "Generative AI",
+        "Cross-Functional Expertise",
+        "Field Experiment"
+      ],
+      "paperUrl": "https://doi.org/10.1287/orsc.2025.20702",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Individual & Team",
+      "teaser": "Large-scale preregistered field experiment across R&D and commercial professionals demonstrating that generative AI enables solo workers to match human team performance while bridging functional expertise silos.",
+      "summaryPoints": [
+        "Core Theoretical Model: Conceptualizes generative AI as a 'cybernetic teammate' capable of reshaping team performance, cross-functional knowledge sharing, and social engagement in collaborative work.",
+        "Methodology & Sample: Preregistered field experiment with 776 professionals across R&D and commercial functions executing real new-product development challenges across individual and team conditions.",
+        "Empirical Findings: Solo individuals equipped with AI matched the overall solution quality of two-person human teams, while teams with AI achieved the highest likelihood of producing top-decile concepts.",
+        "Socio-Technical Mechanisms: AI dismantled functional silos—enabling technical specialists and commercial staff to produce balanced proposals—and elicited positive emotional engagement comparable to human teammates.",
+        "Executive & Practical Implications: Organizations can redesign cross-functional workflows around smaller AI-augmented units while reserving human judgment for downstream evaluative selection."
+      ]
+    },
+    {
+      "id": "cui-genai-high-skilled-work-2026",
+      "year": 2026,
+      "title": "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers",
+      "authors": "Zheyuan Cui, Mert Demirer, Sonia Jaffe, Leon Musolff, Sida Peng, Tobias Salz (Management Science)",
+      "tags": [
+        "Software Engineering",
+        "Generative AI",
+        "Coding Assistants",
+        "Randomized Controlled Trial"
+      ],
+      "paperUrl": "https://doi.org/10.1287/mnsc.2025.00535",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Individual & Enterprise",
+      "teaser": "Multi-firm randomized controlled field trials across nearly 5,000 enterprise software developers finding a 26.08% increase in completed tasks from AI coding assistant access.",
+      "summaryPoints": [
+        "Core Theoretical Model: Evaluates how generative AI coding tools affect productivity and skill heterogeneity in complex, high-skilled software development workflows.",
+        "Methodology & Sample: Pooled analysis of three natural workplace randomized controlled trials encompassing 4,867 software developers across multiple large enterprises.",
+        "Empirical Findings: Developers provided with AI coding assistants achieved a 26.08% increase in completed tasks, alongside measurable gains in pull requests and code commits.",
+        "Socio-Technical Mechanisms: Less experienced and junior developers exhibited higher tool adoption rates and significantly larger marginal productivity gains than senior engineers.",
+        "Executive & Practical Implications: Enterprises deploying AI developer tooling capture the highest return by embedding tools into onboarding and junior engineering workflows while preserving senior architectural review."
+      ]
+    },
+    {
+      "id": "acemoglu-simple-macroeconomics-of-ai-2025",
+      "year": 2025,
+      "title": "The Simple Macroeconomics of AI",
+      "authors": "Daron Acemoglu (Economic Policy)",
+      "tags": [
+        "Macroeconomics",
+        "Total Factor Productivity",
+        "Task-Based Model",
+        "Labor Share"
+      ],
+      "paperUrl": "https://doi.org/10.1093/epolic/eiae042",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Macroeconomic & Labor Market",
+      "teaser": "Task-based macroeconomic formalization estimating modest 10-year aggregate productivity gains from AI due to reliability bottlenecks in context-dependent tasks.",
+      "summaryPoints": [
+        "Core Theoretical Model: Applies Hulten's theorem within a task-based macroeconomic production framework distinguishing routine, verifiable tasks from complex, context-dependent tasks.",
+        "Methodology & Sample: Combines labor share exposure estimates, task cost-savings benchmarks, and capital-labor substitution elasticities over a 10-year macroeconomic horizon.",
+        "Empirical Findings: Projects cumulative Total Factor Productivity (TFP) gains below 0.66% to 0.71% over a decade—and under 0.55% when accounting for hard-to-learn unstructured tasks.",
+        "Socio-Technical Mechanisms: Argues that aggregate gains are constrained when automation shifts toward opaque tasks lacking clear evaluation criteria or introduces negative-value digital manipulation.",
+        "Executive & Practical Implications: Tempering speculative GDP expectations, technology leaders should target verifiable task bottlenecks rather than assuming uniform firm-wide productivity windfalls."
+      ]
+    },
+    {
+      "id": "choi-ai-improves-human-decision-making-2025",
+      "year": 2025,
+      "title": "How Does Artificial Intelligence Improve Human Decision-Making? Evidence from the AI-Powered Go Program",
+      "authors": "Sukwoong Choi, Hyo Kang, Namil Kim, Junsik Kim (Strategic Management Journal)",
+      "tags": [
+        "Human Learning",
+        "Decision Quality",
+        "Strategic Uncertainty",
+        "Skill Acquisition"
+      ],
+      "paperUrl": "https://doi.org/10.1002/smj.3694",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Individual & Strategic Decision-Making",
+      "teaser": "Natural experiment analyzing 749,190 professional moves before and after superhuman AI release, revealing that AI functions as a powerful instructional tool under high strategic uncertainty.",
+      "summaryPoints": [
+        "Core Theoretical Model: Investigates AI as an instructional and epistemic learning partner rather than solely a substitution engine for human judgment.",
+        "Methodology & Sample: Quasi-experimental pre-post analysis evaluating 749,190 professional moves benchmarked against superhuman AI evaluation scores following open-access release.",
+        "Empirical Findings: Professionals measurably improved decision quality and reduced both error frequency and magnitude, with the sharpest gains occurring during high-uncertainty opening phases.",
+        "Socio-Technical Mechanisms: Younger professionals and lower-baseline performers captured disproportionately larger learning gains, revealing generational divergence in cognitive openness to algorithmic feedback.",
+        "Executive & Practical Implications: Managers should deploy analytical AI as structured training scaffolding for ambiguous strategic decisions while designing targeted upskilling for tenured experts."
+      ]
+    },
+    {
+      "id": "stanford-hai-ai-index-2026",
+      "year": 2026,
+      "title": "Artificial Intelligence Index Report 2026: Measuring Capabilities, Governance Gaps, and Economic Integration",
+      "authors": "Stanford Institute for Human-Centered Artificial Intelligence (Stanford HAI)",
+      "tags": [
+        "AI Index",
+        "Governance Gap",
+        "Capital Investment",
+        "Labor Transformation"
+      ],
+      "paperUrl": "https://hai.stanford.edu/ai-index/2026",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "University Research Report",
+      "levelOfAnalysis": "Global & Cross-Sectoral",
+      "teaser": "Ninth annual empirical benchmark documenting accelerating private AI capital deployment, industry dominance in frontier models, and widening governance and evaluation preparedness gaps.",
+      "summaryPoints": [
+        "Core Theoretical Model: Multi-dimensional empirical tracking framework linking technical model scaling, compute concentration, economic investment, and institutional governance readiness.",
+        "Methodology & Sample: Cross-national longitudinal synthesis combining frontier benchmark evaluations, global private investment datasets, Lightcast labor postings, and scientific output metrics.",
+        "Empirical Findings: Private AI investment surged by over 127% with industry producing over 90% of notable frontier models, while specialized AI graduate programs grew alongside shifting labor skill requirements.",
+        "Socio-Technical Mechanisms: Highlights a widening capabilities-governance gap as closed model transparency and compute concentration outpace standardized safety evaluations and educational adaptation.",
+        "Executive & Practical Implications: Requires enterprise leaders to pair rapid AI capital allocation with independent evaluation harnesses, supply-chain resilience, and domain-specific governance protocols."
+      ]
     }
   ]
 }

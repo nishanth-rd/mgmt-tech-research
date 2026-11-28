@@ -769,6 +769,56 @@
         "Bias and Drift Mitigation Playbook: Details automated monitoring triggers that halt model execution if error rate disparities across demographic groups exceed predefined bounds.",
         "Government Transformation Runbook: Provides government agency directors with concrete milestone checklists for transitioning from experimental pilots to certified production systems."
       ]
+    },
+    {
+      "id": "nist-genai-profile-600-1-2024",
+      "year": 2024,
+      "title": "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)",
+      "authors": "National Institute of Standards and Technology (NIST)",
+      "tags": [
+        "NIST AI 600-1",
+        "Generative AI",
+        "Risk Management",
+        "Sociotechnical Governance"
+      ],
+      "paperUrl": "https://doi.org/10.6028/NIST.AI.600-1",
+      "isRecommended": true,
+      "isPeerReviewed": false,
+      "publicationType": "Government Standard & Profile",
+      "levelOfAnalysis": "Enterprise & Sociotechnical System",
+      "teaser": "Cross-sectoral companion profile to NIST AI RMF 1.0 operationalizing over 200 structured governance, mapping, measurement, and mitigation actions across twelve generative AI risk categories.",
+      "summaryPoints": [
+        "Core Theoretical Model: Extends the Govern-Map-Measure-Manage lifecycle of NIST AI RMF 1.0 to address probabilistic and emergent hazards unique to foundation and generative models.",
+        "Methodology & Sample: Consensus-driven socio-technical risk taxonomy developed through multi-stakeholder public-private consultations across technical, legal, and organizational domains.",
+        "Empirical Findings: Codifies 12 distinct risk vectors including confabulation, human-AI automation complacency, data privacy leakage, information integrity, cybersecurity, and third-party value-chain dependencies.",
+        "Socio-Technical Mechanisms: Links technical model red-teaming and evaluation directly to organizational accountability structures, incident-response norms, and human-in-the-loop oversight.",
+        "Executive & Practical Implications: Establishes an auditable baseline for enterprise risk officers to evaluate vendor foundation models and govern internal generative deployments."
+      ]
+    },
+    {
+      "id": "liu-human-ai-delegation-hmm-2025",
+      "year": 2025,
+      "title": "Find the Good. Seek the Unity: A Hidden Markov Model of Human-AI Delegation Dynamics",
+      "authors": "Junming Liu, Wei Thoo Yue, Alvin Chung Man Leung, Xin Zhang (MIS Quarterly)",
+      "tags": [
+        "Human-AI Delegation",
+        "Hidden Markov Model",
+        "Collaborative Intelligence",
+        "Trust Dynamics"
+      ],
+      "paperUrl": "https://doi.org/10.25300/MISQ/2024/18232",
+      "isRecommended": true,
+      "isPeerReviewed": true,
+      "publicationType": "Peer-Reviewed Article",
+      "levelOfAnalysis": "Individual & Managerial Decision-Making",
+      "teaser": "Longitudinal Hidden Markov Model study of 875 managers modeling how dynamic performance appraisals drive polarizing feedback loops in human willingness to delegate tasks to AI.",
+      "summaryPoints": [
+        "Core Theoretical Model: Integrates agentic IS delegation theory with instance-based learning to model transitions across latent managerial delegation states over repeated AI interactions.",
+        "Methodology & Sample: Longitudinal quantitative field study applying a Hidden Markov Model (HMM) to sequential delegation decisions made by 875 retail store managers.",
+        "Empirical Findings: Reveals pronounced polarization in delegation trajectories—managers recognizing AI strengths enter reinforcing high-delegation states and outperform peers, whereas skeptical managers withdraw delegation.",
+        "Socio-Technical Mechanisms: Demonstrates a bidirectional feedback loop in which continuous appraisal of AI output shapes delegation willingness, which in turn constrains future capability discovery.",
+        "Executive & Practical Implications: Rollout programs must intervene early during initial appraisal cycles to prevent premature disuse and cultivate calibrated human-AI task handoffs."
+      ]
     }
   ]
 }
